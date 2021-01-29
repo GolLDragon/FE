@@ -1,0 +1,720 @@
+.header{
+    background-color: var(--primary-color);
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    top: 0;
+}
+
+.header__content{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__nav{
+    display: flex;
+    position: relative;
+}
+
+.header__logo{
+    font-size: 3.0rem;
+    line-height: 3.0rem;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-item{
+    color: white;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    text-decoration: none;
+}
+
+.header__donate{
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    background-color: white;
+    padding: 16px 26px;
+    display: block;
+    margin: 10px 0;
+    border-radius: 4px;
+    color: black;
+    text-decoration: none;
+}
+
+.nav-place.blog,
+.nav-place.shop{
+    position: relative;
+}
+
+.nav-place.blog:hover .nav-blog,
+.nav-place.shop:hover .nav-shop{
+    display: block;
+}
+
+.nav-blog,
+.nav-shop{
+    list-style: none;
+    position: absolute;
+    background-color: white;
+    top: 39px;
+    width: 180px;
+    left: 0px;
+    padding: 10px 10px;
+    border-radius: 4px;
+    display: none;
+    z-index: 2;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    margin: 20px 0;
+    display: block;
+}
+
+.nav-link:last-child{
+    margin-bottom: 10px;
+}
+
+.nav-page{
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    top: 39px;
+    left: 0px;
+    z-index: 2;
+    border-radius: 4px;
+    display: none;
+    width: 596px;
+}
+
+.nav-page__list{
+    border-left: 1px solid #ccc;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.nav-page__list:first-child{
+    border-left: unset;
+}
+
+.nav-link.page{
+    margin-left: 20px;
+}
+
+.nav-place.page:hover .nav-page{
+    display: block;
+}
+
+/* Content */
+
+.content__header{
+    width: 100%;
+    height: 720px;
+    background-position: center -60px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.content__header-info{
+    position: absolute;
+    top: 250px;
+}
+
+.content__header-title{
+    font-size: 2.0rem;
+    line-height: 2.0rem;
+    user-select: none;
+}
+
+.content__header-title2{
+    font-size: 8.0rem;
+    line-height: 8.0rem;
+    margin: 20px 0;
+    user-select: none;
+}
+
+.content__header-descrip{
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    width: 78%;
+    margin-bottom: 32px;
+    user-select: none;
+}
+
+.slider__place{
+    position: absolute;
+    top: 350px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.content__mission-left img{
+    width: 100%;
+}
+
+.content__mission-list{
+    align-items: center;
+}
+
+.content__mission-right{
+    padding-left: 90px;
+}
+
+.content__misstion-right-title1{
+    color: #999;
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+}
+
+.content__misstion-right-title2{
+    color: var(--title-color);
+    font-size: 4.0rem;
+    line-height: 4.0rem;
+    margin: 20px 0;
+}
+
+.content__misstion-right-info{
+    color: var(--text-color);
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+}
+
+.content__mission-right-btn{
+    margin-top: 40px;
+}
+
+.content__mission-tour{
+    background-color: var(--background-color);
+}
+
+.content__mission-list{
+    height: 712px;
+}
+
+.content__mission-tour-title{
+    font-size: 5.0rem;
+    line-height: 5.0rem;
+    color: white;
+    margin-top: 20px;
+}
+
+.content__mission-tour-info{
+    font-size: 2.0rem;
+    line-height: 2.8rem;
+    color: #dbf9ff;
+    margin-top: 14px;
+    margin-bottom: 20px;
+}
+
+.content__mission-tour-item{
+    margin: 64px 0;
+    padding: 0 55px;
+}
+
+.content__mission-tour-item:nth-child(3n+2){
+    border-left: 1px solid  #dbf9ff;
+    border-right: 1px solid  #dbf9ff;
+}
+
+.content__mission-tour-info span{
+    color: white;
+    font-weight: 600;
+}
+
+.content__form-place{
+    padding: 60px;
+    box-shadow: 0px 6px 8px 0px #ddd;
+}
+
+.content__form-title{
+    color: var(--title-color);
+    font-size: 2.8rem;
+    line-height: 2.8rem;
+}
+
+.content__form-phone{
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    background-color: rgb(250,80,0);
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+.content__form-title-place{
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content__form-input-title{
+    color: var(--text-color);
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+}
+
+.content__form-btn{
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+.content__form-title-place{
+    margin-bottom: 40px;
+}
+
+.content__form-notice{
+    color: #999;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    margin: 20px 0;
+}
+
+.content__form{
+    margin-top: 50px;
+}
+
+.content__heroes{
+    margin-top: 100px;
+}
+
+.content__heroes-item{
+    width: 100%;
+}
+
+.content__heroes-title{
+    color: var(--title-color);
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.content__heroes-link{
+    position: relative;
+    text-decoration: none;
+}
+
+.content__heroes-hover{
+    width: calc(100% - 24px);
+    background-color: rgba(250,80,0,0.5);
+    position: absolute;
+    bottom: -60px;
+    color: white;
+    text-align: center;
+    font-size: 2.0rem;
+    line-height: 2.0rem;
+    padding: 20px 0;
+    /* display: none; */
+    transition: transform linear 0.4s;/*Tạo chuyển động theo transform*/
+    will-change: transform;
+}
+
+.content__heroes-link:hover .content__heroes-hover{
+    display: block;
+    transform: translateY(-370%);/*Theo trục dọc lên trên*/
+}
+
+.hide-hover{
+    background-color: white;
+    height: 60px;
+    z-index: 1;
+    position: relative;
+}
+
+.content__the-zoo-link{
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+}
+
+.content__the-zoo-link:hover{
+    color: var(--primary-color);
+}
+
+.content__the-zoo-item-info i{
+    color: var(--primary-color);
+    margin-right: 5px;
+    font-size: 1.4rem;
+}
+
+.content__the-zoo-item-info{
+    margin: 15px 0;
+}
+
+.content__the-zoo-title{
+    color: var(--title-color);
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+    margin-bottom: 40px;
+}
+
+.content__the-zoo-img{
+    width: 100%;
+}
+
+.content__the-zoo-list{
+    padding: 20px 0 60px;
+}
+
+.content__surprise{
+    background-color: var(--background-color);
+    text-align: center;
+}
+
+.content__surprise-title{
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.content__surprise-info{
+    font-size: 1.7rem;
+    line-height: 2.5rem;
+    padding: 0 200px;
+}
+
+.content__surprise-place{
+    padding: 60px 0 40px;
+}
+
+.content__denver-zoo{
+    width: 100%;
+    height: 525px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.grid.wide.content__denver-zoo-content{
+    text-align: right;
+    padding: calc((525px - 248px) / 2) 0;
+}
+
+.content__denver-zoo-title{
+    font-size: 4.8rem;
+    line-height: 4.8rem;
+    text-decoration: none;
+}
+
+.content__denver-zoo-title:hover{
+    color: #ccc;
+}
+
+.content__denver-zoo-info{
+    font-size: 2.8rem;
+    line-height: 3.5rem;
+    padding-left: 60%;
+    margin: 30px 0 20px;
+}
+
+.content__testimonials-place{
+    text-align: center;
+}
+
+.content__testimonials-img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.content__testimonials-title{
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+    color: var(--title-color);
+}
+
+.content__testimonials-descrip{
+    font-size: 2.0rem;
+    line-height: 3.0rem;
+    padding: 0 21%;
+}
+
+.content__testimonials-list{
+    margin: 40px 0 0;
+    list-style: none;
+}
+
+.content__testimonials-name{
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+    color: var(--primary-color);
+    margin-top: 20px;
+}
+
+.content__testimonials{
+    padding: 40px 0;
+}
+
+.content__ticket-list{
+    list-style: none;
+}
+
+.content__ticket-place{
+    text-align: center;
+}
+
+.content__ticket-item{
+    border: 1px solid #ccc;
+    padding: 35px 0;
+    background-color: white;
+}
+
+.content__ticket-item:hover{
+    border-color: var(--border-color);
+    z-index: 1;
+    margin: -10px 0;
+}
+
+.content__ticket-title{
+    color: var(--title-color);
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+.content__ticket-item-title{
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+}
+
+.content__ticket-item-price{
+    font-size: 4.0rem;
+    line-height: 4.0rem;
+    color: var(--border-color);
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.content__ticket-item-price span{
+    font-size: 3.2rem;
+    line-height: 3.2rem;
+}
+
+.content__ticket-item-info{
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    color: var(--text-color);
+    padding: 0 20px;
+    margin: 36px 0 30px;
+}
+
+.content__ticket-popular{
+    color: #28a745;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.content__ticket-item.popular{
+    border-color: var(--border-color);
+    margin: -10px 0;
+}
+
+.btn.popular{
+    background-color: var(--border-color);
+}
+
+.content__ticket{
+    padding: 60px 0;
+}
+
+.content__ticket-quest{
+    margin-top: 30px;
+}
+
+.content__ticket-quest span i{
+    margin-right: 10px;
+}
+
+.content__ticket-quest span{
+    font-size: 1.7rem;
+    line-height: 1.7rem;
+}
+
+.content__ticket-link{
+    color: var(--border-color);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.content__ticket-link:hover{
+    text-decoration: underline;
+}
+
+.content__partners-img{
+    width: 100%;
+}
+
+.content__partners-title{
+    color: var(--title-color);
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.content__partners-info{
+    font-size: 1.7rem;
+    line-height: 2.5rem;
+    color: var(--text-color);
+    text-align: center;
+    margin-top: 40px;
+}
+
+.content__partners-mobile,
+.content__partners-tablet{
+    display: none;
+}
+
+.content__send-mail-bg{
+    width: 100%;
+    height: 236px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.content__send-mail-list{
+    align-items: center;
+    height: 100%;
+}
+
+.content__send-mail-place{
+    position: absolute;
+    left: calc((100% - 1110px) / 2);
+    height: 100%;
+}
+
+.content__send-mail-list .content__send-mail-item{
+    align-items: center;
+    display: flex;
+}
+
+.overlay-send-mail{
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+}
+
+.send-mail{
+    height: 44px;
+    font-size: 1.7rem;
+    line-height: 1.7rem;
+    color: var(--text-color);
+    flex: 1;
+    padding: 0 10px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.content__send-mail-item i{
+    font-size: 4.5rem;
+    margin-right: 20px;
+    width: 45px;
+    height: 45px;
+    display: block;
+}
+
+.content__send-mail-item-title{
+    font-size: 2.6rem;
+    line-height: 3.5rem;
+    flex: 1;
+}
+
+.content__send-mail-item-btn{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.content__send-mail-item.right{
+    justify-content: flex-end;
+}
+
+.email-form{
+    width: 100%;
+}
+
+.content__send-mail{
+    padding: 60px 0 0;
+}
+
+/* Footer */
+
+.footer-item-link{
+    text-decoration: none;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    color: var(--title-color);
+    display: inline-block;
+    margin: 0 0 20px 0;
+}
+
+.footer-item-title{
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 40px;
+}
+
+.footer-item-info{
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    color: var(--title-color);
+    margin: 15px 0;
+}
+
+.footer-item-info span{
+    font-weight: 600;
+}
+
+.footer-content{
+    height: 535px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.footer-icon-link{
+    text-decoration: none;
+    color: white;
+}
+
+.footer-icon-link i{
+    background-color: var(--background-color);
+    font-size: 2.0rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 10px;
+    text-align: center;
+    line-height: 4.0rem;
+}
+
+.footer-icon-list{
+    margin: 60px 0 20px;
+    justify-content: center;
+}
+
+.footer-end p{
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    color: var(--text-color);
+    width: 100%;
+    text-align: center;
+}

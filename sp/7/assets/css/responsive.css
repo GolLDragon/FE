@@ -1,0 +1,427 @@
+/* small pc */
+@media (min-width: 1024px) and (max-width: 1239px){
+    .hide-on-small-pc{
+        display: none;
+    }
+
+    .content__header{
+        background-position: center;
+    }
+
+    .content__heroes-link:hover .content__heroes-hover{
+        display: block;
+        transform: translateY(-300%);/*Theo trục dọc lên trên*/
+    }
+
+    .content__surprise-info{
+        padding: unset;
+    }
+
+    .content__send-mail-place{
+        left: calc((100% - 984px) / 2);
+    }
+
+    .header__content.not-pc{
+        display: flex;
+    }
+}
+
+/* Mobile and tablet */
+@media (max-width: 1023px){
+    .hide-on-mobile-tablet{
+        display: none;
+    }
+
+    .content__header{
+        background-position: center;
+    }
+    
+    .content__mission-right{
+        padding-left: unset;
+    }
+
+    .content__misstion-right-title2{
+        font-size: 2.8rem;
+        line-height: 3.5rem;
+        margin: 15px 0;
+    }
+
+    .content__mission-right{
+        margin-top: 20px;
+    }
+
+    .content__mission-right-btn{
+        margin-top: 25px;
+    }
+
+    .content__mission-tour-info{
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+    }
+
+    .content__the-zoo-img{
+        margin-top: 40px;
+    }
+
+    .content__surprise-info{
+        padding: unset;
+    }
+
+    .content__denver-zoo{
+        width: 100%;
+        height: 373px;
+    }
+
+    .content__testimonials-descrip{
+        padding: unset;
+    }
+
+    .content__send-mail-place{
+        left: unset;
+    }
+
+    .header__content.not-pc{
+        display: flex;
+    }
+}
+
+/* tablet */
+@media (min-width: 740px) and (max-width: 1023px){
+    .hide-on-tablet{
+        display: none;
+    }
+
+    .content__header{
+        height: 650px;
+    }
+
+    .content__header-info{
+        top: 180px;
+    }
+
+    .content__header-title2{
+        font-size: 6.5rem;
+        line-height: 6.5rem;
+    }
+
+    .slider__place{
+        top: 300px;
+    }
+
+    .content__mission-tour-item{
+        padding: 0 20px;
+    }
+
+    .content__mission-tour-title{
+        font-size: 4.6rem;
+        line-height: 4.6rem;
+    }
+
+    .content__mission-list{
+        padding: 40px 0;
+        height: unset;
+    }
+
+    .content__heroes-hover{
+        width: calc(100% - 16px);
+    }
+
+    .content__heroes-link:hover .content__heroes-hover{
+        display: block;
+        transform: translateY(-420%);/*Theo trục dọc lên trên*/
+    }
+
+    .content__the-zoo-list{
+        padding: 20px 0;
+    }
+
+    .content__surprise{
+        margin-top: 40px;
+    }
+
+    .grid.wide.content__denver-zoo-content{
+        text-align: right;
+        padding: calc((373px - 248px) / 2) 0;
+    }
+
+    .content__denver-zoo-info{
+        padding-left: 30%;
+    }
+
+    .content__ticket-item{
+        margin-top: 10px;
+    }
+
+    .content__partners-tablet{
+        display: block;
+    }
+
+    .content__send-mail-place{
+        left: calc((100% - 644px) / 2);
+    }
+}
+
+/* Mobile */
+@media (max-width: 739px){
+    .hide-on-mobile{
+        display: none;
+    }
+
+    .header__content{
+        padding: 0 20px;
+    }
+
+    .content__header{
+        height: 420px;
+    }
+
+    .content__header-info{
+        top: 80px;
+        padding: 0 20px;
+    }
+
+    .slider__place{
+        top: unset;
+        bottom: 0;
+    }
+
+    .content__header-title2{
+        font-size: 4.0rem;
+        line-height: 4.0rem;
+        margin: 10px 0 10px;
+    }
+
+    .content__header-descrip{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .content__mission-tour-title{
+        font-size: 3.0rem;
+        line-height: 3.0rem;
+    }
+
+    .content__mission-list{
+        padding: 40px 20px;
+        height: unset;
+    }
+
+    .content__mission-tour-item:nth-child(3n+2){
+        border-top: 1px solid  #dbf9ff;
+        border-bottom: 1px solid  #dbf9ff;
+        border-left: unset;
+        border-right: unset;
+    }
+
+    .content__mission-tour-list{
+        padding: 30px 20px;
+    }
+    
+    .content__mission-tour-item{
+        margin: unset;
+        padding: unset;
+    }
+
+    .content__form-input.mobile{
+        display: flex;
+    }
+
+    .content__form-place{
+        padding: 0 20px;
+    }
+
+    .content__form-phone{
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .tours,
+    .email,
+    .adults,
+    .childrens,
+    .phone,
+    .date{
+    width: 100%;
+    margin: 10px 0 20px;
+    }
+
+    .content__form-btn{
+        margin-bottom: 40px;
+    }
+
+    .content__form-notice{
+        margin-top: 10px;
+    }
+
+    .content__heroes{
+        padding: 0 20px;
+    }
+
+    .content__heroes-hover{
+        width: calc(100% - 8px);
+    }
+
+    .content__heroes-link:hover .content__heroes-hover{
+        display: block;
+        transform: translateY(-480%);/*Theo trục dọc lên trên*/
+    }
+    
+    .content__the-zoo-title{
+        font-size: 3.0rem;
+        line-height: 3.0rem;
+    }
+
+    .content__the-zoo-list{
+        padding: 0 20px;
+    }
+
+    .content__surprise{
+        margin-top: 40px;
+        padding: 0 20px;
+    }
+
+    .content__surprise-title{
+        font-size: 3.0rem;
+        line-height: 3.5rem;
+    }
+
+    .content__denver-zoo{
+        padding: 0 20px;
+    }
+
+    .grid.wide.content__denver-zoo-content{
+        text-align: right;
+        padding: calc((373px - 220px) / 2) 0;
+    }
+
+    .content__denver-zoo-info{
+        padding-left: 10%;
+        font-size: 2.2rem;
+        line-height: 3.0rem;
+    }
+
+    .content__denver-zoo-title{
+        font-size: 3.2rem;
+        line-height: 3.2rem;
+    }
+
+    .content__testimonials-title{
+        font-size: 3.0rem;
+        line-height: 3.0rem;
+    }
+
+    .content__testimonials-descrip{
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+    }
+
+    .content__testimonials-name{
+        font-size: 2.6rem;
+        line-height: 2.6rem;
+    }
+
+    .content__testimonials{
+        padding: 40px 20px;
+    }
+    
+    .content__ticket{
+        padding: 40px 20px;
+    }
+
+    .content__ticket-title{
+        font-size: 3.0rem;
+        line-height: 3.0rem;
+    }
+
+    .content__ticket-item{
+        margin: 10px 0;
+    }
+
+    .content__ticket-item:nth-child(4n+2){
+        margin: 20px 0;
+    }
+
+    .content__ticket-item:hover{
+        margin: 10px 0;
+    }
+
+    .content__ticket-item:nth-child(4n+2):hover{
+        margin: 20px 0;
+    }
+
+    .content__partners-mobile{
+        display: block;
+    }
+
+    .content__partners-title{
+        font-size: 3.0rem;
+        line-height: 3.0rem;
+    }
+
+    .content__partners{
+        padding: 0 20px;
+    }
+
+    .content__partners-info{
+        text-align: unset;
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+    }
+
+    .content__send-mail-list{
+        padding: 0 20px;
+    }
+
+    .content__send-mail-bg{
+        height: 385px;
+    }
+
+    .content__send-mail-item.right{
+        display: unset;
+    }
+
+    .send-mail{
+        width: 100%;
+        flex: unset;
+        margin-bottom: 10px;
+    }
+
+    .content__send-mail-item-btn{
+        width: 100%;
+    }
+
+    .overlay-footer{
+        height: 746px;
+    }
+    
+    .footer{
+        height: 746px;
+    }
+
+    .footer-content{
+        height: 746px;
+        padding: 0 20px;
+    }
+
+    .footer-item-title{
+        width: 60%;
+        margin-bottom: 20px;
+    }
+
+    .footer-list-item{
+        margin-top: 20px;
+    }
+
+    .footer-item-link{
+        margin-bottom: 10px;
+    }
+
+    .footer-icon-list{
+        margin-top: 40px;
+    }
+
+    .header__menu-content{
+        padding: 0 20px;
+    }
+}

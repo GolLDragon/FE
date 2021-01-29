@@ -1,0 +1,187 @@
+/* small pc */
+
+@media (min-width: 1024px) and (max-width: 1239px) {
+    .hide-on-small-pc {
+        display: none;
+    }
+    .content__header-bg {
+        height: 440px;
+    }
+    .col.l-3.content__header-buy-ticket-info {
+        display: flex;
+    }
+    .col.l-10.footer__body__item {
+        display: flex;
+    }
+    .content__video-place {
+        width: 1024px;
+    }
+}
+
+
+/* Mobile and tablet */
+
+@media (max-width: 1023px) {
+    .hide-on-mobile-tablet {
+        display: none;
+    }
+    .content__background-place.left {
+        text-align: center;
+    }
+    .content__background-place.right {
+        height: unset;
+    }
+    .content__background {
+        /* height: 1100px; */
+        height: unset;
+    }
+    .content__background-mobile {
+        margin-top: 20px;
+    }
+    .content__background-slide-place {
+        /* display: none; */
+        top: 12px;
+    }
+    .content__background-descript {
+        padding: 80px 0;
+    }
+    .content__background-title {
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+        padding: 0 150px;
+    }
+}
+
+
+/* tablet */
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .hide-on-tablet {
+        display: none;
+    }
+    .content__header-bg {
+        height: 330px;
+    }
+    .content__video {
+        margin: 40px 0;
+    }
+    .content__video-place {
+        width: 100%;
+    }
+    .content__video-item-img {
+        height: 250px;
+        min-width: 100%;
+    }
+    .overlay-img {
+        height: 250px;
+    }
+    .content__video-play {
+        left: 25%;
+    }
+    .content__video-stars {
+        right: 0;
+        top: 15px;
+    }
+    .content__background-slide-img {
+        height: 688px;
+        border-radius: 25px;
+    }
+    .content__background-mobile-img {
+        height: 715px;
+    }
+    .footer__body__item__info {
+        text-align: center;
+    }
+}
+
+
+/* Mobile */
+
+@media (max-width: 739px) {
+    .hide-on-mobile {
+        display: none;
+    }
+    .header {
+        background-color: white !important;
+    }
+    .content__video {
+        margin: 20px 0 40px;
+    }
+    .content__video-place-mobile {
+        display: block;
+        padding: 0 10px;
+    }
+    .content__video-title {
+        font-size: 1.6rem;
+        line-height: 1.6rem;
+        font-weight: 600;
+    }
+    .content__video-title:hover {
+        font-size: 1.8rem;
+        line-height: 1.6rem;
+    }
+    .content__video-title.active {
+        font-size: 1.8rem;
+    }
+    .content__video-title.active:hover {
+        font-size: 1.8rem;
+        line-height: 1.6rem;
+    }
+    .content__video-rate {
+        font-size: 1.8rem;
+        line-height: 1.8rem;
+    }
+    .content__blog {
+        padding: 0 10px;
+    }
+    .content__blog-item-place {
+        margin-top: 30px;
+    }
+    .content__blog-list {
+        margin-top: unset;
+    }
+    .content__blog-btn {
+        margin-top: 40px;
+    }
+    .content__background-content {
+        padding: 0 10px;
+    }
+    .content__background-title {
+        padding: 0;
+    }
+    .content__background-slide-img {
+        height: 370px;
+        border-radius: 20px;
+    }
+    .content__background-mobile-img {
+        height: 385px;
+    }
+    .content__background-slide-place {
+        /* display: none; */
+        top: 8px;
+    }
+    .footer {
+        padding: 0 10px 30px;
+    }
+    .footer__head {
+        padding-top: 20px;
+    }
+    .footer__head__item {
+        text-align: center;
+    }
+    .footer__body__item__link {
+        display: flex;
+        justify-content: center;
+        margin: 10px 0 0;
+    }
+    .footer__body__item__link__img {
+        float: unset;
+    }
+    .footer__body__item {
+        display: unset;
+        text-align: center;
+    }
+    .footer__body__item__info {
+        margin-top: 15px;
+    }
+}

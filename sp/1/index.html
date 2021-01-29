@@ -1,0 +1,1264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ - Trung tâm tài nguyên</title>
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.js"></script>
+</head>
+
+<body>
+    <div class="app">
+        <!-- Header -->
+        <header class="header">
+            <div class="header__left">
+                <a href="#" class="header__logo">
+                    <svg viewBox="0 0 1000 1000" role="presentation" aria-hidden="true" focusable="false"
+                        style="height:32px;width:32px;display:block;fill:currentColor">
+                        <path
+                            d="m499.3 736.7c-51-64-81-120.1-91-168.1-10-39-6-70 11-93 18-27 45-40 80-40s62 13 80 40c17 23 21 54 11 93-11 49-41 105-91 168.1zm362.2 43c-7 47-39 86-83 105-85 37-169.1-22-241.1-102 119.1-149.1 141.1-265.1 90-340.2-30-43-73-64-128.1-64-111 0-172.1 94-148.1 203.1 14 59 51 126.1 110 201.1-37 41-72 70-103 88-24 13-47 21-69 23-101 15-180.1-83-144.1-184.1 5-13 15-37 32-74l1-2c55-120.1 122.1-256.1 199.1-407.2l2-5 22-42c17-31 24-45 51-62 13-8 29-12 47-12 36 0 64 21 76 38 6 9 13 21 22 36l21 41 3 6c77 151.1 144.1 287.1 199.1 407.2l1 1 20 46 12 29c9.2 23.1 11.2 46.1 8.2 70.1zm46-90.1c-7-22-19-48-34-79v-1c-71-151.1-137.1-287.1-200.1-409.2l-4-6c-45-92-77-147.1-170.1-147.1-92 0-131.1 64-171.1 147.1l-3 6c-63 122.1-129.1 258.1-200.1 409.2v2l-21 46c-8 19-12 29-13 32-51 140.1 54 263.1 181.1 263.1 1 0 5 0 10-1h14c66-8 134.1-50 203.1-125.1 69 75 137.1 117.1 203.1 125.1h14c5 1 9 1 10 1 127.1.1 232.1-123 181.1-263.1z">
+                        </path>
+                    </svg>
+                </a>
+
+                <a href="#" class="header__title">
+                    <h2 class="header__title-pc hide-on-mobile">Trung tâm tài nguyên Airbnb</h2>
+                    <h2 class="header__title-mobile">Trung tâm tài nguyên</h2>
+                </a>
+
+                <div class="header__search hide-on-mobile">
+                    <i class="header__search-icon fa fa-search"></i>
+                    <input class="header__search-input" type="text"
+                        placeholder="Try &ldquo;create a great listing&rdquo;">
+                </div>
+            </div>
+
+            <div class="header__right hide-on-small-pc">
+                <ul class="header__right-list">
+                    <li class="header__right-item header__right-item-topic">
+                        <label for="header__topic-check-topic">Chủ đề</label>
+                    </li>
+                    <li class="header__right-item">
+                        <label for="header__topic-check-guide">Hướng dẫn</label>
+                    </li>
+                    <li class="header__right-item">
+                        <label for="header__topic-check-info">Tin tức</label>
+                    </li>
+                    <li class="header__right-item">
+                        <a href="" class="header__right-item-link">Trợ giúp</a>
+                    </li>
+                    <li class="header__right-item">
+                        <i class='fas fa-globe'></i>
+                        Tiếng Việt (VN)
+                    </li>
+                    <li class="header__right-item">
+                        <label for="header__topic-check-regis">Đăng ký</label>
+                    </li>
+                    <li class="header__right-item">
+                        <label for="header__topic-check-login">Đăng nhập</label>
+                    </li>
+                </ul>
+
+                <input type="checkbox" name="topic" id="header__topic-check-topic" class="header__topic__input-topic">
+                <input type="checkbox" name="guide" id="header__topic-check-guide" class="header__topic__input-guide">
+                <input type="checkbox" name="info" id="header__topic-check-info" class="header__topic__input-info">
+                <input type="checkbox" name="regis" id="header__topic-check-regis" class="header__topic__input-regis">
+                <input type="checkbox" name="login" id="header__topic-check-login" class="header__topic__input-login">
+
+                <div class="header__right-info-topic">
+                    <div class="grid">
+                        <div class="row">
+                            <ul class="col topic__list c-3">
+                                <li class="topic__item">
+                                    <a href="#" class="topic__title">
+                                        <h2>About hosting</h2>
+                                    </a>
+                                </li>
+                                <li class="topic__item">
+                                    <a href="#" class="topic__link">
+                                        Why host?
+                                    </a>
+                                </li>
+                                <li class="topic__item">
+                                    <a href="#" class="topic__link">
+                                        What's it like to host?
+                                    </a>
+                                </li>
+                                <li class="topic__item">
+                                    <a href="#" class="topic__link">
+                                        Host safety & protection
+                                    </a>
+                                </li>
+                                <li class="topic__item">
+                                    <a href="#" class="topic__link">
+                                        Local laws & taxes
+                                    </a>
+                                </li>
+                                <li class="topic__item">
+                                    <a href="#" class="topic__link">
+                                        Host stories
+                                    </a>
+                                </li>
+                                <li class="topic__item">
+                                    <a href="#" class="topic__link">
+                                        Open Homes
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <ul class="col topic__list c-3">
+                                <li class="topic__item">
+                                    <a href="#" class="topic__title">
+                                        <h2>Your online listing</h2>
+                                    </a>
+                                </li>
+                                <li class="topic__item">
+                                    <a href="#" class="topic__link">
+                                        Listing details & photos
+                                    </a>
+                                </li>
+                                <li class="topic__item">
+                                    <a href="#" class="topic__link">
+                                        Calendar & booking settings
+                                    </a>
+                                </li>
+                                <li class="topic__item">
+                                    <a href="#" class="topic__link">
+                                        Pricing strategies
+                                    </a>
+                                </li>
+                                <li class="topic__item">
+                                    <a href="#" class="topic__link">
+                                        Marketing & promotion
+                                    </a>
+                                </li>
+                                <li class="topic__item">
+                                    <a href="#" class="topic__link">
+                                        Listing tools
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <ul class="col topic__list c-3">
+                                <li class="topic__item">
+                                    <a href="#" class="topic__title">
+                                        <h2>Your place</h2>
+                                    </a>
+                                </li>
+                                <li class="topic__item">
+                                    <a href="#" class="topic__link">
+                                        Cleanliness
+                                    </a>
+                                </li>
+                                <li class="topic__item">
+                                    <a href="#" class="topic__link">
+                                        Setup & amenities
+                                    </a>
+                                </li>
+                                <li class="topic__item">
+                                    <a href="#" class="topic__link">
+                                        Design & decor
+                                    </a>
+                                </li>
+                                <li class="topic__item">
+                                    <a href="#" class="topic__link">
+                                        Accessibility
+                                    </a>
+                                </li>
+                                <li class="topic__item">
+                                    <a href="#" class="topic__link">
+                                        Airbnb Plus
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <ul class="col topic__list c-3">
+                                <li class="topic__item">
+                                    <a href="#" class="topic__title">
+                                        <h2>Your guests & hospitality</h2>
+                                    </a>
+                                </li>
+                                <li class="topic__item">
+                                    <a href="#" class="topic__link">
+                                        Delighting guests
+                                    </a>
+                                </li>
+                                <li class="topic__item">
+                                    <a href="#" class="topic__link">
+                                        Communication & check-in
+                                    </a>
+                                </li>
+                                <li class="topic__item">
+                                    <a href="#" class="topic__link">
+                                        Ratings & reviews
+                                    </a>
+                                </li>
+                                <li class="topic__item">
+                                    <a href="#" class="topic__link">
+                                        Potential Challenges
+                                    </a>
+                                </li>
+                                <li class="topic__item">
+                                    <a href="#" class="topic__link">
+                                        Fighting discrimination
+                                    </a>
+                                </li>
+                                <li class="topic__item">
+                                    <a href="#" class="topic__link">
+                                        Superhost
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header__right-info-guide">
+                    <ul class="guide__list">
+                        <li class="guide__item">
+                            <a href="#" class="guide__link">Discovering the world of hosting</a>
+                        </li>
+                        <li class="guide__item">
+                            <a href="#" class="guide__link">Setting up a successful listing</a>
+                        </li>
+                        <li class="guide__item">
+                            <a href="#" class="guide__link">Creating a guest-friendly space</a>
+                        </li>
+                        <li class="guide__item">
+                            <a href="#" class="guide__link">Delighting your first guests</a>
+                        </li>
+                        <li class="guide__item">
+                            <a href="#" class="guide__link">Exploring the enhanced cleaning process</a>
+                        </li>
+                        <li class="guide__item">
+                            <a href="#" class="guide__link">Rebuilding your hosting business</a>
+                        </li>
+                        <li class="guide__item">
+                            <a href="#" class="guide__link">Navigating hosting during COVID-19</a>
+                        </li>
+                        <li class="guide__item">
+                            <a href="#" class="guide__link">Taking your hosting to the next level</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="header__right-info-info">
+                    <ul class="info__list">
+                        <li class="info__item">
+                            <a href="#" class="info__link">Coronavirus</a>
+                        </li>
+                        <li class="info__item">
+                            <a href="#" class="info__link">New features & announcements</a>
+                        </li>
+                        <li class="info__item">
+                            <a href="#" class="info__link">Leadership updates</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <label for="header__topic-check-topic" class="overlay-topic" id="overlay-topic"></label>
+                <label for="header__topic-check-guide" class="overlay-guide" id="overlay-guide"></label>
+                <label for="header__topic-check-info" class="overlay-info" id="overlay-info"></label>
+                <label for="header__topic-check-regis" class="overlay-regis" id="overlay-regis"></label>
+                <label for="header__topic-check-login" class="overlay-login"></label>
+
+                <div class="header__right-info-regis">
+                    <div class="regis__info">
+                        <div class="regis__header">
+                            <label for="header__topic-check-regis">
+                                <i class="fa fa-close"></i>
+                            </label>
+                            <h2>Đăng ký</h2>
+                        </div>
+                        <div class="regis__body">
+                            <form action="#">
+                                <input class="regis__body-input" type="text" name="account" placeholder="Tài khoản">
+                                <input class="regis__body-input" type="password" name="password" placeholder="Mật khẩu">
+                                <input class="regis__body-input" type="password" name="password"
+                                    placeholder="Nhập lại mật khẩu">
+                                <p>Chúng tôi sẽ gọi điện hoặc nhắn tin cho bạn để xác nhận số điện thoại. Có áp dụng phí
+                                    dữ liệu và phí tin nhắn tiêu chuẩn.</p>
+                                <input type="submit" class="btn regis__body-submit" value="Tiếp tục">
+                            </form>
+                            <p class="regis__body-or"><span>hoặc</span></p>
+                            <div class="regis__body-another">
+                                <ul class="regis__another-list">
+                                    <li class="btn regis__another-item">
+                                        <i class="regis__another-item-icon material-icons">mail_outline</i>
+                                        <span class="regis__another-item-text">Tiếp tục bằng email</span>
+                                    </li>
+                                    <li class="btn regis__another-item">
+                                        <i class='regis__another-item-icon fab fa-facebook'></i>
+                                        <span class="regis__another-item-text">Tiếp tục với Facebook</span>
+                                    </li>
+                                    <li class=" btn regis__another-item">
+                                        <i class="regis__another-item-icon fab fa-google"></i>
+                                        <span class="regis__another-item-text">Tiếp tục với Google</span>
+                                    </li>
+                                    <li class="btn regis__another-item">
+                                        <i class="regis__another-item-icon fab fa-apple"></i>
+                                        <span class="regis__another-item-text">Tiếp tục bằng Apple</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="regis__footer">
+                            <span>Bạn đã có tài khoản? &nbsp;</span>
+                            <label for="header__topic-check-login" class="regis__footer-login">Đăng nhập<label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header__right-info-login">
+                    <div class="login__info">
+                        <div class="login__header">
+                            <label for="header__topic-check-login">
+                                <i class="fa fa-close"></i>
+                            </label>
+                            <h2>Đăng nhập</h2>
+                        </div>
+                        <div class="login__body">
+                            <form action="#">
+                                <input class="login__body-input" type="text" name="account" placeholder="Tài khoản">
+                                <input class="login__body-input" type="password" name="password" placeholder="Mật khẩu">
+                                <p>Chúng tôi sẽ gọi điện hoặc nhắn tin cho bạn để xác nhận số điện thoại. Có áp dụng phí
+                                    dữ liệu và phí tin nhắn tiêu chuẩn.</p>
+                                <input type="submit" class="btn login__body-submit" value="Tiếp tục">
+                            </form>
+                            <p class="login__body-or"><span>hoặc</span></p>
+                            <div class="login__body-another">
+                                <ul class="login__another-list">
+                                    <li class="btn login__another-item">
+                                        <i class="login__another-item-icon material-icons">mail_outline</i>
+                                        <span class="login__another-item-text">Tiếp tục bằng email</span>
+                                    </li>
+                                    <li class="btn login__another-item">
+                                        <i class='login__another-item-icon fab fa-facebook'></i>
+                                        <span class="login__another-item-text">Tiếp tục với Facebook</span>
+                                    </li>
+                                    <li class=" btn login__another-item">
+                                        <i class="login__another-item-icon fab fa-google"></i>
+                                        <span class="login__another-item-text">Tiếp tục với Google</span>
+                                    </li>
+                                    <li class="btn login__another-item">
+                                        <i class="login__another-item-icon fab fa-apple"></i>
+                                        <span class="login__another-item-text">Tiếp tục bằng Apple</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="login__footer">
+                            <span>Bạn chưa có tài khoản? &nbsp;</span>
+                            <label for="header__topic-check-regis" class="login__footer-regis">Đăng ký<label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header__right--small">
+                <label class="header__right--small-btn" for="menu-active">Menu</label>
+            </div>
+
+            <input type="checkbox" name="menu" id="menu-active" class="menu-active-input">
+
+            <label for="menu-active" class="overlay-menu"></label>
+
+            <div class="header__right--small-info">
+                <div class="small-info__header">
+                    <div class="small-info__header-logo-title">
+                        <div class="header__logo">
+                            <svg viewBox="0 0 1000 1000" role="presentation" aria-hidden="true" focusable="false"
+                                style="height:32px;width:32px;display:block;fill:currentColor">
+                                <path
+                                    d="m499.3 736.7c-51-64-81-120.1-91-168.1-10-39-6-70 11-93 18-27 45-40 80-40s62 13 80 40c17 23 21 54 11 93-11 49-41 105-91 168.1zm362.2 43c-7 47-39 86-83 105-85 37-169.1-22-241.1-102 119.1-149.1 141.1-265.1 90-340.2-30-43-73-64-128.1-64-111 0-172.1 94-148.1 203.1 14 59 51 126.1 110 201.1-37 41-72 70-103 88-24 13-47 21-69 23-101 15-180.1-83-144.1-184.1 5-13 15-37 32-74l1-2c55-120.1 122.1-256.1 199.1-407.2l2-5 22-42c17-31 24-45 51-62 13-8 29-12 47-12 36 0 64 21 76 38 6 9 13 21 22 36l21 41 3 6c77 151.1 144.1 287.1 199.1 407.2l1 1 20 46 12 29c9.2 23.1 11.2 46.1 8.2 70.1zm46-90.1c-7-22-19-48-34-79v-1c-71-151.1-137.1-287.1-200.1-409.2l-4-6c-45-92-77-147.1-170.1-147.1-92 0-131.1 64-171.1 147.1l-3 6c-63 122.1-129.1 258.1-200.1 409.2v2l-21 46c-8 19-12 29-13 32-51 140.1 54 263.1 181.1 263.1 1 0 5 0 10-1h14c66-8 134.1-50 203.1-125.1 69 75 137.1 117.1 203.1 125.1h14c5 1 9 1 10 1 127.1.1 232.1-123 181.1-263.1z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div class="header__title">
+                            <h2>Trung tâm tài nguyên Airbnb</h2>
+                        </div>
+                    </div>
+                    <label for="menu-active">
+                        <i class="fa fa-close"></i>
+                    </label>
+                </div>
+                <div class="small-info__body">
+                    <ul class="body-list">
+                        <li class="body-list-item margin">
+                            <h3>Chủ đề</h3>
+                        </li>
+                        <li class="body-list-item">
+                            <a class="body-list-link" href="">About hosting</a>
+                        </li>
+                        <li class="body-list-item">
+                            <a class="body-list-link" href="">Your online listing</a>
+                        </li>
+                        <li class="body-list-item">
+                            <a class="body-list-link" href="">Your place</a>
+                        </li>
+                        <li class="body-list-item">
+                            <a class="body-list-link" href="">Your guests & hospitality</a>
+                        </li>
+                        <li class="body-list-item">
+                            <a class="body-list-link" href="">Professional hosting</a>
+                        </li>
+                    </ul>
+
+                    <ul class="body-list">
+                        <li class="body-list-item">
+                            <h3>Hướng dẫn</h3>
+                        </li>
+                        <li class="body-list-item">
+                            <a class="body-list-link" href="">Discovering the world of hosting</a>
+                        </li>
+                        <li class="body-list-item">
+                            <a class="body-list-link" href="">Setting up a successful listing</a>
+                        </li>
+                        <li class="body-list-item">
+                            <a class="body-list-link" href="">Creating a guest-friendly space</a>
+                        </li>
+                        <li class="body-list-item">
+                            <a class="body-list-link" href="">Delighting your first guests</a>
+                        </li>
+                        <li class="body-list-item">
+                            <a class="body-list-link" href="">Exploring the enhanced cleaning process</a>
+                        </li>
+                        <li class="body-list-item">
+                            <a class="body-list-link" href="">Rebuilding your hosting business</a>
+                        </li>
+                        <li class="body-list-item">
+                            <a class="body-list-link" href="">Navigating hosting during COVID-19</a>
+                        </li>
+                        <li class="body-list-item">
+                            <a class="body-list-link" href="">Taking your hosting to the next level</a>
+                        </li>
+                    </ul>
+
+                    <ul class="body-list">
+                        <li class="body-list-item">
+                            <h3>Tin tức</h3>
+                        </li>
+                        <li class="body-list-item">
+                            <a class="body-list-link" href="">Coronavirus</a>
+                        </li>
+                        <li class="body-list-item">
+                            <a class="body-list-link" href="">New features & announcements</a>
+                        </li>
+                        <li class="body-list-item">
+                            <a class="body-list-link" href="">Leadership updates</a>
+                        </li>
+                    </ul>
+
+                    <div class="body-list">
+                        <a href="" class="body-menu-link__item">
+                            Trở thành chủ nhà
+                            <i class="fa fa-home"></i>
+                        </a>
+                    </div>
+
+                    <div class="body-list">
+                        <h2>TRỢ GIÚP VÀ HỖ TRỢ</h2>
+                        <a href="" class="body-menu-link__item">
+                            Tìm kiếm trợ giúp
+                            <i class="fa fa-question"></i>
+                        </a>
+                    </div>
+
+                    <div class="body-list body-list-non-border">
+                        <h2>NGÔN NGỮ VÀ TIỀN TỆ</h2>
+                        <a href="" class="body-menu-link__item">
+                            Tiếng Việt (VN)
+                            <i class='fas fa-globe'></i>
+                        </a>
+                        <a href="" class="body-menu-link__item">
+                            $ THB
+                            <i class="fa fa-dollar"></i>
+                        </a>
+                    </div>
+
+                    <div class="body-list">
+                        <button class="boy-list-login">Đăng nhập</button>
+                    </div>
+
+                    <div class="body-list">
+                        <span class="body-list-question">
+                            Bạn chưa có tài khoản? &nbsp;
+                            <a href="" class="body-list-regis">Đăng ký</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Mobile search -->
+        <div class="mobile-search header__search">
+            <i class="header__search-icon fa fa-search"></i>
+            <input class="header__search-input" type="text" placeholder="Try &ldquo;create a great listing&rdquo;">
+        </div>
+
+        <!-- Content -->
+        <div class="content grid wide">
+            <div class="content__header grid">
+                <h2 class="content__header-title">Airbnb resources</h2>
+                <p class="content__header-info">Learn how to navigate hosting and traveling during COVID-19 and beyond.
+                </p>
+            </div>
+
+            <div class="content__choose grid">
+                <div class="content__item grid hide-on-small-pc">
+                    <span class="content__item-name active">Dành cho chủ nhà/người tổ chức</span>
+                    <span class="content__item-name no-active">Dành cho du khách</span>
+                </div>
+
+                <div class="content__update-small-pc">
+                    <div class="content__update-title-small-pc">
+                        <h2>Thông tin cập nhật</h2>
+                    </div>
+                    <ul class="row update-item-list-small-pc no-gutters">
+                        <li class="col update-item-small-pc">
+                            <div class="update-item-small-pc-item">
+                                <div class="update-status active">ĐÃ GHIM 3 DAYS AGO</div>
+                                <a href="" class="update-link">
+                                    <div class="update-name-small-pc">If you’re hosting in an area with
+                                        government-mandated COVID-19 travel restrictions, you have options. Learn more
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="col update-item-small-pc">
+                            <div class="update-item-small-pc-item">
+                                <div class="update-status">7 DAYS AGO</div>
+                                <a href="" class="update-link">
+                                    <div class="update-name-small-pc">Airbnb co-founder and CEO Brian Chesky is putting
+                                        plans in place to make a personal contribution to support the Host Endowment.
+                                    </div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="col update-item-small-pc">
+                            <div class="update-item-small-pc-item">
+                                <div class="update-status">9 DAYS AGO</div>
+                                <a href="" class="update-link">
+                                    <div class="update-name-small-pc">Stay updated on COVID-19 travel restrictions and
+                                        advisories around the world</div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="col update-item-small-pc">
+                            <div class="update-item-small-pc-item">
+                                <div class="update-status">10 DAYS AGO</div>
+                                <a href="" class="update-link">
+                                    <div class="update-name-small-pc">Introducing the Airbnb Host Advisory Board and
+                                        Airbnb
+                                        Host Endowment. Learn more.</div>
+                                </a>
+                            </div>
+                        </li>
+                        <li class="col update-item-small-pc no-border">
+                            <div class="update-item-small-pc-item">
+                                <div class="update-status">OCT 22, 2020</div>
+                                <a href="" class="update-link">
+                                    <div class="update-name-small-pc">To help protect public health, single-night
+                                        reservations of entire homes in the U.S. and Canada won’t be allowed over
+                                        Halloween
+                                        weekend.</div>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="row more-item-small-pc no-gutters">
+                        <button class="btn more-item-small-pc-btn">Hiển thị tất cả</button>
+                    </div>
+                </div>
+
+                <div class="content__articles-update">
+                    <div class="content__articles">
+                        <div class="content__articles-title">
+                            <h2>Featured articles</h2>
+                        </div>
+                        <ul class="row articles-item-list">
+                            <li class="col l-6 m-6 c-6 articles-item">
+                                <a href="" class="articles-item-link">
+                                    <div class="item-img articles-item__img"
+                                        style="background-image: url(./assets/img/BeloRauschBG.png);"></div>
+                                    <h2 class="item-name articles-item-name">How we’re giving hosts a seat at the table
+                                    </h2>
+                                    <p class="item-descrip articles-item-descrip">Introducing the Airbnb Host Advisory
+                                        Board and
+                                        the Airbnb Host Endowment.</p>
+                                    <p class="item-status articles-item-status">Đã cập nhật vào Oct 30, 2020 · Bài đọc 6
+                                        phút
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="col l-6 m-6 c-6 articles-item">
+                                <a href="" class="articles-item-link">
+                                    <div class="item-img articles-item__img"
+                                        style="background-image: url(./assets/img/2UV408K77PP7.jpeg);"></div>
+                                    <h2 class="item-name articles-item-name">The essentials: Get started on Airbnb</h2>
+                                    <p class="item-descrip articles-item-descrip">IFrom creating your listing to
+                                        prepping your space, learn how to start hosting.</p>
+                                    <p class="item-status articles-item-status">Đã cập nhật vào Oct 30, 2020 · Bài đọc 6
+                                        phút
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="col l-6 m-6 c-6 articles-item">
+                                <a href="" class="articles-item-link">
+                                    <div class="item-img articles-item__img"
+                                        style="background-image: url(./assets/img/color_SUB01_prepare_1920x1080.jpeg);">
+                                    </div>
+                                    <h2 class="item-name articles-item-name">Getting started with the 5-step enhanced
+                                        cleaning process</h2>
+                                    <p class="item-descrip articles-item-descrip">Learn what’s covered—and why
+                                        cleanliness matters more than ever.</p>
+                                    <p class="item-status articles-item-status">Đã cập nhật vào Oct 30, 2020 · Bài đọc 6
+                                        phút
+                                    </p>
+                                </a>
+                            </li>
+                            <li class="col l-6 m-6 c-6 articles-item">
+                                <a href="" class="articles-item-link">
+                                    <div class="item-img articles-item__img"
+                                        style="background-image: url(./assets/img/Host_Update_6_thumbnail.png);"></div>
+                                    <h2 class="item-name articles-item-name">Improvements to guest reviews</h2>
+                                    <p class="item-descrip articles-item-descrip">We’re taking steps to help protect
+                                        against parties and give you more control.</p>
+                                    <p class="item-status articles-item-status">Đã cập nhật vào Oct 30, 2020 · Bài đọc 6
+                                        phút
+                                    </p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="content__update hide-on-small-pc">
+                        <div class="content__update-title">
+                            <h2>Thông tin cập nhật</h2>
+                        </div>
+                        <ul class="row update-item-list no-gutters">
+                            <li class="col l-12 update-item">
+                                <div class="update-status active">ĐÃ GHIM 3 DAYS AGO</div>
+                                <a href="" class="update-link">
+                                    <div class="update-name">If you’re hosting in an area with government-mandated
+                                        COVID-19 travel restrictions, you have options. Learn more</div>
+                                </a>
+                            </li>
+                            <li class="col l-12 update-item">
+                                <div class="update-status">7 DAYS AGO</div>
+                                <a href="" class="update-link">
+                                    <div class="update-name">Airbnb co-founder and CEO Brian Chesky is putting plans in
+                                        place to make a personal contribution to support the Host Endowment.</div>
+                                </a>
+                            </li>
+                            <li class="col l-12 update-item">
+                                <div class="update-status">9 DAYS AGO</div>
+                                <a href="" class="update-link">
+                                    <div class="update-name">Stay updated on COVID-19 travel restrictions and advisories
+                                        around the world</div>
+                                </a>
+                            </li>
+                            <li class="col l-12 update-item">
+                                <div class="update-status">10 DAYS AGO</div>
+                                <a href="" class="update-link">
+                                    <div class="update-name">Introducing the Airbnb Host Advisory Board and Airbnb Host
+                                        Endowment. Learn more.</div>
+                                </a>
+                            </li>
+                            <li class="col l-12 update-item no-border">
+                                <div class="update-status">OCT 22, 2020</div>
+                                <a href="" class="update-link">
+                                    <div class="update-name">To help protect public health, single-night reservations of
+                                        entire homes in the U.S. and Canada won’t be allowed over Halloween weekend.
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <div class="row more-item no-gutters">
+                            <a href="" class="more-item-link">
+                                <span class="more-item-title">Hiển thị tất cả</span>
+                                <i class="material-icons">keyboard_arrow_right</i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="content__like">
+                    <h2 class="content__like-title">You might also like</h2>
+                    <ul class="row content__like-list">
+                        <li class="col l-4 m-4 c-6 content__like-item">
+                            <a href="" class="content-like-link">
+                                <div class="item-img content__like-item-img"
+                                    style="background-image: url(./assets/img/PJM013418Q316-Garden_Home-06116_JL1_horz_\(1\).jpeg);">
+                                </div>
+                                <h2 class="item-name content__like-item-name">Coronavirus and our extenuating
+                                    circumstances policy</h2>
+                                <p class="item-descrip content__like-item-descrip">Find out what the policy means for
+                                    hosts and guests.</p>
+                                <p class="item-status content__like-item-status">Đã cập nhật vào Jun 2, 2020 · Bài đọc 2
+                                    phút</p>
+                            </a>
+                        </li>
+                        <li class="col l-4 m-4 c-6 content__like-item">
+                            <a href="" class="content-like-link">
+                                <div class="item-img content__like-item-img"
+                                    style="background-image: url(./assets/img/BeloRauschBG.png);"></div>
+                                <h2 class="item-name content__like-item-name">What you need to know about our global ban
+                                    on parties & more</h2>
+                                <p class="item-descrip content__like-item-descrip">Get details about our updated Parties
+                                    and Events policy.</p>
+                                <p class="item-status content__like-item-status">Đã cập nhật vào Jun 2, 2020 · Bài đọc 2
+                                    phút</p>
+                            </a>
+                        </li>
+                        <li class="col l-4 m-4 c-6 content__like-item">
+                            <a href="" class="content-like-link">
+                                <div class="item-img content__like-item-img"
+                                    style="background-image: url(./assets/img/2UV408JFHY27F.jpeg);"></div>
+                                <h2 class="item-name content__like-item-name">The basics of hosting on Airbnb</h2>
+                                <p class="item-descrip content__like-item-descrip">Anyone with space to share can become
+                                    an Airbnb host—here’s how to get started.</p>
+                                <p class="item-status content__like-item-status">Đã cập nhật vào Oct 23, 2020 · Bài đọc
+                                    2
+                                    phút</p>
+                            </a>
+                        </li>
+                        <li class="col l-4 m-4 c-6 content__like-item">
+                            <a href="" class="content-like-link">
+                                <div class="item-img content__like-item-img"
+                                    style="background-image: url(./assets/img/HR0706_Article_Image16_9.jpeg);"></div>
+                                <h2 class="item-name content__like-item-name">How 2 Superhosts are embracing virtual
+                                    hosting</h2>
+                                <p class="item-descrip content__like-item-descrip">From cookies by courier to video
+                                    greetings, these hosts are getting creative.</p>
+                                <p class="item-status content__like-item-status">Đã cập nhật vào Aug 27, 2020 · Bài đọc
+                                    2
+                                    phút</p>
+                            </a>
+                        </li>
+                        <li class="col l-4 m-4 c-6 content__like-item">
+                            <a href="" class="content-like-link">
+                                <div class="item-img content__like-item-img"
+                                    style="background-image: url(./assets/img/2UV408TUFB7V3.jpeg);"></div>
+                                <h2 class="item-name content__like-item-name">What guests want now—and what you can do
+                                    about it</h2>
+                                <p class="item-descrip content__like-item-descrip">Consider these four ways to evolve
+                                    your hosting business as travel returns.</p>
+                                <p class="item-status content__like-item-status">Đã cập nhật vào Oct 7, 2020 · Bài đọc 2
+                                    phút</p>
+                            </a>
+                        </li>
+                        <li class="col l-4 m-4 c-6 content__like-item">
+                            <a href="" class="content-like-link">
+                                <div class="item-img content__like-item-img"
+                                    style="background-image: url(./assets/img/2UV408URGKZ9A.jpeg);"></div>
+                                <h2 class="item-name content__like-item-name">How Airbnb protects hosts</h2>
+                                <p class="item-descrip content__like-item-descrip">Learn about Airbnb’s built-in
+                                    protections for hosts.</p>
+                                <p class="item-status content__like-item-status">Đã cập nhật vào Aug 24, 2020 · Bài đọc
+                                    2
+                                    phút</p>
+                            </a>
+                        </li>
+                        <li class="col l-4 m-4 c-6 content__like-item">
+                            <a href="" class="content-like-link">
+                                <div class="item-img content__like-item-img"
+                                    style="background-image: url(./assets/img/2UV40881MHWDT.jpeg);"></div>
+                                <h2 class="item-name content__like-item-name">Control when you host</h2>
+                                <p class="item-descrip content__like-item-descrip">Take advantage of Airbnb’s
+                                    flexibility to host whenever you like.</p>
+                                <p class="item-status content__like-item-status">Đã cập nhật vào Mar 3, 2020 · Bài đọc 2
+                                    phút</p>
+                            </a>
+                        </li>
+                        <li class="col l-4 m-4 c-6 content__like-item">
+                            <a href="" class="content-like-link">
+                                <div class="item-img content__like-item-img"
+                                    style="background-image: url(./assets/img/2UV9LO7P97QP.jpeg);"></div>
+                                <h2 class="item-name content__like-item-name">The do’s and don’ts of providing self
+                                    check-in</h2>
+                                <p class="item-descrip content__like-item-descrip">Guests want self check-in—here’s how
+                                    to set it up and create a seamless welcome.</p>
+                                <p class="item-status content__like-item-status">Đã cập nhật vào Aug 20, 2020 · Bài đọc
+                                    2
+                                    phút</p>
+                            </a>
+                        </li>
+                        <li class="col l-4 m-4 c-6 grid">
+                            <a href="" class="content-like-link">
+                                <div class="item-img content__like-item-img"
+                                    style="background-image: url(./assets/img/2UV408P43D5YC.jpeg);"></div>
+                                <h2 class="item-name content__like-item-name">How to make your space comfortable for
+                                    remote workers</h2>
+                                <p class="item-descrip content__like-item-descrip">Keep your listing competitive by
+                                    setting up a laptop-friendly workspace.</p>
+                                <p class="item-status content__like-item-status">Đã cập nhật vào Oct 27, 2020 · Bài đọc
+                                    2 phút</p>
+                            </a>
+                        </li>
+                        <li class="col l-4 m-4 c-6 content__like-item">
+                            <a href="" class="content-like-link">
+                                <div class="item-img content__like-item-img"
+                                    style="background-image: url(./assets/img/2UV408PJAI5MH.jpeg);"></div>
+                                <h2 class="item-name content__like-item-name">What you need to know about hosting
+                                    families and pets</h2>
+                                <p class="item-descrip content__like-item-descrip">Thoughtfully prepare your space and
+                                    update your listing to widen your audience.</p>
+                                <p class="item-status content__like-item-status">Đã cập nhật vào Aug 21, 2020 · Bài đọc
+                                    2 phút</p>
+                            </a>
+                        </li>
+                        <li class="col l-4 m-4 c-6 content__like-item">
+                            <a href="" class="content-like-link">
+                                <div class="item-img content__like-item-img"
+                                    style="background-image: url(./assets/img/2UV4080TESSNN.jpeg);"></div>
+                                <h2 class="item-name content__like-item-name">Answers to your hosting questions about
+                                    COVID-19</h2>
+                                <p class="item-descrip content__like-item-descrip">Here’s what our cancellation policies
+                                    and programs mean for you.</p>
+                                <p class="item-status content__like-item-status">Đã cập nhật vào Nov 13, 2020 · Bài đọc
+                                    2 phút</p>
+                            </a>
+                        </li>
+                        <li class="col l-4 m-4 c-6 grid">
+                            <a href="" class="content-like-link">
+                                <div class="item-img content__like-item-img"
+                                    style="background-image: url(./assets/img/hosting_reg.jpeg);"></div>
+                                <h2 class="item-name content__like-item-name">What hosting regulations apply to you?What
+                                    hosting regulations apply to you?What hosting regulations apply to you?
+                                </h2>
+                                <p class="item-descrip content__like-item-descrip">Use this guide to navigate local
+                                    rules and regulations around Airbnb hosting. Use this guide to navigate local
+                                    rules and regulations around Airbnb hosting.</p>
+                                <p class="item-status content__like-item-status">Đã cập nhật vào Oct 23, 2020 · Bài đọc
+                                    2 phút</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="content__hosting">
+                    <h2 class="content__hosting-title">Hosting guides</h2>
+                    <ul class="row content__hosting-list">
+                        <li class="col l-3 m-5 c-7 content__hosting-item">
+                            <a href="" class="content__hosting-link">
+                                <div class="content__hosting-img"
+                                    style="background-image: url(./assets/img/Tile_Discovering_Hosting_jpg.jpg);">
+                                    <div class="content__hosting-info">
+                                        <div class="content__hosting-link-guide">
+                                            <i class="material-icons">location_on</i>
+                                            <p>Hướng dẫn</p>
+                                        </div>
+                                        <div class="content__hosting-link-name">
+                                            <h2>Discovering the world of hosting</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="col l-3 m-5 c-7 content__hosting-item">
+                            <a href="" class="content__hosting-link">
+                                <div class="content__hosting-img"
+                                    style="background-image: url(./assets/img/set-up-listing-tile@2x_\(1\).jpeg);">
+                                    <div class="content__hosting-info">
+                                        <div class="content__hosting-link-guide">
+                                            <i class="material-icons">location_on</i>
+                                            <p>Hướng dẫn</p>
+                                        </div>
+                                        <div class="content__hosting-link-name">
+                                            <h2>Setting up a successful listing</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="col l-3 m-5 c-7 content__hosting-item">
+                            <a href="" class="content__hosting-link">
+                                <div class="content__hosting-img"
+                                    style="background-image: url(./assets/img/2UV9LOTKQSTR.jpeg);">
+                                    <div class="content__hosting-info">
+                                        <div class="content__hosting-link-guide">
+                                            <i class="material-icons">location_on</i>
+                                            <p>Hướng dẫn</p>
+                                        </div>
+                                        <div class="content__hosting-link-name">
+                                            <h2>Exploring the enhanced cleaning process</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="col l-3 m-5 c-7 content__hosting-item">
+                            <a href="" class="content__hosting-link">
+                                <div class="content__hosting-img"
+                                    style="background-image: url(./assets/img/discover-hosting-tile@2x.jpeg);">
+                                    <div class="content__hosting-info">
+                                        <div class="content__hosting-link-guide">
+                                            <i class="material-icons">location_on</i>
+                                            <p>Hướng dẫn</p>
+                                        </div>
+                                        <div class="content__hosting-link-name">
+                                            <h2>Navigating hosting during COVID-19</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <label for="hosting__response" class="content__hosting-response hide-on-mobile">Gửi phản hồi</label>
+                    <label for="hosting__response-mobile" class="content__hosting-response-mobile">Gửi phản hồi</label>
+
+                    <input type="checkbox" name="response" id="hosting__response" class="hosting__response">
+                    <input type="checkbox" name="response-mobile" id="hosting__response-mobile"
+                        class="hosting__response-mobile">
+
+                    <label for="hosting__response" class="overlay-response"></label>
+
+                    <div class="hosting__response-form">
+                        <label for="hosting__response"><i class="material-icons">close</i></label>
+                        <h2 class="hosting__response-form-title">GỬI PHẢN HỒI</h2>
+                        <P class="hosting__response-form-info">Vui lòng cho chúng tôi biết bạn phản hồi về điều gì.
+                            Chúng tôi xem xét tất cả phản hồi nhưng không thể trả lời từng trường hợp.</P>
+                        <form action="">
+                            <label class="form-radio__descrip">Tính hữu ích của Trung tâm tài nguyên
+                                <input type="radio" name="response-item">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="form-radio__descrip">Tìm kiếm thông tin dễ dàng
+                                <input type="radio" name="response-item">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="form-radio__descrip">Sự phù hợp và chất lượng của các chủ đề được đề cập
+                                <input type="radio" name="response-item">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="form-radio__descrip">Đề xuất cho các chủ đề
+                                <input type="radio" name="response-item">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="form-radio__descrip">Đề xuất cho các tính năng
+                                <input type="radio" name="response-item">
+                                <span class="checkmark"></span>
+                            </label>
+                            <div class="grid row form-question">
+                                <div class="col l-9 m-9 form-question-text">Bạn cần kết nối với nhóm hỗ trợ của chúng
+                                    tôi? Hãy truy
+                                    cập <a href="" class="question-text-link">Trung tâm trợ giúp</a> hoặc <a href=""
+                                        class="question-text-link">liên hệ với chúng tôi.</a></div>
+                                <button class="col l-3 m-3 form-question-btn">Tiếp tục</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="hosting__response-form-mobile">
+                        <label for="hosting__response-mobile"><i class="material-icons">close</i></label>
+                        <h2 class="hosting__response-form-title">GỬI PHẢN HỒI</h2>
+                        <P class="hosting__response-form-info">Vui lòng cho chúng tôi biết bạn phản hồi về điều gì.
+                            Chúng tôi xem xét tất cả phản hồi nhưng không thể trả lời từng trường hợp.</P>
+                        <form action="">
+                            <label class="form-radio__descrip">Tính hữu ích của Trung tâm tài nguyên
+                                <input type="radio" name="response-item">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="form-radio__descrip">Tìm kiếm thông tin dễ dàng
+                                <input type="radio" name="response-item">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="form-radio__descrip">Sự phù hợp và chất lượng của các chủ đề được đề cập
+                                <input type="radio" name="response-item">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="form-radio__descrip">Đề xuất cho các chủ đề
+                                <input type="radio" name="response-item">
+                                <span class="checkmark"></span>
+                            </label>
+                            <label class="form-radio__descrip">Đề xuất cho các tính năng
+                                <input type="radio" name="response-item">
+                                <span class="checkmark"></span>
+                            </label>
+                            <div class="grid row form-question">
+                                <div class="col l-9 m-9 c-7 form-question-text">Bạn cần kết nối với nhóm hỗ trợ của
+                                    chúng tôi? Hãy truy
+                                    cập <a href="" class="question-text-link">Trung tâm trợ giúp</a> hoặc <a href=""
+                                        class="question-text-link">liên hệ với chúng tôi.</a></div>
+                                <button class="col l-3 m-3 c-5 form-question-btn-mobile">Tiếp tục</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="content__resources">
+                    <div class="content__resources-title">
+                        <h2>Các tài nguyên khác</h2>
+                        <ul class="row no-gutters content__resources-list">
+                            <li class="col l-5-2 m-12 c-12 content__resources-item">
+                                <a href="" class="content__resources-link">
+                                    <div class="content__resources-n-d">
+                                        <h2 class="content__resources-name">Connect with hosts</h2>
+                                        <p class="content__resources-descrip">Join conversations with hosts around the
+                                            world.</p>
+                                    </div>
+                                    <div class="content__resources-more">
+                                        <p>Go to the Comminity Center</p>
+                                        <i class="material-icons">keyboard_arrow_right</i>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="col l-5-2 m-12 c-12 content__resources-item last-item">
+                                <a href="" class="content__resources-link">
+                                    <div class="content__resources-n-d">
+                                        <h2 class="content__resources-name">Need help?</h2>
+                                        <p class="content__resources-descrip">Find how-to articles and get answers to
+                                            frequently asked questions.</p>
+                                    </div>
+                                    <div class="content__resources-more">
+                                        <p>Go to the help Center</p>
+                                        <i class="material-icons">keyboard_arrow_right</i>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="content__another-topic hide-on-pc">
+                    <div class="content__another-topic-title">
+                        <h2>Tìm hiểu thêm về các chủ đề khác</h2>
+                    </div>
+                    <div class="row content__another-topic-content">
+                        <ul class="col l-3 content__another-topic-list">
+                            <li class="content__another-topic-item">
+                                <h2 class="content__another-topic-item--title">
+                                    Giới thiệu
+                                </h2>
+                            </li>
+                            <li class="content__another-topic-item">
+                                <a href="" class="content__another-topic-item--link">
+                                    Phương thức hoạt động của Airbnb
+                                </a>
+                            </li>
+                            <li class="content__another-topic-item">
+                                <a href="" class="content__another-topic-item--link">
+                                    Trang tin tức
+                                </a>
+                            </li>
+                            <li class="content__another-topic-item">
+                                <a href="" class="content__another-topic-item--link">
+                                    Airbnb Plus
+                                </a>
+                            </li>
+                            <li class="content__another-topic-item">
+                                <a href="" class="content__another-topic-item--link">
+                                    Airbnb Luxe
+                                </a>
+                            </li>
+                            <li class="content__another-topic-item">
+                                <a href="" class="content__another-topic-item--link">
+                                    HotelTonight
+                                </a>
+                            </li>
+                            <li class="content__another-topic-item">
+                                <a href="" class="content__another-topic-item--link">
+                                    Airbnb for Work
+                                </a>
+                            </li>
+                            <li class="content__another-topic-item">
+                                <a href="" class="content__another-topic-item--link">
+                                    Thế vận hội
+                                </a>
+                            </li>
+                            <li class="content__another-topic-item">
+                                <a href="" class="content__another-topic-item--link">
+                                    Cơ hội nghề nghiệp
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="col l-3 content__another-topic-list">
+                            <li class="content__another-topic-item">
+                                <h2 class="content__another-topic-item--title">
+                                    Cộng đồng
+                                </h2>
+                            </li>
+                            <li class="content__another-topic-item">
+                                <a href="" class="content__another-topic-item--link">
+                                    Sự đa dạng và Cảm giác thân thuộc
+                                </a>
+                            </li>
+                            <li class="content__another-topic-item">
+                                <a href="" class="content__another-topic-item--link">
+                                    Tiện nghi phù hợp cho người khuyết tật
+                                </a>
+                            </li>
+                            <li class="content__another-topic-item">
+                                <a href="" class="content__another-topic-item--link">
+                                    Đối tác liên kết Airbnb
+                                </a>
+                            </li>
+                            <li class="content__another-topic-item">
+                                <a href="" class="content__another-topic-item--link">
+                                    Chỗ ở cho tuyến đầu
+                                </a>
+                            </li>
+                            <li class="content__another-topic-item">
+                                <a href="" class="content__another-topic-item--link">
+                                    Mời bạn bè
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="col l-3 content__another-topic-list">
+                            <li class="content__another-topic-item">
+                                <h2 class="content__another-topic-item--title">
+                                    Đón tiếp khách
+                                </h2>
+                            </li>
+                            <li class="content__another-topic-item">
+                                <a href="" class="content__another-topic-item--link">
+                                    Cho thuê nhà
+                                </a>
+                            </li>
+                            <li class="content__another-topic-item">
+                                <a href="" class="content__another-topic-item--link">
+                                    Tổ chức Trải nghiệm trực tuyến
+                                </a>
+                            </li>
+                            <li class="content__another-topic-item">
+                                <a href="" class="content__another-topic-item--link">
+                                    Tổ chức trải nghiệm
+                                </a>
+                            </li>
+                            <li class="content__another-topic-item">
+                                <a href="" class="content__another-topic-item--link">
+                                    Đón tiếp khách có trách nhiệm
+                                </a>
+                            </li>
+                            <li class="content__another-topic-item">
+                                <a href="" class="content__another-topic-item--link">
+                                    Ngôi nhà rộng mở
+                                </a>
+                            </li>
+                            <li class="content__another-topic-item">
+                                <a href="" class="content__another-topic-item--link">
+                                    Trung tâm tài nguyên
+                                </a>
+                            </li>
+                            <li class="content__another-topic-item">
+                                <a href="" class="content__another-topic-item--link">
+                                    Trung tâm cộng đồng
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="col l-3 content__another-topic-list">
+                            <li class="content__another-topic-item">
+                                <h2 class="content__another-topic-item--title">
+                                    Hỗ trợ
+                                </h2>
+                            </li>
+                            <li class="content__another-topic-item">
+                                <a href="" class="content__another-topic-item--link">
+                                    Biện pháp ứng phó với đại dịch COVID-19 của chúng tôi
+                                </a>
+                            </li>
+                            <li class="content__another-topic-item">
+                                <a href="" class="content__another-topic-item--link">
+                                    Trung tâm trợ giúp
+                                </a>
+                            </li>
+                            <li class="content__another-topic-item">
+                                <a href="" class="content__another-topic-item--link">
+                                    Các tùy chọn hủy
+                                </a>
+                            </li>
+                            <li class="content__another-topic-item">
+                                <a href="" class="content__another-topic-item--link">
+                                    Hỗ trợ khu dân cư
+                                </a>
+                            </li>
+                            <li class="content__another-topic-item">
+                                <a href="" class="content__another-topic-item--link">
+                                    Tin cậy và an toàn
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="grid wide footer-item">
+                <div class="row no-gutters footer-item-row">
+                    <div class="footer-item-left">
+                        <p class="footer-item-left-year">© 2020 Airbnb, Inc. All rights reserved</p>
+                        <a href="" class="footer-item-link hide-on-pc">&nbsp; &#183; &nbsp; Quyền riêng tư
+                            &#183;</a>
+                        <a href="" class="footer-item-link hide-on-pc">&nbsp; Điều khoản &#183;</a>
+                        <a href="" class="footer-item-link hide-on-pc">&nbsp; Sơ đồ trang web</a>
+                    </div>
+                    <div class="footer-item-right">
+                        <a href="" class="footer-item-right-link">
+                            <i class='footer-item-right-icon icon-fb fab fa-facebook-f'></i>
+                        </a>
+                        <a href="" class="footer-item-right-link">
+                            <i class='footer-item-right-icon fab fa-twitter'></i>
+                        </a>
+                        <a href="" class="footer-item-right-link">
+                            <i class='footer-item-right-icon fab fa-instagram'></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Event click input -->
+    <script>
+        $('input[name="topic"]').click(function () {
+            $('input[name="guide"]').removeAttr('checked');
+            $('input[name="info"]').removeAttr('checked');
+        });
+
+        $('input[name="guide"]').click(function () {
+            $('input[name="topic"]').removeAttr('checked');
+            $('input[name="info"]').removeAttr('checked');
+        });
+
+        $('input[name="info"]').click(function () {
+            $('input[name="topic"]').removeAttr('checked');
+            $('input[name="guide"]').removeAttr('checked');
+        });
+
+        $('input[name="regis"]').click(function () {
+            $('input[name="topic"]').removeAttr('checked');
+            $('input[name="login"]').removeAttr('checked');
+            $('input[name="guide"]').removeAttr('checked');
+            $('input[name="info"]').removeAttr('checked');
+            // $('body').addClass('stop-scrolling');//Không cho người dùng kéo thanh cuộn
+        });
+
+        $('input[name="login"]').click(function () {
+            $('input[name="topic"]').removeAttr('checked');
+            $('input[name="regis"]').removeAttr('checked');
+            $('input[name="guide"]').removeAttr('checked');
+            $('input[name="info"]').removeAttr('checked');
+        });
+
+        $('input[name="response-item"]').click(function (){
+            $('button[class="col l-3 m-3 form-question-btn"]').addClass('active');
+            $('button[class="col l-3 m-3 c-5 form-question-btn-mobile"]').addClass('active');
+        });
+    </script>
+</body>
+
+</html>

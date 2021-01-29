@@ -1,0 +1,26 @@
+:root{
+    --primary-color: rgb(255,64,64);
+    --text-color: #666;
+    --title-color: #333;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.text-color{
+    color: var(--text-color);
+}
+
+.title-color{
+    color: var(--title-color);
+}

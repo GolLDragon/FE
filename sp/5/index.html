@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodies - Restaurant Category Responsive Web Template</title>
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/grid.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="app">
+        <div class="overlay" id="overlay" onclick="closeVideo()"></div>
+
+        <div id="video" class="iframe-place">
+            <iframe src="https://www.youtube.com/embed/oqaZV9Oxco0" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            <i class="close-icon material-icons" onclick="closeVideo()">close</i>
+        </div>
+
+
+        <header class="header" id="header">
+            <div class="grid wide header__content">
+                <ul class="header__list">
+                    <li class="header__item">
+                        <a href="" class="logo header__link">
+                            <i class="header__logo-icon fa fa-cutlery"></i>
+                            <h2 class="header__title" id="header__title">Foodies</h2>
+                        </a>
+                    </li>
+
+                    <li class="header__item hide-on-mobile-tablet">
+                        <a href="" id="header__link" class="header__link active">
+                            Home
+                        </a>
+                        <a href="" id="header__link" class="header__link">
+                            About Us
+                        </a>
+                        <a href="" id="header__link" class="header__link">
+                            Menu
+                        </a>
+                        <a href="" id="header__link" class="header__link">
+                            Page
+                        </a>
+                        <a href="" id="header__link" class="header__link">
+                            Contact Us
+                        </a>
+                    </li>
+
+                    <li class="header__item">
+                        <i class='header__icon search fas fa-search'></i>
+                        <i id="dark-theme" class='header__icon far fa-moon' onclick="darkTheme()"></i>
+                        <i id="light-theme" class="header__icon in-active material-icons"
+                            onclick="lightTheme()">wb_sunny</i>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <div class="content">
+            <div class="header__content" style="background-image: url(assets/img/grass-banner.png);">
+                <div class="grid wide">
+                    <div class="header__content-list">
+                        <div class="row header__content-info">
+                            <div class="col l-6 m-6 c-12 header__content-left">
+                                <h2 class="header__content-title">Eat Fresh</h2>
+                                <h2 class="header__content-title">Eat Healthy</h2>
+                                <p class="header__content-descrip">Nemo enim ipsam voluptatem quia voluptas sit
+                                    aspernatur aut
+                                    odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi
+                                    nesciunt</p>
+                                <a href="" class="btn content__header-btn">View Our Menu</a>
+                            </div>
+
+                            <div class="col l-6 m-6 c-12 header__content-right">
+                                <img src="assets/img/bannerimg.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content__welcome" id="content__welcome">
+                <div class="grid wide">
+                    <div class="row content__welcome-list">
+                        <div class="col l-6 m-12 c-12 content__welcome-item left hide-on-mobile-tablet">
+                            <img src="assets/img/about.png" alt="">
+                        </div>
+                        <div class="col l-6 m-12 c-12 content__welcome-item right">
+                            <h2 class="content__welcome-title" id="content__welcome-title">Welcome To Our
+                                <span>Foddies</span></h2>
+                            <p class="content__welcome-info">Aptent taciti sociosqu ad litora conubia nostra, per
+                                inceptos himenaeos. Aenean volutpat elementum ante, id eleifend eros luctus sit.</p>
+                            <p class="content__welcome-info">Nunc vel pellentesque. Class aptent taciti sociosqu ad
+                                litora torquent per conubia nostra, per inceptos himenaeos. Aenean volutpat elementum
+                                ante, id eleifend eros luctus sit amet. vel tincidunt erat neque non ipsum. Ut
+                                sollicitudin pharetra enim.</p>
+                            <a href="" class="btn content__btn">Read More</a>
+                        </div>
+                        <div class="col l-6 m-12 c-12 content__welcome-item left mobile">
+                            <img src="assets/img/about.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content__story" id="content__story">
+                <div class="grid wide">
+                    <div class="row content__story-list one">
+                        <div class="col l-4-10 m-12 c-12 content__story-item">
+                            <p class="content__story-descrip" id="content__story-descrip">Hello. Our structure has been
+                                present for over 20 years.
+                                We make the best !</p>
+                        </div>
+
+                        <a href="" class="col l-4-2 m-6 c-12 content__story-item">
+                            <img src="assets/img/team1.jpg" alt="">
+                            <div class="content__story-name">
+                                <h2>Jimic Nasium</h2>
+                                <p>BEST CHEF</p>
+                            </div>
+                        </a>
+
+                        <a href="" class="col l-4-2 m-6 c-12 content__story-item">
+                            <img src="assets/img/team2.jpg" alt="">
+                            <div class="content__story-name">
+                                <h2>Henry Itondo</h2>
+                                <p>FOOD EXPERT</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="row content__story-list two">
+                        <div class="col l-6 m-6 c-12 content__story-item two">
+                            <div class="content__story-icon">
+                                <i class="content__icon fa fa-cutlery" id="content__icon"></i>
+                            </div>
+                            <div class="content__story-text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean egestas magna at
+                                    porttitor vehicula nullam augue ipsum dolor.</p>
+                                <a href="" class="content__story-link" id="content__story-link">
+                                    <span class="read-more">READ MORE</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col l-6 m-6 c-12 content__story-item two">
+                            <div class="content__story-icon">
+                                <i class="content__icon fa fa-cutlery" id="content__icon"></i>
+                            </div>
+                            <div class="content__story-text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean egestas magna at
+                                    porttitor vehicula nullam augue ipsum dolor.</p>
+                                <a href="" class="content__story-link" id="content__story-link">
+                                    <span class="read-more">READ MORE</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col l-6 m-6 c-12 content__story-item two">
+                            <div class="content__story-icon">
+                                <i class="content__icon fa fa-cutlery" id="content__icon"></i>
+                            </div>
+                            <div class="content__story-text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean egestas magna at
+                                    porttitor vehicula nullam augue ipsum dolor.</p>
+                                <a href="" class="content__story-link" id="content__story-link">
+                                    <span class="read-more">READ MORE</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col l-6 m-6 c-12 content__story-item two">
+                            <div class="content__story-icon">
+                                <i class="content__icon fa fa-cutlery" id="content__icon"></i>
+                            </div>
+                            <div class="content__story-text">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean egestas magna at
+                                    porttitor vehicula nullam augue ipsum dolor.</p>
+                                <a href="" class="content__story-link" id="content__story-link">
+                                    <span class="read-more">READ MORE</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content__video" id="content__video">
+                <div class="grid wide content__video-place">
+                    <div class="row content__video-list">
+                        <div class="col l-5 m-12 c-12 content__video-item left">
+                            <h2 class="content__video-title" id="content__video-title">
+                                YOU CAN WATCH OUR COOKING VIDEO PROCESS!
+                            </h2>
+                            <p class="content__video-info">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
+                                ultrices in ligula. Semper at
+                                tempufddfel. Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quae,
+                                consequatur voluptatem ad.</p>
+                            <p class="btn content__video-btn" onclick="showVideo()">Play Video</p>
+                        </div>
+
+                        <div class="col l-7 m-12 c-12 content__video-item right">
+                            <img src="assets/img/video.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content__blog" id="content__blog">
+                <div class="grid wide">
+                    <h2 class="content__blog-title" id="content__blog-title">BLOG POSTS</h2>
+                    <ul class="row content__blog-list">
+                        <li class="col l-4 m-6 c-12 content__blog-item">
+                            <div class="content__blog-info">
+                                <p class="content__blog-item-date">
+                                    21<sup>st</sup> October
+                                </p>
+                                <img src="assets/img/blog1.jpg" alt="">
+                                <h2 class="content__blog-item-title" id="content__blog-item-title">
+                                    Nunc consequat justo id commodo feugiat
+                                </h2>
+                                <ul class="content__blog-item-list">
+                                    <li class="content__blog-item-item">
+                                        <i class="material-icons">account_circle</i>
+                                        <p>Admin</p>
+                                    </li>
+                                    <li class="content__blog-item-item">
+                                        <i class="fa fa-heart"></i>
+                                        <p>9 Likes</p>
+                                    </li>
+                                    <li class="content__blog-item-item">
+                                        <i class='fas fa-comments'></i>
+                                        <p>9 Comments</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="col l-4 m-6 c-12 content__blog-item">
+                            <div class="content__blog-info">
+                                <p class="content__blog-item-date">
+                                    21<sup>st</sup> October
+                                </p>
+                                <img src="assets/img/blog4.jpg" alt="">
+                                <h2 class="content__blog-item-title" id="content__blog-item-title">
+                                    Fusce ac eros quis metus por edit some
+                                    Fusce ac eros quis metus por edit some
+                                    Fusce ac eros quis metus por edit some
+                                </h2>
+                                <ul class="content__blog-item-list">
+                                    <li class="content__blog-item-item">
+                                        <i class="material-icons">account_circle</i>
+                                        <p>Admin</p>
+                                    </li>
+                                    <li class="content__blog-item-item">
+                                        <i class="fa fa-heart"></i>
+                                        <p>9 Likes</p>
+                                    </li>
+                                    <li class="content__blog-item-item">
+                                        <i class='fas fa-comments'></i>
+                                        <p>9 Comments</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="col l-4 m-6 c-12 content__blog-item">
+                            <div class="content__blog-info">
+                                <p class="content__blog-item-date">
+                                    21<sup>st</sup> October
+                                </p>
+                                <img src="assets/img/blog3.jpg" alt="">
+                                <h2 class="content__blog-item-title" id="content__blog-item-title">
+                                    Cras fringilla, enim a porta fermentum
+                                </h2>
+                                <ul class="content__blog-item-list">
+                                    <li class="content__blog-item-item">
+                                        <i class="material-icons">account_circle</i>
+                                        <p>Admin</p>
+                                    </li>
+                                    <li class="content__blog-item-item">
+                                        <i class="fa fa-heart"></i>
+                                        <p>9 Likes</p>
+                                    </li>
+                                    <li class="content__blog-item-item">
+                                        <i class='fas fa-comments'></i>
+                                        <p>9 Comments</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content__contact" id="content__contact">
+                <div class="grid wide">
+                    <div class="content__contact-place">
+                        <div class="content__contact-item left">
+                            <h2 class="content__contact-title" id="content__contact-title">CONTACT US NOW!</h2>
+                            <p class="content__contact-info">For Online queries, please call us today</p>
+                        </div>
+
+                        <ul class="content__contact-item right">
+                            <li class="content__contact-right-item">
+                                <i class='fas fa-phone-volume' id="content__contact-icon"></i>
+                                <p id="content__contact-phone">+1(23) 456 789 0000</p>
+                            </li>
+                            <li class="content__contact-right-item">
+                                <span>Or</span>
+                            </li>
+                            <li class="content__contact-right-item">
+                                <a href="" class="btn">Get in touch</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content__last-list" id="content__last-list">
+                <div class="grid wide">
+                    <ul class="row content__last-list-list">
+                        <li class="col l-4 m-6 c-12 content__last-item">
+                            <div class="content__last-item-place" id="content__last-item-place">
+                                <i class='fas fa-motorcycle'></i>
+                                <a href="" class="content__last-item-title" id="content__last-item-title">
+                                    Fast Delivery
+                                </a>
+                                <p class="content__last-item-info">
+                                    Lorem ante ipsum primis in faucibus orci luctus eted ultrices posuere curae fers
+                                    luctus eted.
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="col l-4 m-6 c-12 content__last-item">
+                            <div class="content__last-item-place" id="content__last-item-place">
+                                <i class="fa fa-shopping-basket"></i>
+                                <a href="" class="content__last-item-title" id="content__last-item-title">
+                                    Fresh Ingredients
+                                </a>
+                                <p class="content__last-item-info">
+                                    Lorem ante ipsum primis in faucibus orci luctus eted ultrices posuere curae fers
+                                    luctus eted.
+                                </p>
+                            </div>
+                        </li>
+
+                        <li class="col l-4 m-6 c-12 content__last-item">
+                            <div class="content__last-item-place" id="content__last-item-place">
+                                <i class="fa fa-laptop"></i>
+                                <a href="" class="content__last-item-title" id="content__last-item-title">
+                                    Online Suport 24/7
+                                </a>
+                                <p class="content__last-item-info">
+                                    Lorem ante ipsum primis in faucibus orci luctus eted ultrices posuere curae fers
+                                    luctus eted.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content__footer" style="background-image: url(assets/img/grass-banner.png);">
+                <div class="grid wide">
+                    <div class="row content__footer-list">
+                        <div class="col l-6 m-12 c-12 content__footer-item hide-on-mobile-tablet">
+                            <img src="assets/img/img3.png" alt="">
+                        </div>
+                        <div class="col l-6 m-12 c-12 content__footer-item">
+                            <p class="content__footer-discount">
+                                FOR 30% DISCOUNT</p>
+                            <h2 class="content__footer-title">GET OUR PROMOCODE NOW</h2>
+                            <p class="content__footer-info">
+                                Uspendisse efficitur orci urna. In et augue ornare, tempor massa in, luctus sapien.
+                                Proin a diam et dui fermentum molestie vel id neque.
+                            </p>
+                            <p class="content__footer-cap">Never Miss a Deal From Foodies</p>
+                            <div class="content__footer-form">
+                                <input type="email" name="input-email" id="input-email" class="input-email"
+                                    placeholder="Enter your email Id">
+                                <a href="" class="btn content__footer-btn">Get Promocode</a>
+                            </div>
+                            <span>(Or) To Get Our Mobile Apps</span>
+                            <div class="content__footer-list-link">
+                                <a href="" class="content__footer-list-item">
+                                    <i class='fab fa-apple'></i>
+                                </a>
+                                <a href="" class="content__footer-list-item">
+                                    <i class="material-icons">play_arrow</i>
+                                </a>
+                                <a href="" class="content__footer-list-item">
+                                    <i class="fa fa-windows"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col l-6 m-12 c-12 content__footer-item mobile ">
+                            <img src="assets/img/img3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer" id="footer">
+            <p>@ 2020 Foodies. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <!-- Thay đổi background thanh header khi  cuộn-->
+    <script>
+        $(window).on("scroll", function () {
+            if ($(window).scrollTop() > 50) {
+                $(".header").addClass("bg-white box-shadow");
+            }
+            else {
+                //remove the background property so it comes transparent again (defined in your css)
+                $(".header").removeClass("bg-white box-shadow");
+            }
+        });
+    </script>
+
+    <script>
+        function showVideo() {
+            var element = document.getElementById("video");
+            element.classList.add("show");
+            document.getElementById("overlay").classList.add("show")
+        }
+
+        function closeVideo() {
+            document.getElementById("overlay").classList.remove("show")
+            document.getElementById("video").classList.remove("show");
+            // Dừng video
+            $("iframe").each(function () {
+                var src = $(this).attr('src');
+                $(this).attr('src', src);
+            });
+        }
+    </script>
+
+    <script>
+        function darkTheme() {
+            document.getElementById("dark-theme").classList.add("in-active");
+            document.getElementById("light-theme").classList.remove("in-active");
+            document.getElementById("light-theme").style.color = "white";
+            document.getElementById("header").classList.add("bg-black");
+            document.getElementById("header").style.borderBottom = "unset";
+            document.getElementById("header__title").classList.add("title-white");
+            $('.header__link').each(function () {
+                $(this).addClass('title-white');
+            });
+            $('.content__icon').each(function () {
+                $(this).addClass('icon-bg-black-theme');
+            });
+            document.getElementById("content__welcome").classList.add("bg-black");
+            document.getElementById("content__welcome-title").classList.add("title-white");
+            document.getElementById("content__story").classList.add("bg-black");
+            document.getElementById("content__story-descrip").classList.add("title-white");
+            document.getElementById("content__video-title").classList.add("title-white");
+            document.getElementById("content__blog-title").classList.add("title-white");
+            //duyệt theo each
+            $('.content__story-link').filter(function () {
+                return $(this).has('.read-more').length > 0
+            }).each(function () {
+                $(this).addClass('title-white');
+            });
+            document.getElementById("content__video").style.backgroundColor = "black";
+            document.getElementById("content__blog").classList.add("bg-black");
+            $(".content__blog-item-title").each(function () {
+                $(this).addClass("title-white");
+            });
+            document.getElementById("content__contact").style.backgroundColor = "black";
+            document.getElementById("content__contact-title").classList.add("title-white");
+            document.getElementById("content__contact-icon").classList.add("title-white");
+            document.getElementById("content__contact-phone").classList.add("title-white");
+            document.getElementById("content__last-list").classList.add("bg-black");
+            $(".content__last-item-place").each(function () {
+                $(this).addClass("remove-box-shadow");
+            });
+            $(".content__last-item-title").each(function () {
+                $(this).addClass("title-white");
+            });
+            document.getElementById("footer").classList.add("bg-black");
+        }
+    </script>
+
+    <script>
+        function lightTheme() {
+            document.getElementById("dark-theme").classList.remove("in-active");
+            document.getElementById("light-theme").classList.add("in-active");
+            document.getElementById("header").classList.remove("bg-black");
+            document.getElementById("header").style.borderBottom = "1px solid white";
+            document.getElementById("header__title").classList.remove("title-white");
+            $('.header__link').each(function () {
+                $(this).removeClass('title-white');
+            });
+            $('.content__icon').each(function () {
+                $(this).removeClass('icon-bg-black-theme');
+            });
+            document.getElementById("content__welcome").classList.remove("bg-black");
+            document.getElementById("content__welcome-title").classList.remove("title-white");
+            document.getElementById("content__story").classList.remove("bg-black");
+            document.getElementById("content__story-descrip").classList.remove("title-white");
+            document.getElementById("content__video-title").classList.remove("title-white");
+            document.getElementById("content__blog-title").classList.remove("title-white");
+            //duyệt theo each
+            $('.content__story-link').filter(function () {
+                return $(this).has('.read-more').length > 0
+            }).each(function () {
+                $(this).removeClass('title-white');
+            });
+            document.getElementById("content__video").style.backgroundColor = "rgb(244, 253, 248)";
+            document.getElementById("content__blog").classList.remove("bg-black");
+            $("#content__blog-item-title").each(function () {
+                this.classList.remove("title-white");
+            });
+            document.getElementById("content__contact").style.backgroundColor = "rgb(244, 253, 248)";
+            document.getElementById("content__contact-title").classList.remove("title-white");
+            document.getElementById("content__contact-icon").classList.remove("title-white");
+            document.getElementById("content__contact-phone").classList.remove("title-white");
+            document.getElementById("content__last-list").classList.remove("bg-black");
+            $(".content__last-item-place").each(function () {
+                $(this).removeClass("remove-box-shadow");
+            });
+            $(".content__last-item-title").each(function () {
+                $(this).removeClass("title-white");
+            });
+            document.getElementById("footer").classList.remove("bg-black");
+        }
+    </script>
+</body>
+
+</html>

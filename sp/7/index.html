@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wild Tour an Animals Category Responsive Website Template</title>
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/grid.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/js/elder-carousel-master/dist/style.css">
+    <script src="assets/js/elder-carousel-master/dist/index.min.js"></script>
+</head>
+
+<body>
+    <div class="app">
+        <header class="header hide-on-mobile-tablet hide-on-small-pc">
+            <div class="grid wide">
+                <div class="row no-gutters header__content">
+                    <a href="" class="header__logo">Wild Tour</a>
+
+                    <nav class="header__nav">
+                        <div class="nav-place">
+                            <a href="" class="nav-item">HOME</a>
+                        </div>
+
+                        <div class="nav-place">
+                            <a href="" class="nav-item">ANIMALS & PLANETS</a>
+                        </div>
+
+                        <div class="nav-place page">
+                            <a href="" class="nav-item">PAGES</a>
+                            <i class="material-icons">arrow_drop_down</i>
+
+                            <div class="nav-page">
+                                <div class="row no-gutters">
+                                    <div class="col l-4 nav-page__list">
+                                        <a href="" class="nav-link page">ABOUT</a>
+                                        <a href="" class="nav-link page">SEREVICES</a>
+                                        <a href="" class="nav-link page">PRICING</a>
+                                        <a href="" class="nav-link page">GALLERY</a>
+                                        <a href="" class="nav-link page">OUT TEAM</a>
+                                        <a href="" class="nav-link page">404</a>
+                                    </div>
+
+                                    <div class="col l-4 nav-page__list">
+                                        <a href="" class="nav-link page">COMING SOON</a>
+                                        <a href="" class="nav-link page">LOGIN</a>
+                                        <a href="" class="nav-link page">REGISTER</a>
+                                        <a href="" class="nav-link page">EVENTS</a>
+                                        <a href="" class="nav-link page">SEARCH RESULT</a>
+                                        <a href="" class="nav-link page">TIME LINE</a>
+                                    </div>
+
+                                    <div class="col l-4 nav-page__list">
+                                        <a href="" class="nav-link page">FAQ</a>
+                                        <a href="" class="nav-link page">EMAIL TEMPLATE</a>
+                                        <a href="" class="nav-link page">DONATE</a>
+                                        <a href="" class="nav-link page">BLOG</a>
+                                        <a href="" class="nav-link page">DETAILS</a>
+                                        <a href="" class="nav-link page">SINGLE PAGE</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="nav-place shop">
+                            <a href="" class="nav-item">SHOP</a>
+                            <i class="material-icons">arrow_drop_down</i>
+
+                            <ul class="nav-shop">
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">ECOMMERCE</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">ECOMMERCE SINGLE</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">ECOMMERCE CART</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="nav-place blog">
+                            <a href="" class="nav-item">BLOG</a>
+                            <i class="material-icons">arrow_drop_down</i>
+
+                            <ul class="nav-blog">
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">BLOG</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">BLOG SINGLE</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="nav-place">
+                            <a href="" class="nav-item">CONTACT</a>
+                        </div>
+                    </nav>
+
+                    <a href="" class="header__donate">Donate</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- header not-pc -->
+        <div class="header__not-pc">
+            <div class="grid wide">
+                <div class="row no-gutters header__content not-pc">
+                    <a href="" class="header__logo">Wild Tour</a>
+                    <p class="header__menu" onclick="onClickMenu()">Menu</p>
+                </div>
+
+                <div class="header__menu-content" id="header__menu-content">
+                    <ul class="header__menu-list">
+                        <li class="header__menu-item">
+                            <a href="" class="header__menu-item-link">HOME</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="" class="header__menu-item-link">ANIMALS & PLANETS</a>
+                        </li>
+                        <li class="header__menu-item">
+                            PAGES
+                        </li>
+                        <li class="header__menu-item">
+                            SHOP
+                        </li>
+                        <li class="header__menu-item">
+                            BLOG
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="" class="header__menu-item-link">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="content__header-place">
+                <div class="content__header" style="background-image: url(assets/img/mainslide1.jpg);">
+                    <div class="overlay"></div>
+
+                    <div class="grid wide">
+                        <div class="content__header-info">
+                            <h2 class="content__header-title text-color-white">ANIMAL CARE</h2>
+                            <p class="content__header-title2 text-color-white">Discover the wonder</p>
+                            <p class="content__header-descrip text-color-white">Wildlife traditionally refers to
+                                undomesticated animal
+                                species, but has come to include all organisms that grow or live wild in an area.</p>
+                            <a href="" class="btn content__header-btn">Know More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content__header" style="background-image: url(assets/img/mainslide2.jpg);">
+                    <div class="overlay"></div>
+
+                    <div class="grid wide">
+                        <div class="content__header-info">
+                            <h2 class="content__header-title text-color-white">PEGUIN BEACH</h2>
+                            <p class="content__header-title2 text-color-white">Outside look tours</p>
+                            <p class="content__header-descrip text-color-white">Wildlife traditionally refers to
+                                undomesticated animal
+                                species, but has come to include all organisms that grow or live wild in an area.</p>
+                            <a href="" class="btn content__header-btn">Know More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content__header" style="background-image: url(assets/img/mainslide3.jpg);">
+                    <div class="overlay"></div>
+
+                    <div class="grid wide">
+                        <div class="content__header-info">
+                            <h2 class="content__header-title text-color-white">ZERAPH</h2>
+                            <p class="content__header-title2 text-color-white">Discovery cart tour</p>
+                            <p class="content__header-descrip text-color-white">Wildlife traditionally refers to
+                                undomesticated animal
+                                species, but has come to include all organisms that grow or live wild in an area.</p>
+                            <a href="" class="btn content__header-btn">Know More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content__header" style="background-image: url(assets/img/mainslide4.jpg);">
+                    <div class="overlay"></div>
+
+                    <div class="grid wide">
+                        <div class="content__header-info">
+                            <h2 class="content__header-title text-color-white">RYANOSAURUS</h2>
+                            <p class="content__header-title2 text-color-white">Animals in action</p>
+                            <p class="content__header-descrip text-color-white">Wildlife traditionally refers to
+                                undomesticated animal
+                                species, but has come to include all organisms that grow or live wild in an area.</p>
+                            <a href="" class="btn content__header-btn">Know More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slider__place">
+                    <button class="slider left" onclick="plusDivs(-1)">&#10094;</button>
+                    <button class="slider right" onclick="plusDivs(1)">&#10095;</button>
+                </div>
+            </div>
+
+            <div class="content__mission">
+                <div class="grid wide">
+                    <div class="row content__mission-list">
+                        <div class="col l-5-5 m-12 c-12 content__mission-left">
+                            <img src="assets/img/index1.jpg" alt="index1">
+                        </div>
+
+                        <div class="col l-5-7 m-12 c-12 content__mission-right">
+                            <p class="content__misstion-right-title1">OUR MISSION</p>
+                            <h2 class="content__misstion-right-title2">Join us and keep ahead of animal welfare</h2>
+                            <p class="content__misstion-right-info">Fusce faucibus ante vitae justo efficitur elementum.
+                                Donec faucibus arcu elementum, luctus justo. ac purus semper pharetra. Donec faucibus
+                                arcu elementum, luctus justo.</p><br>
+                            <p class="content__misstion-right-info">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam architecto, ex
+                                veritatis tempora aliquid labore natus autem iusto magni dicta incidunt nostrum odit
+                                veniam voluptas provident minus saepe reiciendis nulla dolore delectus molestias nam
+                                officiis repellat. Sequi corrupti reiciendis nostrum.
+                            </p>
+                            <a href="" class="btn content__mission-right-btn">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="content__mission-tour">
+                    <div class="grid wide">
+                        <div class="row content__mission-tour-list">
+                            <div class="col l-4 m-4 c-12 content__mission-tour-item">
+                                <p class="content__mission-tour-title">280+</p>
+                                <p class="content__mission-tour-info">Countries that <span>Wild Tour</span> has
+                                    conservation projects in.</p>
+                            </div>
+
+                            <div class="col l-4 m-4 c-12 content__mission-tour-item">
+                                <p class="content__mission-tour-title">290+</p>
+                                <p class="content__mission-tour-info">Partners that <span>Wild Tour</span> collaborates
+                                    with.</p>
+                            </div>
+
+                            <div class="col l-4 m-4 c-12 content__mission-tour-item">
+                                <p class="content__mission-tour-title">15</p>
+                                <p class="content__mission-tour-info">Conservation field stations that <span>Wild
+                                        Tour</span> operates.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content__form">
+                <div class="grid wide--small">
+                    <div class="content__form-place">
+                        <div class="row no-gutters content__form-title-place">
+                            <h2 class="content__form-title">Buy tickets for your tour</h2>
+                            <p class="content__form-phone text-color-white">Call us: +404 11-22-89</p>
+                        </div>
+
+                        <form action="" class="row no-gutters content__form-input hide-on-mobile">
+                            <p class="col l-4 m-4 content__form-input-title">Choose your tour</p>
+                            <p class="col l-4 m-4 content__form-input-title">Date</p>
+                            <p class="col l-4 m-4 content__form-input-title">Email</p>
+
+                            <div class="col l-4 m-4 tour-select">
+                                <select name="tours" id="tours" class="tours">
+                                    <option value="Ranthambore-National-Park">Ranthambore National Park</option>
+                                    <option value="Jim-Corbett-National-Park">Jim Corbett National Park</option>
+                                    <option value="Bandhavgarh-National-Park">Bandhavgarh National Park</option>
+                                    <option value="Kanha-National-Park">Kanha National Park</option>
+                                    <option value="Kaziranga-National-Park">Kaziranga National Park</option>
+                                    <option value="Sunderban-National-Park">Sunderban National Park</option>
+                                    <option value="Gir-National-Park">Gir National Park</option>
+                                </select>
+                            </div>
+                            <div class="col l-4 m-4 date-select">
+                                <input type="text" name="text" id="text" class="date">
+                            </div>
+                            <div class="col l-4 m-4 email-input">
+                                <input type="email" name="email" id="email" class="email" required>
+                            </div>
+
+                            <p class="col l-4 m-4 content__form-input-title">Mobile number</p>
+                            <p class="col l-4 m-4 content__form-input-title">No. of Adults</p>
+                            <p class="col l-4 m-4 content__form-input-title">No. of Childrens</p>
+
+                            <div class="col l-4 m-4 phone-input">
+                                <input type="number" name="phone" id="phone" class="phone" required>
+                            </div>
+                            <div class="col l-4 m-4 aldults-select">
+                                <select name="adults" id="adults" class="adults">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                </select>
+                            </div>
+                            <div class="col l-4 m-4 childrens-select">
+                                <select name="childrens" id="childrens" class="childrens">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                </select>
+                            </div>
+
+                            <p class="col l-12 m-12 content__form-notice">*Must be atleast one adult Person</p>
+                            <input type="submit" value="Get your tour" class="btn content__form-btn">
+                        </form>
+
+                        <form action="" class="row no-gutters content__form-input mobile">
+                            <p class="col c-12 content__form-input-title">Choose your tour</p>
+                            <div class="col c-12 tour-select">
+                                <select name="tours" id="tours" class="tours">
+                                    <option value="Ranthambore-National-Park">Ranthambore National Park</option>
+                                    <option value="Jim-Corbett-National-Park">Jim Corbett National Park</option>
+                                    <option value="Bandhavgarh-National-Park">Bandhavgarh National Park</option>
+                                    <option value="Kanha-National-Park">Kanha National Park</option>
+                                    <option value="Kaziranga-National-Park">Kaziranga National Park</option>
+                                    <option value="Sunderban-National-Park">Sunderban National Park</option>
+                                    <option value="Gir-National-Park">Gir National Park</option>
+                                </select>
+                            </div>
+
+                            <p class="col c-12 content__form-input-title">Date</p>
+                            <div class="col c-12 date-select">
+                                <input type="text" name="text" id="text" class="date">
+                            </div>
+
+                            <p class="col c-12 content__form-input-title">Email</p>
+                            <div class="col c-12 email-input">
+                                <input type="email" name="email" id="email" class="email" required>
+                            </div>
+
+                            <p class="col c-12 content__form-input-title">Mobile number</p>
+                            <div class="col c-12 phone-input">
+                                <input type="number" name="phone" id="phone" class="phone" required>
+                            </div>
+
+                            <p class="col c-12 content__form-input-title">No. of Adults</p>
+                            <div class="col c-12 aldults-select">
+                                <select name="adults" id="adults" class="adults">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                </select>
+                            </div>
+
+                            <p class="col c-12 content__form-input-title">No. of Childrens</p>
+                            <div class="col c-12 childrens-select">
+                                <select name="childrens" id="childrens" class="childrens">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                </select>
+                            </div>
+
+                            <p class="col c-12 content__form-notice">*Must be atleast one adult Person</p>
+                            <input type="submit" value="Get your tour" class="btn content__form-btn">
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content__heroes">
+                <div class="grid wide">
+                    <h2 class="content__heroes-title">Our Heroes</h2>
+                    <div class="row content__heroes-list">
+                        <a href="" class="col l-3 m-6 c-12 content__heroes-link">
+                            <img src="assets/img/img1.jpg" alt="img1" class="content__heroes-item">
+                            <h2 class="content__heroes-hover">COLORFUL BIRD</h2>
+                        </a>
+                        <a href="" class="col l-3 m-6 c-12 content__heroes-link">
+                            <img src="assets/img/img2.jpg" alt="img2" class="content__heroes-item">
+                            <h2 class="content__heroes-hover">PENGUIN CHICKS</h2>
+                        </a>
+                        <a href="" class="col l-3 m-6 c-12 content__heroes-link">
+                            <img src="assets/img/img3.jpg" alt="img3" class="content__heroes-item">
+                            <h2 class="content__heroes-hover">CUTE BEAR</h2>
+                        </a>
+                        <a href="" class="col l-3 m-6 c-12 content__heroes-link">
+                            <img src="assets/img/img4.jpg" alt="img4" class="content__heroes-item">
+                            <h2 class="content__heroes-hover">MASTER DEER</h2>
+                        </a>
+                    </div>
+                    <div class="row hide-hover"></div>
+                </div>
+            </div>
+
+            <div class="content__the-zoo">
+                <div class="grid wide">
+                    <div class="row content__the-zoo-list">
+                        <div class="col l-6 m-12 c-12 content__the-zoo-item left">
+                            <h2 class="content__the-zoo-title">
+                                Wile Life - THE ZOO
+                            </h2>
+
+                            <ul class="content__the-zoo-item-list">
+                                <li class="content__the-zoo-item-info">
+                                    <i class="fa fa-arrow-right"></i>
+                                    <a href="" class="content__the-zoo-link">WELCOME TO OUR WORLD</a>
+                                </li>
+
+                                <li class="content__the-zoo-item-info">
+                                    <i class="fa fa-arrow-right"></i>
+                                    <a href="" class="content__the-zoo-link">NEW DAY FOR AN OLD TORTOISE</a>
+                                </li>
+
+                                <li class="content__the-zoo-item-info">
+                                    <i class="fa fa-arrow-right"></i>
+                                    <a href="" class="content__the-zoo-link">YETI AND THE CUBS</a>
+                                </li>
+
+                                <li class="content__the-zoo-item-info">
+                                    <i class="fa fa-arrow-right"></i>
+                                    <a href="" class="content__the-zoo-link">A LION'S TALE</a>
+                                </li>
+
+                                <li class="content__the-zoo-item-info">
+                                    <i class="fa fa-arrow-right"></i>
+                                    <a href="" class="content__the-zoo-link">PANDA-MONIUM</a>
+                                </li>
+                            </ul>
+
+                            <a href="" class="btn">View All</a>
+                        </div>
+
+                        <div class="col l-6 m-12 c-12 content__the-zoo-item right">
+                            <img src="assets/img/slide3.jpg" alt="" class="content__the-zoo-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content__surprise">
+                <div class="grid wide content__surprise-place">
+                    <h2 class="content__surprise-title text-color-white">MEET OUR SURPRISE ARRIVAL</h2>
+                    <p class="content__surprise-info text-color-white">Lorem ipsum, dolor sit amet consectetur
+                        adipisicing elit.
+                        Veniam, cumque enim. Recusandae delectus nihil consequuntur perspiciatis eum possimus sint
+                        impedit omnis repudiandae, excepturi corrupti corporis?.</p>
+                </div>
+            </div>
+
+            <div class="content__denver-zoo" style="background-image: url(assets/img/new.jpg);">
+                <div class="grid wide content__denver-zoo-content">
+                    <a href="" class="content__denver-zoo-title text-color-white">Denver Zoo</a>
+                    <p class="content__denver-zoo-info text-color-white">Lorem ipsum dolor, sit amet consectetur
+                        adipisicing elit.
+                        Ratione, pariatur.</p>
+                    <a href="" class="btn content__denver-zoo-btn">Read More</a>
+                </div>
+            </div>
+
+            <div class="content__testimonials">
+                <div class="grid wide content__testimonials-place">
+                    <h2 class="content__testimonials-title">Testimonials</h2>
+                    <ul class="content__testimonials-list">
+                        <li class="content__testimonials-item">
+                            <img class="content__testimonials-img" src="assets/img/client1.jpg" alt="">
+                            <p class="content__testimonials-descrip">Contrary to popular belief, Lorem Ipsum is not
+                                simply random text. It has roots in a
+                                piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                            <p class="content__testimonials-name">Camilla</p>
+                        </li>
+                        <li class="content__testimonials-item">
+                            <img class="content__testimonials-img" src="assets/img/client2.jpg" alt="">
+                            <p class="content__testimonials-descrip">Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. Ea sit id accusantium officia quod quasi necessitatibus perspiciatis Harum error
+                                provident quibusdam tenetur.</p>
+                            <p class="content__testimonials-name">- Dennis Jack</p>
+                        </li>
+                        <li class="content__testimonials-item">
+                            <img class="content__testimonials-img" src="assets/img/client3.jpg" alt="">
+                            <p class="content__testimonials-descrip">It is a long established fact that a reader will be
+                                distracted by the readable content of a page when looking at its layout. The point of
+                                using Lorem Ipsum.</p>
+                            <p class="content__testimonials-name">Antonio Davin</p>
+                        </li>
+                        <li class="content__testimonials-item">
+                            <img class="content__testimonials-img" src="assets/img/client4.jpg" alt="">
+                            <p class="content__testimonials-descrip">It was popularised in the 1960s with the release of
+                                Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                                publishing software.</p>
+                            <p class="content__testimonials-name">Bradley</p>
+                        </li>
+                        <li class="content__testimonials-item">
+                            <img class="content__testimonials-img" src="assets/img/client5.jpg" alt="">
+                            <p class="content__testimonials-descrip">Lorem ipsum dolor sit amet consectetur adipisicing
+                                elit. Ea sit id accusantium officia quod quasi necessitatibus perspiciatis Harum error
+                                provident quibusdam tenetur.</p>
+                            <p class="content__testimonials-name">Anthony</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="content__ticket">
+                <div class="grid wide content__ticket-place">
+                    <h2 class="content__ticket-title">Tickets & Membership</h2>
+                    <ul class="row no-gutters content__ticket-list">
+                        <li class="col l-3 m-6 c-12 content__ticket-item">
+                            <p class="content__ticket-item-title">1-DAY PASS</p>
+                            <p class="content__ticket-item-price"><span>$</span>39</p>
+                            <p class="content__ticket-item-info">Includes: One visit to the Zoo, Guided Bus Tour,
+                                Kangaroo Express Bus, Skyfari Aerial Tram, and all regularly scheduled shows.</p>
+                            <a href="" class="btn">Buy now</a>
+                        </li>
+
+                        <li class="col l-3 m-6 c-12 content__ticket-item popular">
+                            <p class="content__ticket-popular">POPULAR</p>
+                            <p class="content__ticket-item-title">MULTI-DAY/MULTI-PARK PASSES</p>
+                            <p class="content__ticket-item-price"><span>$</span>99</p>
+                            <p class="content__ticket-item-info">Includes: One visit to the Zoo, Guided Bus Tour,
+                                Kangaroo Express Bus, Skyfari Aerial Tram, and all regularly scheduled shows.</p>
+                            <a href="" class="btn popular">Buy now</a>
+                        </li>
+
+                        <li class="col l-3 m-6 c-12 content__ticket-item">
+                            <p class="content__ticket-item-title">ANNUAL PASSES</p>
+                            <p class="content__ticket-item-price"><span>$</span>149</p>
+                            <p class="content__ticket-item-info">Includes: One visit to the Zoo, Guided Bus Tour,
+                                Kangaroo Express Bus, Skyfari Aerial Tram, and all regularly scheduled shows.</p>
+                            <a href="" class="btn">Buy now</a>
+                        </li>
+
+                        <li class="col l-3 m-6 c-12 content__ticket-item">
+                            <p class="content__ticket-item-title">DONOR CLUBS</p>
+                            <p class="content__ticket-item-price"><span>$</span>199</p>
+                            <p class="content__ticket-item-info">Includes: One visit to the Zoo, Guided Bus Tour,
+                                Kangaroo Express Bus, Skyfari Aerial Tram, and all regularly scheduled shows.</p>
+                            <a href="" class="btn">Buy now</a>
+                        </li>
+                    </ul>
+                    <div class="content__ticket-quest">
+                        <span><i class="fa fa-paper-plane"></i>Got Questions? We Can Help <a
+                                class="content__ticket-link" href="">Contact Us</a></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content__partners">
+                <div class="grid wide--small hide-on-mobile-tablet">
+                    <h2 class="content__partners-title">Our Partners</h2>
+
+                    <div class="row carousel-example content__partners-list">
+                        <div class="col l-3 content__partners-item">
+                            <img src="assets/img/logo1.png" alt="logo1" class="content__partners-img">
+                        </div>
+                        <div class="col l-3 content__partners-item">
+                            <img src="assets/img/logo2.png" alt="logo2" class="content__partners-img">
+                        </div>
+                        <div class="col l-3 content__partners-item">
+                            <img src="assets/img/logo3.png" alt="logo3" class="content__partners-img">
+                        </div>
+                        <div class="col l-3 content__partners-item">
+                            <img src="assets/img/logo4.png" alt="logo4" class="content__partners-img">
+                        </div>
+                        <div class="col l-3 content__partners-item">
+                            <img src="assets/img/logo5.png" alt="logo5" class="content__partners-img">
+                        </div>
+                        <div class="col l-3 content__partners-item">
+                            <img src="assets/img/logo6.png" alt="logo6" class="content__partners-img">
+                        </div>
+                    </div>
+
+                    <p class="content__partners-info">It is a long established fact that a reader will be distracted by
+                        the readable content of a page when looking at its layout. The point of using Lorem Ipsum is
+                        that it has a more-or-less normal distribution of letters, as opposed to using 'Content here,
+                        content here', making it look like readable English.Many desktop publishing packages and web
+                        page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum'
+                        will uncover many web sites still in their infancy. Various versions have evolved over the
+                        years, sometimes by accident.</p>
+                </div>
+
+                <div class="grid wide content__partners-tablet">
+                    <h2 class="content__partners-title">Our Partners</h2>
+
+                    <div class="row carousel-example-tablet content__partners-list">
+                        <div class="col m-4 content__partners-item">
+                            <img src="assets/img/logo1.png" alt="logo1" class="content__partners-img">
+                        </div>
+                        <div class="col m-4 content__partners-item">
+                            <img src="assets/img/logo2.png" alt="logo2" class="content__partners-img">
+                        </div>
+                        <div class="col m-4 content__partners-item">
+                            <img src="assets/img/logo3.png" alt="logo3" class="content__partners-img">
+                        </div>
+                        <div class="col m-4 content__partners-item">
+                            <img src="assets/img/logo4.png" alt="logo4" class="content__partners-img">
+                        </div>
+                        <div class="col m-4 content__partners-item">
+                            <img src="assets/img/logo5.png" alt="logo5" class="content__partners-img">
+                        </div>
+                        <div class="col m-4 content__partners-item">
+                            <img src="assets/img/logo6.png" alt="logo6" class="content__partners-img">
+                        </div>
+                    </div>
+
+                    <p class="content__partners-info">It is a long established fact that a reader will be distracted by
+                        the readable content of a page when looking at its layout. The point of using Lorem Ipsum is
+                        that it has a more-or-less normal distribution of letters, as opposed to using 'Content here,
+                        content here', making it look like readable English.Many desktop publishing packages and web
+                        page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum'
+                        will uncover many web sites still in their infancy. Various versions have evolved over the
+                        years, sometimes by accident.</p>
+                </div>
+
+                <div class="grid wide content__partners-mobile">
+                    <h2 class="content__partners-title">Our Partners</h2>
+
+                    <div class="row carousel-example-mobile content__partners-list">
+                        <div class="col c-12 content__partners-item">
+                            <img src="assets/img/logo1.png" alt="logo1" class="content__partners-img">
+                        </div>
+                        <div class="col c-12 content__partners-item">
+                            <img src="assets/img/logo2.png" alt="logo2" class="content__partners-img">
+                        </div>
+                        <div class="col c-12 content__partners-item">
+                            <img src="assets/img/logo3.png" alt="logo3" class="content__partners-img">
+                        </div>
+                        <div class="col c-12 content__partners-item">
+                            <img src="assets/img/logo4.png" alt="logo4" class="content__partners-img">
+                        </div>
+                        <div class="col c-12 content__partners-item">
+                            <img src="assets/img/logo5.png" alt="logo5" class="content__partners-img">
+                        </div>
+                        <div class="col c-12 content__partners-item">
+                            <img src="assets/img/logo6.png" alt="logo6" class="content__partners-img">
+                        </div>
+                    </div>
+
+                    <p class="content__partners-info">It is a long established fact that a reader will be distracted by
+                        the readable content of a page when looking at its layout. The point of using Lorem Ipsum is
+                        that it has a more-or-less normal distribution of letters, as opposed to using 'Content here,
+                        content here', making it look like readable English.Many desktop publishing packages and web
+                        page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum'
+                        will uncover many web sites still in their infancy. Various versions have evolved over the
+                        years, sometimes by accident.</p>
+                </div>
+            </div>
+
+            <div class="content__send-mail">
+                <div class="content__send-mail-bg" style="background-image: url(assets/img/slide4.jpg);">
+                    <div class="overlay-send-mail"></div>
+
+                    <div class="grid wide content__send-mail-place">
+                        <div class="row content__send-mail-list">
+                            <div class="col l-6 m-12 c-12 content__send-mail-item left">
+                                <i class="material-icons text-color-white">mail_outline</i>
+                                <h2 class="content__send-mail-item-title text-color-white">Get weekly news on ANIMALS,
+                                    ZOO EVENTS, AND
+                                    MORE</h2>
+                            </div>
+
+                            <form class="col l-6 m-12 c-12 content__send-mail-item right">
+                                <input type="email" name="send-mail" id="send-mail" class="send-mail"
+                                    placeholder="Your Email.." required>
+                                <input type="submit" value="Subsribe" class="btn content__send-mail-item-btn">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer" style="background-image: url(assets/img/footer-bg.jpg);">
+            <div class="overlay-footer"></div>
+
+            <div class="footer-content">
+                <div class="grid wide">
+                    <div class="row footer-list">
+                        <ul class="col l-3 m-3 c-6 footer-list-item">
+                            <li class="footer-item">
+                                <h2 class="footer-item-title">CONTACT INFORMATION</h2>
+                            </li>
+                            <li class="footer-item">
+                                <p class="footer-item-info"><span>Address</span> : #135 block, Barnard St. Brooklyn, NY
+                                    10036, USA</p>
+                            </li>
+                            <li class="footer-item">
+                                <p class="footer-item-info"><span>Phone</span> : +404 11-22-89</p>
+                            </li>
+                            <li class="footer-item">
+                                <p class="footer-item-info"><span>Email</span> : example@mail.com</p>
+                            </li>
+                        </ul>
+
+                        <ul class="col l-3 m-3 c-6 footer-list-item">
+                            <li class="footer-item">
+                                <h2 class="footer-item-title">COMPANY</h2>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item-link">About</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item-link">Animals & Planets</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item-link">Events</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item-link">FAQ</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item-link">Pricing</a>
+                            </li>
+                        </ul>
+
+                        <ul class="col l-3 m-3 c-6 footer-list-item">
+                            <li class="footer-item">
+                                <h2 class="footer-item-title">SUPPORT</h2>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item-link">Contact Us</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item-link">Donate</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item-link">Services</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item-link">Team</a>
+                            </li>
+                        </ul>
+
+                        <ul class="col l-3 m-3 c-6 footer-list-item">
+                            <li class="footer-item">
+                                <h2 class="footer-item-title">SHOP</h2>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item-link">Ecommerce</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item-link">Ecommerce Single</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item-link">Ecommerce Cart</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item-link">Timeline</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item-link">Search results</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="row footer-icon-list">
+                        <a href="" class="footer-icon-link">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a href="" class="footer-icon-link">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a href="" class="footer-icon-link">
+                            <i class="fa fa-ge"></i>
+                        </a>
+                        <a href="" class="footer-icon-link">
+                            <i class="fa fa-maxcdn"></i>
+                        </a>
+                    </div>
+
+                    <div class="row footer-end">
+                        <p>© 2019 Wild Tour. All RIghts Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+<!-- Content header slider -->
+<script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+        showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("content__header");
+        if (n > x.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = x.length }
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        x[slideIndex - 1].style.display = "block";
+    }
+</script>
+
+<!-- content__testimonials slider -->
+<script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("content__testimonials-item");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1 }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 4000); // Change image every 2 seconds
+    }
+</script>
+
+<script>
+    new ElderCarousel('.carousel-example', {
+        items: 4,
+        play: true,
+        playInterval: 3000,
+        speed: 1000
+    });
+
+    new ElderCarousel('.carousel-example-tablet', {
+        items: 3,
+        play: true,
+        playInterval: 3000,
+        speed: 1000
+    });
+
+    new ElderCarousel('.carousel-example-mobile', {
+        items: 1,
+        play: true,
+        playInterval: 3000,
+        speed: 1000
+    });
+</script>
+
+<!-- Menu click not-pc -->
+<script>
+    /* When the user clicks on the button, 
+    toggle between hiding and showing the dropdown content */
+    function onClickMenu() {
+        document.getElementById("header__menu-content").classList.toggle("show");
+    }
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function (event) {
+        if (!event.target.matches('.header__menu')) {
+            var dropdowns = document.getElementsByClassName("header__menu-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+            console.log(dropdowns.length);
+        }
+    }
+</script>
+
+</html>

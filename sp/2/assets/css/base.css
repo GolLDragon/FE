@@ -1,0 +1,171 @@
+:root{
+    --text-color: #ccc;
+    --border-color: rgb(219, 219, 219);
+
+    --content-enjoy-height: 466px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.btn{
+    font-size: 2.6rem;
+    line-height: 2.6rem;
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 16px 20px;
+}
+
+/* Content */
+
+.content{
+    background-color: black;
+}
+
+.content-space{
+    background-color: rgb(34, 34, 34);
+    height: 8px;
+}
+
+.content-list{
+    width: 1100px;
+}
+
+.content-list.enjoy{
+    height: 466px;
+}
+
+.content-list.download{
+    height: 462px;
+}
+
+.content-list.download.small{
+    display: none;
+}
+
+.content-list.watch{
+    height: 536px;
+}
+
+.content-item-title{
+    color: white;
+    font-size: 5.0rem;
+    line-height: 5.0rem;
+}
+
+.content-item-descrip{
+    color: white;
+    font-size: 2.6rem;
+    line-height: 3.0rem;
+    margin-top: 20px;
+}
+
+.content-item{
+    width: 550px;
+    position: relative;
+}
+
+.content-list.row.no-gutters{
+    align-items: center;
+    margin: 0 calc((100% - 1100px) / 2);
+}
+
+.content-item-img{
+    position: relative;
+    width: 100%;
+    z-index: 2;
+}
+
+.content-item-video{
+    position: absolute;
+    width: 73%;
+    top: 20.25%;
+    left: 13%;
+}
+
+.content-item-img-box{
+    display: flex;
+    position: absolute;
+    left: 20%;
+    top: 68%;
+    z-index: 2;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box-right{
+    height: 50px;
+}
+
+.content-item-video-watch{
+    position: absolute;
+    width: 61%;
+    top: 8%;
+    left: 19%;
+}
+
+.content-item-header .content-item-icon{
+    color: white;
+    font-size: 2.2rem;
+}
+
+.read-more4,
+.read-more3,
+.read-more2,
+.read-more1,
+.read-more{
+    display: none;
+}
+
+.footer{
+    background-color: black;
+}
+
+.row.footer__list{
+    width: 100%;
+}
+
+.footer__title h2{
+    color: rgb(80, 80, 80); 
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+}
+
+.footer__title{
+    margin-bottom: 20px;
+}
+
+.footer__item-link{
+    text-decoration: none;
+    color: rgb(80, 80, 80);
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+}
+
+.footer__item-link:hover{
+    text-decoration: underline;
+}
+
+.footer__content{
+    padding: 40px calc((100% - 888px) / 2);
+}
+
+.footer__rows{
+    width: 888px;
+}
+
+.footer__item{
+    margin: 6px 0;
+}

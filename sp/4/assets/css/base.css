@@ -1,0 +1,149 @@
+:root{
+    --primary-color: rgb(232,205,48);
+    --text-color: #ddd;
+    --green-color: rgb(0,159,77);
+    --info-color: #707579;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.unactive{
+    display: none;
+}
+
+.header__right-mobile{
+    color: white;
+    font-size: 2.0rem;
+    padding: 5px 10px;
+    background-color: var(--green-color);
+    display: none;
+    outline: none;
+    border: none;
+}
+
+.header__mobile-link{
+    text-decoration: none;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    color: #333;
+}
+
+.header__mobile-link.active{
+    color: var(--green-color);
+}
+
+.header__mobile-item{
+    text-align: center;
+    margin: 10px 0;
+}
+
+.header__mobile-item.last{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__mobile-item.last p{
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    color: #333;
+    margin-left: 10px;
+}
+
+.header__mobile-item.last i{
+    color: var(--primary-color);
+    font-size: 1.6rem;
+}
+
+.header__mobile-list{
+    position: absolute;
+    top: 50px;
+    display: none;
+}
+
+.header__mobile-list-item{
+    list-style: none;
+    background-color: white;
+    padding: 10px 0;
+}
+
+.show {
+    display: block;
+}
+
+.content__choose{
+    background-color: var(--green-color);
+}
+
+.content__core-item-img{
+    padding-top: 66.3%;
+    background-repeat: no-repeat;
+}
+
+.content__body-banner-list{
+    list-style: none;
+}
+
+.content__body-item-list{
+    list-style: none;
+}
+
+.content__body-banner-content{
+    position: absolute;
+    top: 16%;
+    left: calc((100% - 1110px)/ 2);;
+}
+
+.content__body-item-info{
+    font-size: 1.7rem;
+    line-height: 3rem;
+    color: #ccc;
+}
+
+.content__product-item-img{
+    padding-top: 70%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.content__product-item-header{
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.content__product-item-info{
+    background-color: white;
+    position: relative;
+    top: -17%;
+    padding: 50px 30px;
+    margin: 0 6px;
+    box-shadow: 0 8px 6px -6px rgb(173, 173, 173);
+}
+
+.content__product-list{
+    list-style: none;
+}
+
+.footer{
+    background-color: rgb(24, 24, 24);
+}
+
+.footer__content-social,
+.footer__content-contact{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}

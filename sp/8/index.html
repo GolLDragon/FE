@@ -1,0 +1,1812 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIX - Đặt Vé Nhanh Nhất / Trang Chủ</title>
+    <link rel="shortcut icon" href="assets/img/short-cut-icon.png">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/grid.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__logo-place">
+            <img class="header__logo" src="assets/img/web-logo.png" alt="logo">
+        </div>
+
+        <nav class="header__nav hide-on-mobile-tablet">
+            <a href="#" class="header__nav-link">Lịch Chiếu</a>
+            <a href="#" class="header__nav-link">Cụm rạp</a>
+            <a href="#" class="header__nav-link">Tin Tức</a>
+            <a href="#" class="header__nav-link">Ứng dụng</a>
+        </nav>
+
+        <div class="header__login-place hide-on-mobile">
+            <div class="login">
+                <img class="login-img" src="assets/img/avatar.png" alt="avatar">
+                <p class="login-text">Đăng nhập</p>
+            </div>
+
+            <div class="place" onclick="placeListFunction()">
+                <img class="place-img" src="assets/img/location-header.png" alt="location">
+                <p class="place-text">Hồ Chí Minh</p>
+                <i class="material-icons">keyboard_arrow_down</i>
+
+                <ul class="header__place-list" id="header__place-list">
+                    <li class="header__place-item">
+                        Hồ Chí Minh
+                    </li>
+                    <li class="header__place-item">
+                        Hà Nội
+                    </li>
+                    <li class="header__place-item">
+                        Đà Nẵng
+                    </li>
+                    <li class="header__place-item">
+                        Hải Phòng
+                    </li>
+                    <li class="header__place-item">
+                        Biên Hòa
+                    </li>
+                    <li class="header__place-item">
+                        Nha Trang
+                    </li>
+                    <li class="header__place-item">
+                        Bình Dương
+                    </li>
+                    <li class="header__place-item">
+                        Phan Thiết
+                    </li>
+                    <li class="header__place-item">
+                        Hạ Long
+                    </li>
+                    <li class="header__place-item">
+                        Cần Thơ
+                    </li>
+                    <li class="header__place-item">
+                        Vũng Tàu
+                    </li>
+                    <li class="header__place-item">
+                        Quy Nhơn
+                    </li>
+                    <li class="header__place-item">
+                        Huế
+                    </li>
+                    <li class="header__place-item">
+                        Long Xuyên
+                    </li>
+                    <li class="header__place-item">
+                        Thái Nguyên
+                    </li>
+                    <li class="header__place-item">
+                        Buôn Mê Thuột
+                    </li>
+                    <li class="header__place-item">
+                        Bắc Giang
+                    </li>
+                    <li class="header__place-item">
+                        Bến Tre
+                    </li>
+                    <li class="header__place-item">
+                        Việt Trì
+                    </li>
+                    <li class="header__place-item">
+                        Ninh Bình
+                    </li>
+                </ul>
+            </div>
+
+
+        </div>
+    </header>
+
+    <div class="content">
+        <div class="content__header hide-on-mobile">
+            <a href="#" class="content__header-link">
+                <div class="content__header-bg img" style="background-image: url(assets/img/slider1.jpg);"></div>
+            </a>
+            <a href="#" class="content__header-link">
+                <div class="content__header-bg clip" style="background-image: url(assets/img/slider2.jpg);"></div>
+            </a>
+            <a href="#" class="content__header-link">
+                <div class="content__header-bg clip" style="background-image: url(assets/img/slider3.jpg);"></div>
+            </a>
+            <a href="#" class="content__header-link">
+                <div class="content__header-bg clip" style="background-image: url(assets/img/slider4.jpg);"></div>
+            </a>
+            <a href="#" class="content__header-link">
+                <div class="content__header-bg clip" style="background-image: url(assets/img/slider5.jpg);"></div>
+            </a>
+
+            <div class="content__header-slider-btn">
+                <div class="slider left" onclick="plusDivs(-1)">&#10094;</div>
+                <div class="slider right" onclick="plusDivs(1)">&#10095;</div>
+            </div>
+
+            <div class="slider-dot-list">
+                <span class="dot-item" onclick="currentDiv(1)"></span>
+                <span class="dot-item" onclick="currentDiv(2)"></span>
+                <span class="dot-item" onclick="currentDiv(3)"></span>
+                <span class="dot-item" onclick="currentDiv(4)"></span>
+                <span class="dot-item" onclick="currentDiv(5)"></span>
+            </div>
+
+            <div class="content__header-buy-ticket hide-on-tablet">
+                <div class="grid wide content__header-buy-ticket-place">
+                    <div class="row">
+                        <div class="col l-3 content__header-buy-ticket-info">
+                            <p class="content__header-buy-ticket-title">Phim</p>
+                            <i class="material-icons">keyboard_arrow_down</i>
+                        </div>
+
+                        <div class="col l-2-5 content__header-buy-ticket-info">
+                            <p class="content__header-buy-ticket-title">Rạp</p>
+                            <i class="material-icons">keyboard_arrow_down</i>
+                        </div>
+
+                        <div class="col l-2-5 content__header-buy-ticket-info">
+                            <p class="content__header-buy-ticket-title">Ngày xem</p>
+                            <i class="material-icons">keyboard_arrow_down</i>
+                        </div>
+
+                        <div class="col l-2-5 content__header-buy-ticket-info">
+                            <p class="content__header-buy-ticket-title">Suất chiếu</p>
+                            <i class="material-icons">keyboard_arrow_down</i>
+                        </div>
+
+                        <div class="col l-2-5 content__header-buy-ticket-info">
+                            <button class="content__header-buy-ticket-btn">
+                                MUA VÉ NGAY
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content__video">
+            <div class="grid wide">
+                <div class="content__video-title-place">
+                    <h2 class="content__video-title active">Đang Chiếu</h2>
+                    <h2 class="content__video-title">Sắp Chiếu</h2>
+                </div>
+            </div>
+
+            <div class="content__video-place hide-on-mobile">
+                <div class="grid wide">
+                    <ul class="row content__video-list">
+                        <li class="col l-3 m-3 content__video-item not-now">
+                            <a href="#" class="content__video-item-link">
+                                <img class="content__video-item-img" src="assets/img/nu-than-chien-binh-1984-wonder-woman-1984-16069039499631_215x318.png" alt="img">
+                                <div class="content__video-item-descrip">
+                                    <h2 class="content__video-item-title"><span class="content__video-item-title-tag P">P</span>Nữ Thần Chiến Binh 1984 - Wonder Woman 1984</h2>
+                                    <p class="content__video-lenght">100 phút</p>
+                                </div>
+
+                                <div class="content__video-stars">
+                                    <p class="content__video-rate">6.1</p>
+                                    <img class="content__video-star-icon" src="assets/img/star1.png" alt="star">
+                                    <img class="content__video-star-icon" src="assets/img/star1.png" alt="star">
+                                    <img class="content__video-star-icon" src="assets/img/star1.png" alt="star">
+                                    <img class="content__video-star-icon" src="assets/img/star1.2.png" alt="star">
+                                </div>
+
+                                <img src="assets/img/film_type_1.png" alt="type1" class="content__video-type hot">
+                                <img src="assets/img/film_type_2.png" alt="type1" class="content__video-type sale-off">
+                                <img src="assets/img/film_type_3.png" alt="type1" class="content__video-type not-now">
+
+                                <div class="overlay-img"></div>
+
+                                <div class="content__video-play">
+                                    <i class="material-icons">play_arrow</i>
+                                </div>
+
+                                <button class="content__video-btn">
+                                    MUA VÉ
+                                </button>
+                            </a>
+                        </li>
+
+                        <li class="col l-3 m-3 content__video-item hot">
+                            <a href="#" class="content__video-item-link">
+                                <img class="content__video-item-img" src="assets/img/thanh-guom-diet-quy-chuyen-tau-vo-tan-demon-slayer-the-movie-mugen-train-p-16063888466666_215x318.png" alt="img">
+                                <div class="content__video-item-descrip">
+                                    <h2 class="content__video-item-title"><span class="content__video-item-title-tag C">C13</span>Thanh Gươm Diệt Quỷ: Chuyến Tàu Vô Tận - Demon Slayer The Movie: Mugen Train (P)</h2>
+                                    <p class="content__video-lenght">117 phút</p>
+                                </div>
+
+                                <div class="content__video-stars">
+                                    <p class="content__video-rate">8.3</p>
+                                    <img class="content__video-star-icon" src="assets/img/star1.png" alt="star">
+                                    <img class="content__video-star-icon" src="assets/img/star1.png" alt="star">
+                                    <img class="content__video-star-icon" src="assets/img/star1.png" alt="star">
+                                    <img class="content__video-star-icon" src="assets/img/star1.png" alt="star">
+                                    <img class="content__video-star-icon" src="assets/img/star1.2.png" alt="star">
+                                </div>
+
+                                <img src="assets/img/film_type_1.png" alt="type1" class="content__video-type hot">
+                                <img src="assets/img/film_type_2.png" alt="type1" class="content__video-type sale-off">
+                                <img src="assets/img/film_type_3.png" alt="type1" class="content__video-type not-now">
+
+                                <div class="overlay-img"></div>
+
+                                <div class="content__video-play">
+                                    <i class="material-icons">play_arrow</i>
+                                </div>
+
+                                <button class="content__video-btn">
+                                    MUA VÉ
+                                </button>
+                            </a>
+                        </li>
+
+                        <li class="col l-3 m-3 content__video-item">
+                            <a href="#" class="content__video-item-link">
+                                <img class="content__video-item-img" src="assets/img/hoa-phong-nguyet-vu-the-crawler-16064689420018_215x318.png" alt="img">
+                                <div class="content__video-item-descrip">
+                                    <h2 class="content__video-item-title"><span class="content__video-item-title-tag C">C18</span>Hoa Phong Nguyệt Vũ - The Crawler (C18)</h2>
+                                    <p class="content__video-lenght">0 phút</p>
+                                </div>
+
+                                <div class="content__video-stars">
+                                    <p class="content__video-rate">5.6</p>
+                                    <img class="content__video-star-icon" src="assets/img/star1.png" alt="star">
+                                    <img class="content__video-star-icon" src="assets/img/star1.png" alt="star">
+                                    <img class="content__video-star-icon" src="assets/img/star1.2.png" alt="star">
+                                </div>
+
+                                <img src="assets/img/film_type_1.png" alt="type1" class="content__video-type hot">
+                                <img src="assets/img/film_type_2.png" alt="type1" class="content__video-type sale-off">
+                                <img src="assets/img/film_type_3.png" alt="type1" class="content__video-type not-now">
+
+                                <div class="overlay-img"></div>
+
+                                <div class="content__video-play">
+                                    <i class="material-icons">play_arrow</i>
+                                </div>
+
+                                <button class="content__video-btn">
+                                    MUA VÉ
+                                </button>
+                            </a>
+                        </li>
+
+                        <li class="col l-3 m-3 content__video-item">
+                            <a href="#" class="content__video-item-link">
+                                <img class="content__video-item-img" src="assets/img/doraemon-nobita-va-nhung-ban-khung-long-moi-doraemon-the-movie-nobita-s-new-dinosaurs-p-16074846198854_215x318.png" alt="img">
+                                <div class="content__video-item-descrip">
+                                    <h2 class="content__video-item-title"><span class="content__video-item-title-tag P">P</span>Doraemon: Nobita và Những Bạn Khủng Long Mới - Doraemon the Movie: Nobita's New Dinosaurs (P)</h2>
+                                    <p class="content__video-lenght">110 phút</p>
+                                </div>
+
+                                <div class="content__video-stars">
+                                    <p class="content__video-rate">9</p>
+                                    <img class="content__video-star-icon" src="assets/img/star1.png" alt="star">
+                                    <img class="content__video-star-icon" src="assets/img/star1.png" alt="star">
+                                    <img class="content__video-star-icon" src="assets/img/star1.png" alt="star">
+                                    <img class="content__video-star-icon" src="assets/img/star1.png" alt="star">
+                                    <img class="content__video-star-icon" src="assets/img/star1.2.png" alt="star">
+                                </div>
+
+                                <img src="assets/img/film_type_1.png" alt="type1" class="content__video-type hot">
+                                <img src="assets/img/film_type_2.png" alt="type1" class="content__video-type sale-off">
+                                <img src="assets/img/film_type_3.png" alt="type1" class="content__video-type not-now">
+
+                                <div class="overlay-img"></div>
+
+                                <div class="content__video-play">
+                                    <i class="material-icons">play_arrow</i>
+                                </div>
+
+                                <button class="content__video-btn">
+                                    MUA VÉ
+                                </button>
+                            </a>
+                        </li>
+
+                        <li class="col l-3 m-3 content__video-item">
+                            <a href="#" class="content__video-item-link">
+                                <img class="content__video-item-img" src="assets/img/nghe-sieu-kho-extreme-job-c18-16074190927361_215x318.png" alt="img">
+                                <div class="content__video-item-descrip">
+                                    <h2 class="content__video-item-title"><span class="content__video-item-title-tag C">C18</span>Nghề Siêu Khó - Extreme Job (C18)
+                                    </h2>
+                                    <p class="content__video-lenght">111 phút</p>
+                                </div>
+
+                                <div class="content__video-stars">
+                                    <p class="content__video-rate">8.9</p>
+                                    <img class="content__video-star-icon" src="assets/img/star1.png" alt="star">
+                                    <img class="content__video-star-icon" src="assets/img/star1.png" alt="star">
+                                    <img class="content__video-star-icon" src="assets/img/star1.png" alt="star">
+                                    <img class="content__video-star-icon" src="assets/img/star1.png" alt="star">
+                                    <img class="content__video-star-icon" src="assets/img/star1.2.png" alt="star">
+                                </div>
+
+                                <img src="assets/img/film_type_1.png" alt="type1" class="content__video-type hot">
+                                <img src="assets/img/film_type_2.png" alt="type1" class="content__video-type sale-off">
+                                <img src="assets/img/film_type_3.png" alt="type1" class="content__video-type not-now">
+
+                                <div class="overlay-img"></div>
+
+                                <div class="content__video-play">
+                                    <i class="material-icons">play_arrow</i>
+                                </div>
+
+                                <button class="content__video-btn">
+                                    MUA VÉ
+                                </button>
+                            </a>
+                        </li>
+
+                        <li class="col l-3 m-3 content__video-item">
+                            <a href="#" class="content__video-item-link">
+                                <img class="content__video-item-img" src="assets/img/gia-dinh-croods-ky-nguyen-moi-the-croods-new-age-p-16057775991222_215x318.png" alt="img">
+                                <div class="content__video-item-descrip">
+                                    <h2 class="content__video-item-title"><span class="content__video-item-title-tag P">P</span>Gia Đình Croods: Kỷ Nguyên Mới - The Croods: New Age (P)</h2>
+                                    <p class="content__video-lenght">95 phút</p>
+                                </div>
+
+                                <div class="content__video-stars">
+                                    <p class="content__video-rate">8.9</p>
+                                    <img class="content__video-star-icon" src="assets/img/star1.png" alt="star">
+                                    <img class="content__video-star-icon" src="assets/img/star1.png" alt="star">
+                                    <img class="content__video-star-icon" src="assets/img/star1.png" alt="star">
+                                    <img class="content__video-star-icon" src="assets/img/star1.png" alt="star">
+                                    <img class="content__video-star-icon" src="assets/img/star1.2.png" alt="star">
+                                </div>
+
+                                <img src="assets/img/film_type_1.png" alt="type1" class="content__video-type hot">
+                                <img src="assets/img/film_type_2.png" alt="type1" class="content__video-type sale-off">
+                                <img src="assets/img/film_type_3.png" alt="type1" class="content__video-type not-now">
+
+                                <div class="overlay-img"></div>
+
+                                <div class="content__video-play">
+                                    <i class="material-icons">play_arrow</i>
+                                </div>
+
+                                <button class="content__video-btn">
+                                    MUA VÉ
+                                </button>
+                            </a>
+                        </li>
+
+                        <li class="col l-3 m-3 content__video-item">
+                            <a href="#" class="content__video-item-link">
+                                <img class="content__video-item-img" src="assets/img/bi-mat-cua-gio-secrets-of-the-wind-c16-16044837500429_215x318.png" alt="img">
+                                <div class="content__video-item-descrip">
+                                    <h2 class="content__video-item-title"><span class="content__video-item-title-tag C">C16</span>Bí Mật Của Gió - Secrets of the Wind (C16)</h2>
+                                    <p class="content__video-lenght">95 phút</p>
+                                </div>
+
+                                <div class="content__video-stars">
+                                    <p class="content__video-rate">7</p>
+                                    <img class="content__video-star-icon" src="assets/img/star1.png" alt="star">
+                                    <img class="content__video-star-icon" src="assets/img/star1.png" alt="star">
+                                    <img class="content__video-star-icon" src="assets/img/star1.png" alt="star">
+                                    <img class="content__video-star-icon" src="assets/img/star1.2.png" alt="star">
+                                </div>
+
+                                <img src="assets/img/film_type_1.png" alt="type1" class="content__video-type hot">
+                                <img src="assets/img/film_type_2.png" alt="type1" class="content__video-type sale-off">
+                                <img src="assets/img/film_type_3.png" alt="type1" class="content__video-type not-now">
+
+                                <div class="overlay-img"></div>
+
+                                <div class="content__video-play">
+                                    <i class="material-icons">play_arrow</i>
+                                </div>
+
+                                <button class="content__video-btn">
+                                    MUA VÉ
+                                </button>
+                            </a>
+                        </li>
+
+                        <li class="col l-3 m-3 content__video-item sale-off">
+                            <a href="#" class="content__video-item-link">
+                                <img class="content__video-item-img" src="assets/img/chong-nguoi-ta-c18-16027366912559_215x318.png" alt="img">
+                                <div class="content__video-item-descrip">
+                                    <h2 class="content__video-item-title"><span class="content__video-item-title-tag C">C18</span>Chồng Người Ta (C18)</h2>
+                                    <p class="content__video-lenght">90 phút</p>
+                                </div>
+
+                                <div class="content__video-stars">
+                                    <p class="content__video-rate">6.6</p>
+                                    <img class="content__video-star-icon" src="assets/img/star1.png" alt="star">
+                                    <img class="content__video-star-icon" src="assets/img/star1.png" alt="star">
+                                    <img class="content__video-star-icon" src="assets/img/star1.png" alt="star">
+                                    <img class="content__video-star-icon" src="assets/img/star1.2.png" alt="star">
+                                </div>
+
+                                <img src="assets/img/film_type_1.png" alt="type1" class="content__video-type hot">
+                                <img src="assets/img/film_type_2.png" alt="type1" class="content__video-type sale-off">
+                                <img src="assets/img/film_type_3.png" alt="type1" class="content__video-type not-now">
+
+                                <div class="overlay-img"></div>
+
+                                <div class="content__video-play">
+                                    <i class="material-icons">play_arrow</i>
+                                </div>
+
+                                <button class="content__video-btn">
+                                    MUA VÉ
+                                </button>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="row content__video-list">
+                        <li class="col l-3 m-3 content__video-item not-now">
+                            <a href="#" class="content__video-item-link">
+                                <img class="content__video-item-img" src="assets/img/nu-than-chien-binh-1984-wonder-woman-1984-16069039499631_215x318.png" alt="img">
+                                <div class="content__video-item-descrip">
+                                    <h2 class="content__video-item-title"><span class="content__video-item-title-tag P">P</span>Nữ Thần Chiến Binh 1984 - Wonder Woman 1984</h2>
+                                    <p class="content__video-lenght">100 phút</p>
+                                </div>
+
+                                <div class="content__video-stars">
+                                    <p class="content__video-rate">6.1</p>
+                                    <img class="content__video-star-icon" src="assets/img/star1.png" alt="star">
+                                    <img class="content__video-star-icon" src="assets/img/star1.png" alt="star">
+                                    <img class="content__video-star-icon" src="assets/img/star1.png" alt="star">
+                                    <img class="content__video-star-icon" src="assets/img/star1.2.png" alt="star">
+                                </div>
+
+                                <img src="assets/img/film_type_1.png" alt="type1" class="content__video-type hot">
+                                <img src="assets/img/film_type_2.png" alt="type1" class="content__video-type sale-off">
+                                <img src="assets/img/film_type_3.png" alt="type1" class="content__video-type not-now">
+
+                                <div class="overlay-img"></div>
+
+                                <div class="content__video-play">
+                                    <i class="material-icons">play_arrow</i>
+                                </div>
+
+                                <button class="content__video-btn">
+                                    MUA VÉ
+                                </button>
+                            </a>
+                        </li>
+
+                        <li class="col l-3 m-3 content__video-item hot">
+                            <a href="#" class="content__video-item-link">
+                                <img class="content__video-item-img" src="assets/img/thanh-guom-diet-quy-chuyen-tau-vo-tan-demon-slayer-the-movie-mugen-train-p-16063888466666_215x318.png" alt="img">
+                                <div class="content__video-item-descrip">
+                                    <h2 class="content__video-item-title"><span class="content__video-item-title-tag C">C13</span>Thanh Gươm Diệt Quỷ: Chuyến Tàu Vô Tận - Demon Slayer The Movie: Mugen Train (P)</h2>
+                                    <p class="content__video-lenght">117 phút</p>
+                                </div>
+
+                                <div class="content__video-stars">
+                                    <p class="content__video-rate">8.3</p>
+                                    <img class="content__video-star-icon" src="assets/img/star1.png" alt="star">
+                                    <img class="content__video-star-icon" src="assets/img/star1.png" alt="star">
+                                    <img class="content__video-star-icon" src="assets/img/star1.png" alt="star">
+                                    <img class="content__video-star-icon" src="assets/img/star1.png" alt="star">
+                                    <img class="content__video-star-icon" src="assets/img/star1.2.png" alt="star">
+                                </div>
+
+                                <img src="assets/img/film_type_1.png" alt="type1" class="content__video-type hot">
+                                <img src="assets/img/film_type_2.png" alt="type1" class="content__video-type sale-off">
+                                <img src="assets/img/film_type_3.png" alt="type1" class="content__video-type not-now">
+
+                                <div class="overlay-img"></div>
+
+                                <div class="content__video-play">
+                                    <i class="material-icons">play_arrow</i>
+                                </div>
+
+                                <button class="content__video-btn">
+                                    MUA VÉ
+                                </button>
+                            </a>
+                        </li>
+
+                        <li class="col l-3 m-3 content__video-item">
+                            <a href="#" class="content__video-item-link">
+                                <img class="content__video-item-img" src="assets/img/hoa-phong-nguyet-vu-the-crawler-16064689420018_215x318.png" alt="img">
+                                <div class="content__video-item-descrip">
+                                    <h2 class="content__video-item-title"><span class="content__video-item-title-tag C">C18</span>Hoa Phong Nguyệt Vũ - The Crawler (C18)</h2>
+                                    <p class="content__video-lenght">0 phút</p>
+                                </div>
+
+                                <div class="content__video-stars">
+                                    <p class="content__video-rate">5.6</p>
+                                    <img class="content__video-star-icon" src="assets/img/star1.png" alt="star">
+                                    <img class="content__video-star-icon" src="assets/img/star1.png" alt="star">
+                                    <img class="content__video-star-icon" src="assets/img/star1.2.png" alt="star">
+                                </div>
+
+                                <img src="assets/img/film_type_1.png" alt="type1" class="content__video-type hot">
+                                <img src="assets/img/film_type_2.png" alt="type1" class="content__video-type sale-off">
+                                <img src="assets/img/film_type_3.png" alt="type1" class="content__video-type not-now">
+
+                                <div class="overlay-img"></div>
+
+                                <div class="content__video-play">
+                                    <i class="material-icons">play_arrow</i>
+                                </div>
+
+                                <button class="content__video-btn">
+                                    MUA VÉ
+                                </button>
+                            </a>
+                        </li>
+
+                        <li class="col l-3 m-3 content__video-item">
+                            <a href="#" class="content__video-item-link">
+                                <img class="content__video-item-img" src="assets/img/doraemon-nobita-va-nhung-ban-khung-long-moi-doraemon-the-movie-nobita-s-new-dinosaurs-p-16074846198854_215x318.png" alt="img">
+                                <div class="content__video-item-descrip">
+                                    <h2 class="content__video-item-title"><span class="content__video-item-title-tag P">P</span>Doraemon: Nobita và Những Bạn Khủng Long Mới - Doraemon the Movie: Nobita's New Dinosaurs (P)</h2>
+                                    <p class="content__video-lenght">110 phút</p>
+                                </div>
+
+                                <div class="content__video-stars">
+                                    <p class="content__video-rate">9</p>
+                                    <img class="content__video-star-icon" src="assets/img/star1.png" alt="star">
+                                    <img class="content__video-star-icon" src="assets/img/star1.png" alt="star">
+                                    <img class="content__video-star-icon" src="assets/img/star1.png" alt="star">
+                                    <img class="content__video-star-icon" src="assets/img/star1.png" alt="star">
+                                    <img class="content__video-star-icon" src="assets/img/star1.2.png" alt="star">
+                                </div>
+
+                                <img src="assets/img/film_type_1.png" alt="type1" class="content__video-type hot">
+                                <img src="assets/img/film_type_2.png" alt="type1" class="content__video-type sale-off">
+                                <img src="assets/img/film_type_3.png" alt="type1" class="content__video-type not-now">
+
+                                <div class="overlay-img"></div>
+
+                                <div class="content__video-play">
+                                    <i class="material-icons">play_arrow</i>
+                                </div>
+
+                                <button class="content__video-btn">
+                                    MUA VÉ
+                                </button>
+                            </a>
+                        </li>
+
+                        <li class="col l-3 m-3 content__video-item">
+                            <a href="#" class="content__video-item-link">
+                                <img class="content__video-item-img" src="assets/img/nghe-sieu-kho-extreme-job-c18-16074190927361_215x318.png" alt="img">
+                                <div class="content__video-item-descrip">
+                                    <h2 class="content__video-item-title"><span class="content__video-item-title-tag C">C18</span>Nghề Siêu Khó - Extreme Job (C18)
+                                    </h2>
+                                    <p class="content__video-lenght">111 phút</p>
+                                </div>
+
+                                <div class="content__video-stars">
+                                    <p class="content__video-rate">8.9</p>
+                                    <img class="content__video-star-icon" src="assets/img/star1.png" alt="star">
+                                    <img class="content__video-star-icon" src="assets/img/star1.png" alt="star">
+                                    <img class="content__video-star-icon" src="assets/img/star1.png" alt="star">
+                                    <img class="content__video-star-icon" src="assets/img/star1.png" alt="star">
+                                    <img class="content__video-star-icon" src="assets/img/star1.2.png" alt="star">
+                                </div>
+
+                                <img src="assets/img/film_type_1.png" alt="type1" class="content__video-type hot">
+                                <img src="assets/img/film_type_2.png" alt="type1" class="content__video-type sale-off">
+                                <img src="assets/img/film_type_3.png" alt="type1" class="content__video-type not-now">
+
+                                <div class="overlay-img"></div>
+
+                                <div class="content__video-play">
+                                    <i class="material-icons">play_arrow</i>
+                                </div>
+
+                                <button class="content__video-btn">
+                                    MUA VÉ
+                                </button>
+                            </a>
+                        </li>
+
+                        <li class="col l-3 m-3 content__video-item">
+                            <a href="#" class="content__video-item-link">
+                                <img class="content__video-item-img" src="assets/img/gia-dinh-croods-ky-nguyen-moi-the-croods-new-age-p-16057775991222_215x318.png" alt="img">
+                                <div class="content__video-item-descrip">
+                                    <h2 class="content__video-item-title"><span class="content__video-item-title-tag P">P</span>Gia Đình Croods: Kỷ Nguyên Mới - The Croods: New Age (P)</h2>
+                                    <p class="content__video-lenght">95 phút</p>
+                                </div>
+
+                                <div class="content__video-stars">
+                                    <p class="content__video-rate">8.9</p>
+                                    <img class="content__video-star-icon" src="assets/img/star1.png" alt="star">
+                                    <img class="content__video-star-icon" src="assets/img/star1.png" alt="star">
+                                    <img class="content__video-star-icon" src="assets/img/star1.png" alt="star">
+                                    <img class="content__video-star-icon" src="assets/img/star1.png" alt="star">
+                                    <img class="content__video-star-icon" src="assets/img/star1.2.png" alt="star">
+                                </div>
+
+                                <img src="assets/img/film_type_1.png" alt="type1" class="content__video-type hot">
+                                <img src="assets/img/film_type_2.png" alt="type1" class="content__video-type sale-off">
+                                <img src="assets/img/film_type_3.png" alt="type1" class="content__video-type not-now">
+
+                                <div class="overlay-img"></div>
+
+                                <div class="content__video-play">
+                                    <i class="material-icons">play_arrow</i>
+                                </div>
+
+                                <button class="content__video-btn">
+                                    MUA VÉ
+                                </button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="content__video-slide hide-on-tablet">
+                    <div class="slider left" onclick="plusDivsContent(-1)">&#10094;</div>
+                    <div class="slider right" onclick="plusDivsContent(1)">&#10095;</div>
+                </div>
+            </div>
+
+            <div class="content__video-place-mobile">
+                <div class="grid wide">
+                    <ul class="content__video-place-mobile-list">
+                        <li class="content__video-place-mobile-item not-now">
+                            <a href="#" class="content__video-place-mobile-link">
+                                <img class="content__video-place-mobile-img" src="assets/img/nu-than-chien-binh-1984-wonder-woman-1984-15411453088668_540x225.jpg" alt="img">
+
+                                <img src="assets/img/film_type_1.png" alt="type" class="content__video-place-mobile-type hot">
+                                <img src="assets/img/film_type_2.png" alt="type" class="content__video-place-mobile-type sale-off">
+                                <img src="assets/img/film_type_3.png" alt="type" class="content__video-place-mobile-type not-now">
+
+                                <div class="content__video-stars">
+                                    <p class="content__video-rate">6.1</p>
+                                    <img class="content__video-star-icon" src="assets/img/star1.png" alt="star">
+                                    <img class="content__video-star-icon" src="assets/img/star1.png" alt="star">
+                                    <img class="content__video-star-icon" src="assets/img/star1.png" alt="star">
+                                    <img class="content__video-star-icon" src="assets/img/star1.2.png" alt="star">
+                                </div>
+
+                                <span class="content__video-item-title-tag mobile P">P</span>
+                            </a>
+                        </li>
+
+                        <li class="content__video-place-mobile-item hot">
+                            <a href="#" class="content__video-place-mobile-link">
+                                <img class="content__video-place-mobile-img" src="assets/img/thanh-guom-diet-quy-chuyen-tau-vo-tan-demon-slayer-the-movie-mugen-train-p-16074820529204_540x225.png" alt="img">
+
+                                <img src="assets/img/film_type_1.png" alt="type" class="content__video-place-mobile-type hot">
+                                <img src="assets/img/film_type_2.png" alt="type" class="content__video-place-mobile-type sale-off">
+                                <img src="assets/img/film_type_3.png" alt="type" class="content__video-place-mobile-type not-now">
+
+                                <div class="content__video-stars">
+                                    <p class="content__video-rate">8.9</p>
+                                    <img class="content__video-star-icon" src="assets/img/star1.png" alt="star">
+                                    <img class="content__video-star-icon" src="assets/img/star1.png" alt="star">
+                                    <img class="content__video-star-icon" src="assets/img/star1.png" alt="star">
+                                    <img class="content__video-star-icon" src="assets/img/star1.png" alt="star">
+                                    <img class="content__video-star-icon" src="assets/img/star1.2.png" alt="star">
+                                </div>
+
+                                <span class="content__video-item-title-tag mobile C">C13</span>
+                            </a>
+                        </li>
+
+                        <li class="content__video-place-mobile-item">
+                            <a href="#" class="content__video-place-mobile-link">
+                                <img class="content__video-place-mobile-img" src="assets/img/hoa-phong-nguyet-vu-the-crawler-16064689319625_540x225.png" alt="img">
+
+                                <img src="assets/img/film_type_1.png" alt="type" class="content__video-place-mobile-type hot">
+                                <img src="assets/img/film_type_2.png" alt="type" class="content__video-place-mobile-type sale-off">
+                                <img src="assets/img/film_type_3.png" alt="type" class="content__video-place-mobile-type not-now">
+
+                                <div class="content__video-stars">
+                                    <p class="content__video-rate">5.6</p>
+                                    <img class="content__video-star-icon" src="assets/img/star1.png" alt="star">
+                                    <img class="content__video-star-icon" src="assets/img/star1.png" alt="star">
+                                    <img class="content__video-star-icon" src="assets/img/star1.2.png" alt="star">
+                                </div>
+
+                                <span class="content__video-item-title-tag mobile C">C18</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <button class="content__video-place-mobile-btn">XEM THÊM</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="content__backnew">
+            <div class="grid wide">
+                <div class="content__backnew-bg" style="background-image: url(assets/img/back-news.png);"></div>
+            </div>
+        </div>
+
+        <div class="content__cinema hide-on-mobile">
+            <div class="grid wide">
+                <div class="content__cinema-border">
+                    <ul class="content__cinema-place">
+                        <li class="content__cinema-icon active">
+                            <img class="content__cinema-img" src="assets/img/f32670fd0eb083c9c4c804f0f3a252ed.png" alt="icon">
+                            <div class="overlay__cinema"></div>
+                        </li>
+                        <li class="content__cinema-icon">
+                            <img class="content__cinema-img" src="assets/img/1721cfa98768f300c03792e25ceb0191.png" alt="icon">
+                            <div class="overlay__cinema"></div>
+                        </li>
+                        <li class="content__cinema-icon">
+                            <img class="content__cinema-img" src="assets/img/9b240f96a233bb43203ee514a21a6004.png" alt="icon">
+                            <div class="overlay__cinema"></div>
+                        </li>
+                        <li class="content__cinema-icon">
+                            <img class="content__cinema-img" src="assets/img/7b078639bd8fdb09dd83652d207c7b90.png" alt="icon">
+                            <div class="overlay__cinema"></div>
+                        </li>
+                        <li class="content__cinema-icon">
+                            <img class="content__cinema-img" src="assets/img/9ff07a03371c4a09260309faa32caa55.jpg" alt="icon">
+                            <div class="overlay__cinema"></div>
+                        </li>
+                        <li class="content__cinema-icon">
+                            <img class="content__cinema-img" src="assets/img/404b8c4b80d77732e7426cdb7e24be20.png" alt="icon">
+                            <div class="overlay__cinema"></div>
+                        </li>
+                    </ul>
+
+                    <ul class="content__cinema-street active">
+                        <li class="content__cinema-street-item active">
+                            <div class="content__cinema-street-place">
+                                <img class="content__cinema-street-img" src="assets/img/bhd-star-bitexco-15379552241200.jpg" alt="img">
+                                <div class="content__cinema-street-info">
+                                    <h2 class="content__cinema-street-title"><span>BHD Star</span> - Bitexco</h2>
+                                    <p class="content__cinema-street-location">
+                                        L3-Bitexco Icon 68, 2 Hải Triều, Q.1
+                                    </p>
+                                    <a href="#" class="content__cinema-street-link">[chi tiết]</a>
+                                </div>
+                            </div>
+
+                            <div class="overlay__cinema"></div>
+                        </li>
+                        <li class="content__cinema-street-item">
+                            <div class="content__cinema-street-place">
+                                <img class="content__cinema-street-img" src="assets/img/bhd-star-vincom-thao-dien-15379553942188.jpg" alt="img">
+                                <div class="content__cinema-street-info">
+                                    <h2 class="content__cinema-street-title"><span>BHD Star</span> - Vincom Thảo Điền
+                                    </h2>
+                                    <p class="content__cinema-street-location">
+                                        L5-Megamall, 159 XL Hà Nội, Q.2
+                                    </p>
+                                    <a href="#" class="content__cinema-street-link">[chi tiết]</a>
+                                </div>
+                            </div>
+
+                            <div class="overlay__cinema"></div>
+                        </li>
+                        <li class="content__cinema-street-item">
+                            <div class="content__cinema-street-place">
+                                <img class="content__cinema-street-img" src="assets/img/bhd-star-pham-hung-15379533093101.jpg" alt="img">
+                                <div class="content__cinema-street-info">
+                                    <h2 class="content__cinema-street-title"><span>BHD Star</span> - Phạm Hùng</h2>
+                                    <p class="content__cinema-street-location">
+                                        L4-Satra Phạm Hùng, C6/27 Phạm Hùng, Bình Chánh
+                                    </p>
+                                    <a href="#" class="content__cinema-street-link">[chi tiết]</a>
+                                </div>
+                            </div>
+
+                            <div class="overlay__cinema"></div>
+                        </li>
+                        <li class="content__cinema-street-item">
+                            <div class="content__cinema-street-place">
+                                <img class="content__cinema-street-img" src="assets/img/bhd-star-vincom-quang-trung-15379536724871.jpg" alt="img">
+                                <div class="content__cinema-street-info">
+                                    <h2 class="content__cinema-street-title"><span>BHD Star</span> - Vincom Quang Trung
+                                    </h2>
+                                    <p class="content__cinema-street-location">
+                                        B1-Vincom QT, 190 Quang Trung, Gò Vấp
+                                    </p>
+                                    <a href="#" class="content__cinema-street-link">[chi tiết]</a>
+                                </div>
+                            </div>
+
+                            <div class="overlay__cinema"></div>
+                        </li>
+                        <li class="content__cinema-street-item">
+                            <div class="content__cinema-street-place">
+                                <img class="content__cinema-street-img" src="assets/img/bhd-star-vincom-quang-trung-15379536724871.jpg" alt="img">
+                                <div class="content__cinema-street-info">
+                                    <h2 class="content__cinema-street-title"><span>BHD Star</span> - Vincom Lê Văn Việt
+                                    </h2>
+                                    <p class="content__cinema-street-location">
+                                        L4-Vincom Plaza, 50 Lê Văn Việt, Q.9
+                                    </p>
+                                    <a href="#" class="content__cinema-street-link">[chi tiết]</a>
+                                </div>
+                            </div>
+
+                            <div class="overlay__cinema"></div>
+                        </li>
+                        <li class="content__cinema-street-item">
+                            <div class="content__cinema-street-place">
+                                <img class="content__cinema-street-img" src="assets/img/bhd-star-vincom-quang-trung-15379536724871.jpg" alt="img">
+                                <div class="content__cinema-street-info">
+                                    <h2 class="content__cinema-street-title"><span>BHD Star</span> - Vincom Lê Văn Việt
+                                    </h2>
+                                    <p class="content__cinema-street-location">
+                                        L4-Vincom Plaza, 50 Lê Văn Việt, Q.9
+                                    </p>
+                                    <a href="#" class="content__cinema-street-link">[chi tiết]</a>
+                                </div>
+                            </div>
+
+                            <div class="overlay__cinema"></div>
+                        </li>
+                        <li class="content__cinema-street-item">
+                            <div class="content__cinema-street-place">
+                                <img class="content__cinema-street-img" src="assets/img/bhd-star-vincom-quang-trung-15379536724871.jpg" alt="img">
+                                <div class="content__cinema-street-info">
+                                    <h2 class="content__cinema-street-title"><span>BHD Star</span> - Vincom Lê Văn Việt
+                                    </h2>
+                                    <p class="content__cinema-street-location">
+                                        L4-Vincom Plaza, 50 Lê Văn Việt, Q.9
+                                    </p>
+                                    <a href="#" class="content__cinema-street-link">[chi tiết]</a>
+                                </div>
+                            </div>
+
+                            <div class="overlay__cinema"></div>
+                        </li>
+                        <li class="content__cinema-street-item">
+                            <div class="content__cinema-street-place">
+                                <img class="content__cinema-street-img" src="assets/img/bhd-star-vincom-quang-trung-15379536724871.jpg" alt="img">
+                                <div class="content__cinema-street-info">
+                                    <h2 class="content__cinema-street-title"><span>BHD Star</span> - Vincom Lê Văn Việt
+                                    </h2>
+                                    <p class="content__cinema-street-location">
+                                        L4-Vincom Plaza, 50 Lê Văn Việt, Q.9
+                                    </p>
+                                    <a href="#" class="content__cinema-street-link">[chi tiết]</a>
+                                </div>
+                            </div>
+
+                            <div class="overlay__cinema"></div>
+                        </li>
+
+                    </ul>
+
+                    <ul class="content__cinema-street">
+                        <li class="content__cinema-street-item active">
+                            <div class="content__cinema-street-place">
+                                <img class="content__cinema-street-img" src="assets/img/bhd-star-bitexco-15379552241200.jpg" alt="img">
+                                <div class="content__cinema-street-info">
+                                    <h2 class="content__cinema-street-title"><span>Star</span> - Bitexco</h2>
+                                    <p class="content__cinema-street-location">
+                                        L3-Bitexco Icon 68, 2 Hải Triều, Q.1
+                                    </p>
+                                    <a href="#" class="content__cinema-street-link">[chi tiết]</a>
+                                </div>
+                            </div>
+
+                            <div class="overlay__cinema"></div>
+                        </li>
+                        <li class="content__cinema-street-item">
+                            <div class="content__cinema-street-place">
+                                <img class="content__cinema-street-img" src="assets/img/bhd-star-bitexco-15379552241200.jpg" alt="img">
+                                <div class="content__cinema-street-info">
+                                    <h2 class="content__cinema-street-title"><span>Star</span> - Bitexco</h2>
+                                    <p class="content__cinema-street-location">
+                                        L3-Bitexco Icon 68, 10 Hải Triều, Q.12
+                                    </p>
+                                    <a href="#" class="content__cinema-street-link">[chi tiết]</a>
+                                </div>
+                            </div>
+
+                            <div class="overlay__cinema"></div>
+                        </li>
+                    </ul>
+
+                    <ul class="content__cinema-street">
+                        <li class="content__cinema-street-item active">
+                            <div class="content__cinema-street-place">
+                                <img class="content__cinema-street-img" src="assets/img/bhd-star-bitexco-15379552241200.jpg" alt="img">
+                                <div class="content__cinema-street-info">
+                                    <h2 class="content__cinema-street-title"><span>DDC</span> - Bitexco</h2>
+                                    <p class="content__cinema-street-location">
+                                        L3-Bitexco Icon 68, 2 Hải Triều, Q.1
+                                    </p>
+                                    <a href="#" class="content__cinema-street-link">[chi tiết]</a>
+                                </div>
+                            </div>
+
+                            <div class="overlay__cinema"></div>
+                        </li>
+                        <li class="content__cinema-street-item">
+                            <div class="content__cinema-street-place">
+                                <img class="content__cinema-street-img" src="assets/img/bhd-star-bitexco-15379552241200.jpg" alt="img">
+                                <div class="content__cinema-street-info">
+                                    <h2 class="content__cinema-street-title"><span>DDC</span> - Bitexco</h2>
+                                    <p class="content__cinema-street-location">
+                                        L3-Bitexco Icon 68, 10 Hải Triều, Q.12
+                                    </p>
+                                    <a href="#" class="content__cinema-street-link">[chi tiết]</a>
+                                </div>
+                            </div>
+
+                            <div class="overlay__cinema"></div>
+                        </li>
+                    </ul>
+
+                    <ul class="content__cinema-street">
+                        <li class="content__cinema-street-item active">
+                            <div class="content__cinema-street-place">
+                                <img class="content__cinema-street-img" src="assets/img/bhd-star-bitexco-15379552241200.jpg" alt="img">
+                                <div class="content__cinema-street-info">
+                                    <h2 class="content__cinema-street-title"><span>Mega</span> - Bitexco</h2>
+                                    <p class="content__cinema-street-location">
+                                        L3-Bitexco Icon 68, 2 Hải Triều, Q.1
+                                    </p>
+                                    <a href="#" class="content__cinema-street-link">[chi tiết]</a>
+                                </div>
+                            </div>
+
+                            <div class="overlay__cinema"></div>
+                        </li>
+                        <li class="content__cinema-street-item">
+                            <div class="content__cinema-street-place">
+                                <img class="content__cinema-street-img" src="assets/img/bhd-star-bitexco-15379552241200.jpg" alt="img">
+                                <div class="content__cinema-street-info">
+                                    <h2 class="content__cinema-street-title"><span>Mega</span> - Bitexco</h2>
+                                    <p class="content__cinema-street-location">
+                                        L3-Bitexco Icon 68, 10 Hải Triều, Q.12
+                                    </p>
+                                    <a href="#" class="content__cinema-street-link">[chi tiết]</a>
+                                </div>
+                            </div>
+
+                            <div class="overlay__cinema"></div>
+                        </li>
+                    </ul>
+
+                    <ul class="content__cinema-street">
+                        <li class="content__cinema-street-item active">
+                            <div class="content__cinema-street-place">
+                                <img class="content__cinema-street-img" src="assets/img/bhd-star-bitexco-15379552241200.jpg" alt="img">
+                                <div class="content__cinema-street-info">
+                                    <h2 class="content__cinema-street-title"><span>Dcine</span> - Bitexco</h2>
+                                    <p class="content__cinema-street-location">
+                                        L3-Bitexco Icon 68, 2 Hải Triều, Q.1
+                                    </p>
+                                    <a href="#" class="content__cinema-street-link">[chi tiết]</a>
+                                </div>
+                            </div>
+
+                            <div class="overlay__cinema"></div>
+                        </li>
+                        <li class="content__cinema-street-item">
+                            <div class="content__cinema-street-place">
+                                <img class="content__cinema-street-img" src="assets/img/bhd-star-bitexco-15379552241200.jpg" alt="img">
+                                <div class="content__cinema-street-info">
+                                    <h2 class="content__cinema-street-title"><span>Dcine</span> - Bitexco</h2>
+                                    <p class="content__cinema-street-location">
+                                        L3-Bitexco Icon 68, 10 Hải Triều, Q.12
+                                    </p>
+                                    <a href="#" class="content__cinema-street-link">[chi tiết]</a>
+                                </div>
+                            </div>
+
+                            <div class="overlay__cinema"></div>
+                        </li>
+                    </ul>
+
+                    <ul class="content__cinema-street">
+                        <li class="content__cinema-street-item active">
+                            <div class="content__cinema-street-place">
+                                <img class="content__cinema-street-img" src="assets/img/bhd-star-bitexco-15379552241200.jpg" alt="img">
+                                <div class="content__cinema-street-info">
+                                    <h2 class="content__cinema-street-title"><span>Lotte</span> - Bitexco</h2>
+                                    <p class="content__cinema-street-location">
+                                        L3-Bitexco Icon 68, 2 Hải Triều, Q.1
+                                    </p>
+                                    <a href="#" class="content__cinema-street-link">[chi tiết]</a>
+                                </div>
+                            </div>
+
+                            <div class="overlay__cinema"></div>
+                        </li>
+                        <li class="content__cinema-street-item">
+                            <div class="content__cinema-street-place">
+                                <img class="content__cinema-street-img" src="assets/img/bhd-star-bitexco-15379552241200.jpg" alt="img">
+                                <div class="content__cinema-street-info">
+                                    <h2 class="content__cinema-street-title"><span>Lotte</span> - Bitexco</h2>
+                                    <p class="content__cinema-street-location">
+                                        L3-Bitexco Icon 68, 10 Hải Triều, Q.12
+                                    </p>
+                                    <a href="#" class="content__cinema-street-link">[chi tiết]</a>
+                                </div>
+                            </div>
+
+                            <div class="overlay__cinema"></div>
+                        </li>
+                    </ul>
+
+                    <ul class="content__cinema-movie">
+                        <li class="content__cinema-movie-item">
+                            <div class="content__cinema-movie-place">
+                                <div class="content__cinema-movie-header click">
+                                    <img src="assets/img/tiec-trang-mau-blood-moon-party-16016226514166_60x60.png" alt="img" class="content__cinema-movie-img">
+
+                                    <div class="content__cinema-movie-info">
+                                        <h2 class="content__cinema-movie-title">
+                                            <span class="content__video-item-title-tag C">C16</span>Tiệc Trăng Máu - Blood Moon Party
+                                        </h2>
+                                        <p class="content__cinema-movie-lenght">100 phút - TIX 9.3 - IMDb 0</p>
+                                    </div>
+                                </div>
+
+                                <div class="content__cinema-movie-body" id="content__cinema-movie-body">
+                                    <h3 class="content__cinema-movie-type">2D Digital</h3>
+                                    <ul class="row no-gutters content__cinema-movie-time-list">
+                                        <li class="col l-3 content__cinema-movie-time-item">
+                                            <div class="content__cinema-movie-time-place">
+                                                <p class="content__cinema-movie-time">
+                                                    <span>14:00 </span> ~ 15:40
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li class="col l-3 content__cinema-movie-time-item">
+                                            <div class="content__cinema-movie-time-place">
+                                                <p class="content__cinema-movie-time">
+                                                    <span>14:00 </span> ~ 15:40
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li class="col l-3 content__cinema-movie-time-item">
+                                            <div class="content__cinema-movie-time-place">
+                                                <p class="content__cinema-movie-time">
+                                                    <span>14:00 </span> ~ 15:40
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li class="col l-3 content__cinema-movie-time-item">
+                                            <div class="content__cinema-movie-time-place">
+                                                <p class="content__cinema-movie-time">
+                                                    <span>14:00 </span> ~ 15:40
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li class="col l-3 content__cinema-movie-time-item">
+                                            <div class="content__cinema-movie-time-place">
+                                                <p class="content__cinema-movie-time">
+                                                    <span>14:00 </span> ~ 15:40
+                                                </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="content__cinema-movie-item">
+                            <div class="content__cinema-movie-place">
+                                <div class="content__cinema-movie-header">
+                                    <img src="assets/img/chong-nguoi-ta-c18-16027366912559_60x60.png" alt="img" class="content__cinema-movie-img">
+
+                                    <div class="content__cinema-movie-info">
+                                        <h2 class="content__cinema-movie-title">
+                                            <span class="content__video-item-title-tag C">C18</span>Chồng Người Ta
+                                        </h2>
+                                        <p class="content__cinema-movie-lenght">90 phút - TIX 6.5 - IMDb 0</p>
+                                    </div>
+                                </div>
+
+                                <div class="content__cinema-movie-body">
+                                    <h3 class="content__cinema-movie-type">2D Digital</h3>
+                                    <ul class="row no-gutters content__cinema-movie-time-list">
+                                        <li class="col l-3 content__cinema-movie-time-item">
+                                            <div class="content__cinema-movie-time-place">
+                                                <p class="content__cinema-movie-time">
+                                                    <span>23:00</span> ~ 0:45
+                                                </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="content__cinema-movie-item">
+                            <div class="content__cinema-movie-place">
+                                <div class="content__cinema-movie-header">
+                                    <img src="assets/img/gia-dinh-croods-ky-nguyen-moi-the-croods-new-age-p-16057775991222_60x60.png" alt="img" class="content__cinema-movie-img">
+
+                                    <div class="content__cinema-movie-info">
+                                        <h2 class="content__cinema-movie-title">
+                                            <span class="content__video-item-title-tag P">P</span>Gia Đình Croods: Kỷ Nguyên Mới - The Croods: New Age
+                                        </h2>
+                                        <p class="content__cinema-movie-lenght">95 phút - TIX 8.9 - IMDb 0</p>
+                                    </div>
+                                </div>
+
+                                <div class="content__cinema-movie-body">
+                                    <h3 class="content__cinema-movie-type">2D Digital</h3>
+                                    <ul class="row no-gutters content__cinema-movie-time-list">
+                                        <li class="col l-3 content__cinema-movie-time-item">
+                                            <div class="content__cinema-movie-time-place">
+                                                <p class="content__cinema-movie-time">
+                                                    <span>23:00</span> ~ 0:45
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li class="col l-3 content__cinema-movie-time-item">
+                                            <div class="content__cinema-movie-time-place">
+                                                <p class="content__cinema-movie-time">
+                                                    <span>23:00</span> ~ 0:45
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li class="col l-3 content__cinema-movie-time-item">
+                                            <div class="content__cinema-movie-time-place">
+                                                <p class="content__cinema-movie-time">
+                                                    <span>23:00</span> ~ 0:45
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li class="col l-3 content__cinema-movie-time-item">
+                                            <div class="content__cinema-movie-time-place">
+                                                <p class="content__cinema-movie-time">
+                                                    <span>23:00</span> ~ 0:45
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li class="col l-3 content__cinema-movie-time-item">
+                                            <div class="content__cinema-movie-time-place">
+                                                <p class="content__cinema-movie-time">
+                                                    <span>23:00</span> ~ 0:45
+                                                </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="content__cinema-movie-item">
+                            <div class="content__cinema-movie-place">
+                                <div class="content__cinema-movie-header">
+                                    <img src="assets/img/gia-dinh-croods-ky-nguyen-moi-the-croods-new-age-p-16057775991222_60x60.png" alt="img" class="content__cinema-movie-img">
+
+                                    <div class="content__cinema-movie-info">
+                                        <h2 class="content__cinema-movie-title">
+                                            <span class="content__video-item-title-tag P">P</span>Gia Đình Croods: Kỷ Nguyên Mới - The Croods: New Age
+                                        </h2>
+                                        <p class="content__cinema-movie-lenght">95 phút - TIX 8.9 - IMDb 0</p>
+                                    </div>
+                                </div>
+
+                                <div class="content__cinema-movie-body">
+                                    <h3 class="content__cinema-movie-type">2D Digital</h3>
+                                    <ul class="row no-gutters content__cinema-movie-time-list">
+                                        <li class="col l-3 content__cinema-movie-time-item">
+                                            <div class="content__cinema-movie-time-place">
+                                                <p class="content__cinema-movie-time">
+                                                    <span>23:00</span> ~ 0:45
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li class="col l-3 content__cinema-movie-time-item">
+                                            <div class="content__cinema-movie-time-place">
+                                                <p class="content__cinema-movie-time">
+                                                    <span>23:00</span> ~ 0:45
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li class="col l-3 content__cinema-movie-time-item">
+                                            <div class="content__cinema-movie-time-place">
+                                                <p class="content__cinema-movie-time">
+                                                    <span>23:00</span> ~ 0:45
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li class="col l-3 content__cinema-movie-time-item">
+                                            <div class="content__cinema-movie-time-place">
+                                                <p class="content__cinema-movie-time">
+                                                    <span>23:00</span> ~ 0:45
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li class="col l-3 content__cinema-movie-time-item">
+                                            <div class="content__cinema-movie-time-place">
+                                                <p class="content__cinema-movie-time">
+                                                    <span>23:00</span> ~ 0:45
+                                                </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="content__cinema-movie-item">
+                            <div class="content__cinema-movie-place">
+                                <div class="content__cinema-movie-header">
+                                    <img src="assets/img/gia-dinh-croods-ky-nguyen-moi-the-croods-new-age-p-16057775991222_60x60.png" alt="img" class="content__cinema-movie-img">
+
+                                    <div class="content__cinema-movie-info">
+                                        <h2 class="content__cinema-movie-title">
+                                            <span class="content__video-item-title-tag P">P</span>Gia Đình Croods: Kỷ Nguyên Mới - The Croods: New Age
+                                        </h2>
+                                        <p class="content__cinema-movie-lenght">95 phút - TIX 8.9 - IMDb 0</p>
+                                    </div>
+                                </div>
+
+                                <div class="content__cinema-movie-body">
+                                    <h3 class="content__cinema-movie-type">2D Digital</h3>
+                                    <ul class="row no-gutters content__cinema-movie-time-list">
+                                        <li class="col l-3 content__cinema-movie-time-item">
+                                            <div class="content__cinema-movie-time-place">
+                                                <p class="content__cinema-movie-time">
+                                                    <span>23:00</span> ~ 0:45
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li class="col l-3 content__cinema-movie-time-item">
+                                            <div class="content__cinema-movie-time-place">
+                                                <p class="content__cinema-movie-time">
+                                                    <span>23:00</span> ~ 0:45
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li class="col l-3 content__cinema-movie-time-item">
+                                            <div class="content__cinema-movie-time-place">
+                                                <p class="content__cinema-movie-time">
+                                                    <span>23:00</span> ~ 0:45
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li class="col l-3 content__cinema-movie-time-item">
+                                            <div class="content__cinema-movie-time-place">
+                                                <p class="content__cinema-movie-time">
+                                                    <span>23:00</span> ~ 0:45
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li class="col l-3 content__cinema-movie-time-item">
+                                            <div class="content__cinema-movie-time-place">
+                                                <p class="content__cinema-movie-time">
+                                                    <span>23:00</span> ~ 0:45
+                                                </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="content__backnew hide-on-mobile">
+            <div class="grid wide">
+                <div class="content__backnew-bg" style="background-image: url(assets/img/back-news.png);"></div>
+            </div>
+        </div>
+
+        <div class="content__blog">
+            <div class="grid wide">
+                <div class="content__video-title-place">
+                    <h2 class="content__video-title active">Đang Chiếu</h2>
+                    <h2 class="content__video-title">Review</h2>
+                    <h2 class="content__video-title">Khuyến Mãi</h2>
+                </div>
+
+                <ul class="content__blog-list">
+                    <li class="content__blog-item">
+                        <div class="row content__blog-header">
+                            <div class="col l-6 m-6 c-12 content__blog-item-place">
+                                <a href="#" class="content__blog-link">
+                                    <img src="assets/img/boc-tem-to-hop-giai-tri-moi-toanh-cua-gioi-ha-thanh-16056938333773.jpg" alt="img" class="content__blog-img">
+                                </a>
+
+                                <h2 class="content__blog-title">
+                                    <a href="#" class="content__blog-link"> “Bóc tem” tổ hợp giải trí mới toanh của giới
+                                        Hà Thành</a>
+                                </h2>
+
+
+                                <p class="content__blog-descrip">
+                                    Vào đúng ngày Nhà giáo Việt Nam 20/11, khu vui chơi sống ảo độc-lạ-chill nhất từ trước đến giờ sẽ chính thức khai trương tại 360 Giải Phóng!
+                                </p>
+
+                                <div class="content__blog-like-com hide-on-mobile">
+                                    <div class="content__blog-like">
+                                        <img class="content__blog-icon" src="assets/img/like.png" alt="like">
+                                        <p class="content__blog-cout">2</p>
+                                    </div>
+
+                                    <div class="content__blog-com">
+                                        <img class="content__blog-icon" src="assets/img/comment.png" alt="like">
+                                        <p class="content__blog-cout">2</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col l-6 m-6 c-12 content__blog-item-place">
+                                <a href="#" class="content__blog-link">
+                                    <img src="assets/img/tiec-trang-mau-chinh-thuc-can-moc-100-ty-chi-sau-2-tuan-cong-chieu-16043752411629.png" alt="img" class="content__blog-img">
+                                </a>
+
+                                <h2 class="content__blog-title">
+                                    <a href="#" class="content__blog-link"> Tiệc Trăng Máu chính thức cán mốc 100 tỷ chỉ
+                                        sau 2 tuần công chiếu</a>
+                                </h2>
+
+                                <p class="content__blog-descrip">
+                                    Sau 2 tuần ra mắt, Tiệc Trăng Máu chính thức gia nhập câu lạc bộ phim điện ảnh đạt 100 tỷ đồng doanh thu phòng vé. Dàn ngôi sao “bạc tỷ” của phim cũng lần đầu tiên hội tụ đầy đủ trong một khung hình để ăn mừng thành tích ấn tượng
+                                </p>
+
+                                <div class="content__blog-like-com hide-on-mobile">
+                                    <div class="content__blog-like">
+                                        <img class="content__blog-icon" src="assets/img/like.png" alt="like">
+                                        <p class="content__blog-cout">2</p>
+                                    </div>
+
+                                    <div class="content__blog-com">
+                                        <img class="content__blog-icon" src="assets/img/comment.png" alt="like">
+                                        <p class="content__blog-cout">2</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row content__blog-body">
+                            <div class="col l-4 m-4 c-12 content__blog-item-place">
+                                <a href="#" class="content__blog-link">
+                                    <img src="assets/img/ngo-thanh-van-chinh-thuc-khoi-dong-cuoc-thi-thiet-ke-trang-phuc-cho-sieu-anh-hung-dau-tien-cua-viet-nam-vinaman-16041597587981.jpg" alt="img" class="content__blog-img">
+                                </a>
+
+                                <h2 class="content__blog-title">
+                                    <a href="#" class="content__blog-link"> NGÔ THANH VÂN CHÍNH THỨC KHỞI ĐỘNG CUỘC THI
+                                        THIẾT KẾ TRANG PHỤC CHO SIÊU ANH HÙNG ĐẦU TIÊN CỦA VIỆT NAM – VINAMAN</a>
+                                </h2>
+
+                                <p class="content__blog-descrip">
+                                    Chiều tối ngày 30-10-2020, Ngô Thanh Vân và Studio68 đã chính thức phát động cuộc thi thiết kế trang phục cho siêu anh hùng VINAMAN với tổng
+                                </p>
+
+                                <div class="content__blog-like-com hide-on-mobile">
+                                    <div class="content__blog-like">
+                                        <img class="content__blog-icon" src="assets/img/like.png" alt="like">
+                                        <p class="content__blog-cout">2</p>
+                                    </div>
+
+                                    <div class="content__blog-com">
+                                        <img class="content__blog-icon" src="assets/img/comment.png" alt="like">
+                                        <p class="content__blog-cout">2</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col l-4 m-4 c-12 content__blog-item-place">
+                                <a href="#" class="content__blog-link">
+                                    <img src="assets/img/antebellum-4-ly-do-khong-the-bo-lo-sieu-pham-kinh-di-antebellum-bay-thuc-tai-kinh-hoang-16045678023913.png" alt="img" class="content__blog-img">
+                                </a>
+
+                                <h2 class="content__blog-title">
+                                    <a href="#" class="content__blog-link"> [ANTEBELLUM] - 4 lý do không thể bỏ lỡ siêu
+                                        phẩm kinh dị Antebellum: Bẫy Thực Tại Kinh Hoàng</a>
+                                </h2>
+
+                                <p class="content__blog-descrip">
+                                    Không đi theo lối mòn máu me, hù dọa mà đầu tư khai thác những mảng tối của xã hội trên nền một câu chuyện kinh dị, có sự tham gia của nhà sản xuất
+                                </p>
+
+                                <div class="content__blog-like-com hide-on-mobile">
+                                    <div class="content__blog-like">
+                                        <img class="content__blog-icon" src="assets/img/like.png" alt="like">
+                                        <p class="content__blog-cout">2</p>
+                                    </div>
+
+                                    <div class="content__blog-com">
+                                        <img class="content__blog-icon" src="assets/img/comment.png" alt="like">
+                                        <p class="content__blog-cout">2</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col l-4 m-4 c-12 content__blog-item-place">
+                                <ul class="content__blog-item-list">
+                                    <li class="content__blog-item-item">
+                                        <a href="#" class="content__blog-link">
+                                            <img src="assets/img/da-n-my-nhan-trong-the-gio-i-die-n-a-nh-cu-a-qua-i-kie-t-christopher-nolan-15970503793246.png" alt="img" class="content__blog-item-item-img">
+                                        </a>
+
+                                        <h2 class="content__blog-title item">
+                                            <a href="#" class="content__blog-link item"> Dàn mỹ nhân trong thế giới
+                                                điện ảnh của quái kiệt Christopher Nolan</a>
+                                        </h2>
+                                    </li>
+
+                                    <li class="content__blog-item-item">
+                                        <a href="#" class="content__blog-link">
+                                            <img src="assets/img/6-da-o-die-n-ti-do-lam-nen-thanh-cong-cua-nhu-ng-bom-ta-n-di-nh-da-m-nha-t-hollywood-15966023547553.png" alt="img" class="content__blog-item-item-img">
+                                        </a>
+
+                                        <h2 class="content__blog-title item">
+                                            <a href="#" class="content__blog-link item"> 6 đạo diễn tỉ đô làm nên
+                                                thành công của những bom tấn đình đám nhất Hollywood</a>
+                                        </h2>
+                                    </li>
+
+                                    <li class="content__blog-item-item">
+                                        <a href="#" class="content__blog-link">
+                                            <img src="assets/img/truy-cung-giet-tan-cuoc-tai-ngo-cua-hai-ong-hoang-phong-ve-xu-han-15966122262210.png" alt="img" class="content__blog-item-item-img">
+                                        </a>
+
+                                        <h2 class="content__blog-title item">
+                                            <a href="#" class="content__blog-link item"> Truy Cùng Giết Tận - Cuộc tái
+                                                ngộ của hai 'ông hoàng phòng vé' xứ Hàn</a>
+                                        </h2>
+                                    </li>
+
+                                    <li class="content__blog-item-item">
+                                        <a href="#" class="content__blog-link">
+                                            <img src="assets/img/da-n-my-nhan-trong-the-gio-i-die-n-a-nh-cu-a-qua-i-kie-t-christopher-nolan-15970503793246.png" alt="img" class="content__blog-item-item-img">
+                                        </a>
+
+                                        <h2 class="content__blog-title item">
+                                            <a href="#" class="content__blog-link item"> Dàn mỹ nhân trong thế giới
+                                                điện ảnh của quái kiệt Christopher Nolan</a>
+                                        </h2>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="content__blog-btn-place">
+                    <button class="content__blog-btn">Xem Thêm</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="content__background" style="background-image: url(assets/img/backapp.jpg);">
+            <div class="grid wide content__background-content">
+                <div class="row content__background-descript">
+                    <div class="col l-6 m-12 c-12 content__background-place left">
+                        <div class="content__background-left-position">
+                            <h2 class="content__background-title">Ứng dụng tiện lợi dành cho người yêu điện ảnh</h2>
+                            <p class="content__background-info">Không chỉ đặt vé, bạn còn có thể bình luận phim, chấm điểm rạp và đổi quà hấp dẫn.</p>
+                            <button class="content__background-btn">App miễn phí - Tải về ngay!</button>
+                            <p class="content__background-version">TIX có hai phiên bản <a href="#" class="content__background-link">iOS</a> & <a href="#" class="content__background-link">Android</a></p>
+                        </div>
+                    </div>
+
+                    <div class="col l-6 m-12 c-12 content__background-place right">
+                        <div class="content__background-mobile">
+                            <img src="assets/img/mobile.png" alt="mobile" class="content__background-mobile-img">
+
+                            <div class="content__background-slide-place">
+                                <img src="assets/img/slide1.jpg" alt="img" class="content__background-slide-img">
+                                <img src="assets/img/slide2.jpg" alt="img" class="content__background-slide-img">
+                                <img src="assets/img/slide3.jpg" alt="img" class="content__background-slide-img">
+                                <img src="assets/img/slide4.jpg" alt="img" class="content__background-slide-img">
+                                <img src="assets/img/slide5.jpg" alt="img" class="content__background-slide-img">
+                                <img src="assets/img/slide6.jpg" alt="img" class="content__background-slide-img">
+                                <img src="assets/img/slide7.jpg" alt="img" class="content__background-slide-img">
+                                <img src="assets/img/slide8.jpg" alt="img" class="content__background-slide-img">
+                                <img src="assets/img/slide9.jpg" alt="img" class="content__background-slide-img">
+                                <img src="assets/img/slide10.jpg" alt="img" class="content__background-slide-img">
+                                <img src="assets/img/slide11.jpg" alt="img" class="content__background-slide-img">
+                                <img src="assets/img/slide12.jpg" alt="img" class="content__background-slide-img">
+                                <img src="assets/img/slide13.jpg" alt="img" class="content__background-slide-img">
+                                <img src="assets/img/slide14.jpg" alt="img" class="content__background-slide-img">
+                                <img src="assets/img/slide15.jpg" alt="img" class="content__background-slide-img">
+                                <img src="assets/img/slide16.jpg" alt="img" class="content__background-slide-img">
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="grid wide">
+            <div class="row no-gutters footer__head">
+                <div class="col l-4 m-4 c-12 footer__head__item">
+                    <div class="row no-gutters footer__head__item__list">
+                        <h2 class="col l-12 m-12 footer__head__item__list__title hide-on-mobile">
+                            TIX
+                        </h2>
+                        <a href="#" class="col l-6 m-6 footer__head__item__list__link hide-on-mobile">FAQ</a>
+                        <a href="#" class="col l-6 m-6 c-6 footer__head__item__list__link">Thỏa thuận sử dụng</a>
+                        <a href="#" class="col l-6 m-6 footer__head__item__list__link hide-on-mobile">Brand
+                            Guidelines</a>
+                        <a href="#" class="col l-6 m-6 c-6 footer__head__item__list__link">Chính sách bảo mật</a>
+                    </div>
+                </div>
+                <div class="col l-4 m-4 footer__head__item hide-on-mobile">
+                    <div class="row no-gutters footer__head__item__list">
+                        <h2 class="col l-12 m-12 footer__head__item__list__title">
+                            Đối tác
+                        </h2>
+                        <div class="col l-10 m-12 footer__head__item__list__icon">
+                            <a href="#" class="footer__head__item__list__link -icon">
+                                <img class="footer__head__item__list__link__icon -bg-white" src="assets/img/cgv.png" alt="icon">
+                            </a>
+                            <a href="#" class="footer__head__item__list__link -icon">
+                                <img class="footer__head__item__list__link__icon" src="assets/img/bhd.png" alt="icon">
+                            </a>
+                            <a href="#" class="footer__head__item__list__link -icon">
+                                <img class="footer__head__item__list__link__icon" src="assets/img/galaxycine.png" alt="icon">
+                            </a>
+                            <a href="#" class="footer__head__item__list__link -icon">
+                                <img class="footer__head__item__list__link__icon" src="assets/img/cinestar.png" alt="icon">
+                            </a>
+                            <a href="#" class="footer__head__item__list__link -icon">
+                                <img class="footer__head__item__list__link__icon" src="assets/img/404b8c4b80d77732e7426cdb7e24be20.png" alt="icon">
+                            </a>
+                            <a href="#" class="footer__head__item__list__link -icon">
+                                <img class="footer__head__item__list__link__icon" src="assets/img/megags.png" alt="icon">
+                            </a>
+                            <a href="#" class="footer__head__item__list__link -icon">
+                                <img class="footer__head__item__list__link__icon" src="assets/img/bt.jpg" alt="icon">
+                            </a>
+                            <a href="#" class="footer__head__item__list__link -icon">
+                                <img class="footer__head__item__list__link__icon" src="assets/img/dongdacinema.png" alt="icon">
+                            </a>
+                            <a href="#" class="footer__head__item__list__link -icon">
+                                <img class="footer__head__item__list__link__icon" src="assets/img/TOUCH.png" alt="icon">
+                            </a>
+                            <a href="#" class="footer__head__item__list__link -icon">
+                                <img class="footer__head__item__list__link__icon" src="assets/img/cnx.jpg" alt="icon">
+                            </a>
+                            <a href="#" class="footer__head__item__list__link -icon">
+                                <img class="footer__head__item__list__link__icon" src="assets/img/STARLIGHT.png" alt="icon">
+                            </a>
+                            <a href="#" class="footer__head__item__list__link -icon">
+                                <img class="footer__head__item__list__link__icon" src="assets/img/dcine.png" alt="icon">
+                            </a>
+                            <a href="#" class="footer__head__item__list__link -icon">
+                                <img class="footer__head__item__list__link__icon" src="assets/img/zalopay_icon.png" alt="icon">
+                            </a>
+                            <a href="#" class="footer__head__item__list__link -icon">
+                                <img class="footer__head__item__list__link__icon" src="assets/img/payoo.jpg" alt="icon">
+                            </a>
+                            <a href="#" class="footer__head__item__list__link -icon">
+                                <img class="footer__head__item__list__link__icon" src="assets/img/VCB.png" alt="icon">
+                            </a>
+                            <a href="#" class="footer__head__item__list__link -icon">
+                                <img class="footer__head__item__list__link__icon" src="assets/img/AGRIBANK.png" alt="icon">
+                            </a>
+                            <a href="#" class="footer__head__item__list__link -icon">
+                                <img class="footer__head__item__list__link__icon" src="assets/img/VIETTINBANK.png" alt="icon">
+                            </a>
+                            <a href="#" class="footer__head__item__list__link -icon">
+                                <img class="footer__head__item__list__link__icon" src="assets/img/IVB.png" alt="icon">
+                            </a>
+                            <a href="#" class="footer__head__item__list__link -icon">
+                                <img class="footer__head__item__list__link__icon" src="assets/img/123go.png" alt="icon">
+                            </a>
+                            <a href="#" class="footer__head__item__list__link -icon">
+                                <img class="footer__head__item__list__link__icon" src="assets/img/laban.png" alt="icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l-4 m-4 c-12 footer__head__item last">
+                    <div class="row no-gutters footer__head__item__list">
+                        <h2 class="col l-6 m-6 footer__head__item__list__title hide-on-mobile">
+                            MOBILE APP
+                        </h2>
+                        <h2 class="col l-6 m-6 footer__head__item__list__title hide-on-mobile">
+                            SOCIAL
+                        </h2>
+                        <div class="col l-6 m-6 footer__head__item__list__app hide-on-mobile">
+                            <a href="#" class="footer__head__item__list__link -img">
+                                <img src="assets/img/apple-logo.png" alt="apple" class="footer__head__item__list__app__icon">
+                            </a>
+                            <a href="#" class="footer__head__item__list__link -img">
+                                <img src="assets/img/android-logo.png" alt="android" class="footer__head__item__list__app__icon">
+                            </a>
+                        </div>
+                        <div class="col l-6 m-6 c-12 footer__head__item__list__app">
+                            <a href="#" class="footer__head__item__list__link -img">
+                                <img src="assets/img/facebook-logo.png" alt="fb" class="footer__head__item__list__app__icon -large">
+                            </a>
+                            <a href="#" class="footer__head__item__list__link -img">
+                                <img src="assets/img/zalo-logo.png" alt="zalo" class="footer__head__item__list__app__icon -large">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row no-gutters footer__body">
+                <div class="col l-10 m-10 c-12 footer__body__item">
+                    <img src="assets/img/zion-logo.jpg" alt="img" class="footer__body__item__img">
+                    <div class="footer__body__item__info">
+                        <h2 class="footer__body__item__info__title">TIX – SẢN PHẨM CỦA CÔNG TY CỔ PHẦN ZION</h2>
+                        <p class="footer__body__item__info__descript">Địa chỉ: Z06 Đường số 13, Phường Tân Thuận Đông, Quận 7, Tp. Hồ Chí Minh, Việt Nam.</p>
+                        <p class="footer__body__item__info__descript">Giấy chứng nhận đăng ký kinh doanh số: 0101659783,
+                        </p>
+                        <p class="footer__body__item__info__descript">đăng ký thay đổi lần thứ 30, ngày 22 tháng 01 năm 2020 do Sở kế hoạch và đầu tư Thành phố Hồ Chí Minh cấp.</p>
+                        <p class="footer__body__item__info__descript">Số Điện Thoại (Hotline): 1900 545 436</p>
+                        <p class="footer__body__item__info__descript">Email: <a href="" class="footer__body__item__info__descript__link">support@tix.vn</a></p>
+                    </div>
+                </div>
+                <div class="col l-2 m-2 c-12 footer__body__item">
+                    <a href="#" class="footer__body__item__link">
+                        <img alt="img" src="assets/img/d1e6bd560daa9e20131ea8a0f62e87f8.png" class="footer__body__item__link__img">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Header background -->
+    <script>
+        $(window).on("scroll", function() {
+            if ($(window).scrollTop() > 100) {
+                $(".header").addClass("bg-color box-shadow");
+            } else {
+                //remove the background property so it comes transparent again (defined in your css)
+                $(".header").removeClass("bg-color box-shadow");
+            }
+        });
+    </script>
+
+    <!-- Header__place click-->
+    <script>
+        function placeListFunction() {
+            var x = document.getElementById("header__place-list");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+
+        // function placeListFunction(){
+        //     document.getElementById("header__place-list").classList.toggle("show");
+        // }
+
+        // window.onclick = function (event) {
+        //     if (!event.target.matches('.place')) {
+        //         var dropdowns = document.getElementsByClassName("header__place-list");
+        //         var i;
+        //         for (i = 0; i < dropdowns.length; i++) {
+        //             var openDropdown = dropdowns[i];
+        //             if (openDropdown.classList.contains('show')) {
+        //                 openDropdown.classList.remove('show');
+        //             }
+        //         }
+        //     }
+        // }
+    </script>
+
+    <!-- Content__header slide -->
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function currentDiv(n) {
+            showDivs(slideIndex = n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("content__header-link");
+            var dots = document.getElementsByClassName("dot-item");
+            if (n > x.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = x.length
+            }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace("dot-active", "");
+            }
+            x[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " dot-active";
+        }
+    </script>
+
+    <!-- Content__video slide -->
+    <script>
+        var slideIndex = 1;
+        showDivsContent(slideIndex);
+
+        function plusDivsContent(n) {
+            showDivsContent(slideIndex += n);
+        }
+
+        function showDivsContent(n) {
+            var i;
+            var x = document.getElementsByClassName("row content__video-list");
+            if (n > x.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = x.length
+            }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "flex";
+        }
+    </script>
+
+    <!-- Content__background -->
+    <script>
+        var slideIndex = 0;
+        showSlidesBG();
+
+        function showSlidesBG() {
+            var i;
+            var slides = document.getElementsByClassName("content__background-slide-img");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlidesBG, 2000); // Change image every 2 seconds
+        }
+    </script>
+
+    <script>
+        const $ = document.querySelector.bind(document);
+        const $$ = document.querySelectorAll.bind(document);
+
+        const places = $$(".content__cinema-icon"); //Danh sách rạp chiếu
+        const streets = $$(".content__cinema-street"); //Danh sách địa chỉ của rạp chiếu
+        const streetItems = $$(".content__cinema-street-item"); //1 rạp chiếu nào đó
+
+        const placeActive = $$(".content__cinema-street-item.active");
+        const streetActive = $$(".content__cinema-street.active");
+        const streetItemActive = $$(".content__cinema-street-item.active");
+
+        places.forEach((place, index) => {
+            const street = streets[index]; //Danh sách địa chỉ của rạp chiếu ứng với rạp chiếu
+
+            place.onclick = function() {
+                $(".content__cinema-icon.active").classList.remove("active");
+                $(".content__cinema-street.active").classList.remove("active");
+
+                this.classList.add("active");
+                street.classList.add("active");
+            }
+        })
+
+        streetActive.forEach((streetActives, index) => {
+            streetActives.onclick = function() {
+                    $(".content__cinema-street-item.active").classList.remove("active");
+
+                    streetItems.classList.add("active");
+                }
+                // streetItem.onclick = function() {
+                //     $(".content__cinema-street-item.active").classList.remove("active");
+
+            //     this.classList.add("active");
+            // }
+        })
+    </script>
+
+
+</body>
+
+</html>
